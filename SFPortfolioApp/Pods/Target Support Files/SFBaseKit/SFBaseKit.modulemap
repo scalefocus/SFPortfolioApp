@@ -1,0 +1,6 @@
+framework module SFBaseKit {
+  umbrella header "SFBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
