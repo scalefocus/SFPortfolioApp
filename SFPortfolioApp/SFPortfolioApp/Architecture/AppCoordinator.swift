@@ -24,4 +24,5 @@ class AppCoordinator: Coordinator {
     /// Should start the coordinator of next scene and add it as child coordinator to the current one.
     override func start() {
     }
+    
 }
