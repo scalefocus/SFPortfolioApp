@@ -5,7 +5,7 @@
 //  Created by Stoyko Kolev on 30.06.21.
 //
 
-import UIKit
+import SFBaseKit
 
 class CategoryItemTableViewCell: UITableViewCell {
     
@@ -13,3 +13,13 @@ class CategoryItemTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     
 }
+
+// MARK: - Configurable
+extension CategoryItemTableViewCell: Configurable {
+    
+    func configureWith(_ data: CategoryItemTableViewCellViewModelProtocol) {
+        titleLabel.text = data.title
+    }
+    
+}
+
