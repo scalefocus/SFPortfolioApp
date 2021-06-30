@@ -72,29 +72,21 @@
 			children = (
 				9A92CC99268C91C000B7A80E /* Modules */,
 				32CDD9C4268B46D8008154AA /* Utilities */,
-				32CDD9C2268B0CC5008154AA /* Common */,
+				32CDD9C2268B0CC5008154AA /* SupportingFiles */,
 			);
 			path = SFPortfolioApp;
 			sourceTree = "<group>";
 		};
-		32CDD9C2268B0CC5008154AA /* Common */ = {
+		32CDD9C2268B0CC5008154AA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				32CDD9BC268B0C9F008154AA /* Info.plist */,
 				32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */,
 				32CDD9B7268B0C9F008154AA /* Assets.xcassets */,
-				32CDD9C3268B0CCD008154AA /* AppDelegate */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		32CDD9C3268B0CCD008154AA /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				32CDD9B0268B0C9C008154AA /* SceneDelegate.swift */,
 				32CDD9AE268B0C9C008154AA /* AppDelegate.swift */,
+				32CDD9B0268B0C9C008154AA /* SceneDelegate.swift */,
 			);
-			path = AppDelegate;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		32CDD9C4268B46D8008154AA /* Utilities */ = {
