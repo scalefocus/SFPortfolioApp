@@ -17,6 +17,29 @@ class CategoryCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    // MARK: - Public Functions
+    override func start() {
+        startCategoryScene()
+    }
+    
+    // MARK: - Private Functions
+    private func startCategoryScene() {
+        let categoriesViewController = CategoryViewController.create(with: Category.allCases,
+                                                                     delegate: self)
+        navigationController.pushViewController(categoriesViewController, animated: true)
+    }
+    
+}
+
+// MARK: - CategoryViewModelCoordinatorDelegate
+extension CategoryCoordinator: CategoryViewModelCoordinatorDelegate {
+    
+    func didFinishCategorySceneWithSelection(of category: Category) {
+        let categoryItemsViewController = CategoryItemsViewController.create(with: CategoryItem.allCases,
+                                                                             delegate: self)
+        navigationController.pushViewController(categoryItemsViewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryItemsViewModelCoordinatorDelegate
