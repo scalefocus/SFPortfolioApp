@@ -80,33 +80,24 @@
 		32CDD9AD268B0C9C008154AA /* SFPortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
-				9A92CC8A268C7A6200B7A80E /* Modules */,
-				32CDD9C7268B4A44008154AA /* Scenes */,
+				9A92CC99268C91C000B7A80E /* Modules */,
 				9A92CC96268C7C9D00B7A80E /* Extensions */,
 				32CDD9C4268B46D8008154AA /* Utilities */,
-				32CDD9C2268B0CC5008154AA /* Common */,
+				32CDD9C2268B0CC5008154AA /* SupportingFiles */,
 			);
 			path = SFPortfolioApp;
 			sourceTree = "<group>";
 		};
-		32CDD9C2268B0CC5008154AA /* Common */ = {
+		32CDD9C2268B0CC5008154AA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				32CDD9BC268B0C9F008154AA /* Info.plist */,
 				32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */,
 				32CDD9B7268B0C9F008154AA /* Assets.xcassets */,
-				32CDD9C3268B0CCD008154AA /* AppDelegate */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		32CDD9C3268B0CCD008154AA /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				32CDD9B0268B0C9C008154AA /* SceneDelegate.swift */,
 				32CDD9AE268B0C9C008154AA /* AppDelegate.swift */,
+				32CDD9B0268B0C9C008154AA /* SceneDelegate.swift */,
 			);
-			path = AppDelegate;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		32CDD9C4268B46D8008154AA /* Utilities */ = {
@@ -115,29 +106,6 @@
 				32CDD9C5268B46ED008154AA /* AppCoordinator.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		32CDD9C7268B4A44008154AA /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		9A92CC8A268C7A6200B7A80E /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				9A92CC8B268C7A7300B7A80E /* HomeModule */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		9A92CC8B268C7A7300B7A80E /* HomeModule */ = {
-			isa = PBXGroup;
-			children = (
-				9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */,
-			);
-			path = HomeModule;
 			sourceTree = "<group>";
 		};
 		9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */ = {
@@ -165,6 +133,22 @@
 				9A92CC97268C7CAF00B7A80E /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9A92CC99268C91C000B7A80E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9A92CC9A268C91CC00B7A80E /* CategoryModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9A92CC9A268C91CC00B7A80E /* CategoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */,
+			);
+			path = CategoryModule;
 			sourceTree = "<group>";
 		};
 		C36A6F754EB363BA4393F08F /* Frameworks */ = {
