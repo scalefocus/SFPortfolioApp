@@ -59,6 +59,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		327F9B9E268DFF9F00A9BB01 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				32CDD9C5268B46ED008154AA /* AppCoordinator.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
 		32CDD9A2268B0C9C008154AA = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +88,7 @@
 		32CDD9AD268B0C9C008154AA /* SFPortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
+				327F9B9E268DFF9F00A9BB01 /* Architecture */,
 				9A92CC99268C91C000B7A80E /* Modules */,
 				32CDD9C4268B46D8008154AA /* Utilities */,
 				32CDD9C2268B0CC5008154AA /* SupportingFiles */,
@@ -103,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				9A92CC96268C7C9D00B7A80E /* Extensions */,
-				32CDD9C5268B46ED008154AA /* AppCoordinator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -420,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SFPortfolioApp/Common/Info.plist;
+				INFOPLIST_FILE = SFPortfolioApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SFPortfolioApp/Common/Info.plist;
+				INFOPLIST_FILE = SFPortfolioApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
