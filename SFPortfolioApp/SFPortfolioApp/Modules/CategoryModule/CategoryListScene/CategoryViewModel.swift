@@ -13,6 +13,7 @@ class CategoryViewModel: CategoryViewModelProtocol {
     
     // MARK: - Public Properties
     let categories: [Category]
+    weak var delegate: CategoryViewModelCoordinatorDelegate?
     
     // MARK: - Inits
     init(categories: [Category]) {
@@ -21,7 +22,8 @@ class CategoryViewModel: CategoryViewModelProtocol {
     
     // MARK: - Public Functions
     func selectCategory(at index: Int) {
-
+        guard let category = categories[safeAt: index] else { return }
+        delegate?.didFinishCategorySceneWithSelection(of: category)
     }
     
     func numberOfCellsInSection(_ section: Int) -> Int? {

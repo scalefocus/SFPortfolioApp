@@ -9,15 +9,15 @@ import SFBaseKit
 
 class CategoryViewController: BaseViewController {
 
-    // MARK: - IBOUtlets
+    // MARK: - Private Properties
+    private var viewModel: CategoryViewModelProtocol!
+    
+    // MARK: - IBOutlets
     @IBOutlet private weak var categoriesTableView: UITableView! {
         didSet {
             categoriesTableView.register(cellNames: CategoryTableViewCell.typeName)
         }
     }
-    
-    // MARK: - Private Properties
-    private var viewModel: CategoryViewModelProtocol!
     
 }
 
@@ -26,6 +26,7 @@ extension CategoryViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.selectCategory(at: indexPath.row)
     }
     
 }
@@ -52,10 +53,14 @@ extension CategoryViewController: UITableViewDataSource {
 extension CategoryViewController {
     
     /// Create current ViewController.
-    /// - Parameter viewModel: View model of the current ViewController.
+    /// - Parameter categories: Categories to configure ViewModel with.
+    /// - Parameter delegate: Coordinatable Delegate to set to ViewModel.
     /// - Returns: configured ViewController.
-    static func create(with viewModel: CategoryViewModelProtocol) -> UIViewController {
+    static func create(with categories: [Category],
+                       delegate: CategoryViewModelCoordinatorDelegate) -> UIViewController {
         let viewController = CategoryViewController()
+        let viewModel = CategoryViewModel(categories: categories)
+        viewModel.delegate = delegate
         viewController.viewModel = viewModel
         return viewController
     }

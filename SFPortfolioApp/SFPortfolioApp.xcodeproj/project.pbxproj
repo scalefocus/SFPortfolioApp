@@ -15,6 +15,8 @@
 		32964BE92692E0EC00FC3B1A /* CategoryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */; };
 		32964BEB2692EECC00FC3B1A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEA2692EECC00FC3B1A /* Category.swift */; };
 		32964BED2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEC2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift */; };
+		32964BEF2693205900FC3B1A /* CategoryViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEE2693205800FC3B1A /* CategoryViewModelCoordinatorDelegate.swift */; };
+		32964BF12693453D00FC3B1A /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BF02693453C00FC3B1A /* CategoryViewModel.swift */; };
 		32C1316A268F0167000EDC1C /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */; };
 		32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1318F268F3ABC000EDC1C /* CategoryCoordinator.swift */; };
 		32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDD9AE268B0C9C008154AA /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModelProtocol.swift; sourceTree = "<group>"; };
 		32964BEA2692EECC00FC3B1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		32964BEC2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		32964BEE2693205800FC3B1A /* CategoryViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryViewModelCoordinatorDelegate.swift; path = SFPortfolioApp/Modules/CategoryModule/CategoryListScene/CategoryViewModelCoordinatorDelegate.swift; sourceTree = SOURCE_ROOT; };
+		32964BF02693453C00FC3B1A /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		32C1318F268F3ABC000EDC1C /* CategoryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCoordinator.swift; sourceTree = "<group>"; };
 		32CDD9AB268B0C9C008154AA /* SFPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFPortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,9 +169,10 @@
 			children = (
 				32C13168268EFE31000EDC1C /* CategoryViewCell */,
 				3274B387268EF58200E1B445 /* CategoryViewController.swift */,
+				32964BF02693453C00FC3B1A /* CategoryViewModel.swift */,
 				3274B389268EF59E00E1B445 /* CategoryViewController.xib */,
+				32964BEE2693205800FC3B1A /* CategoryViewModelCoordinatorDelegate.swift */,
 				32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */,
-				32499A482692E02500504E46 /* CategoryViewModel.swift */,
 			);
 			path = CategoryListScene;
 			sourceTree = "<group>";
@@ -362,15 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32499A472692DF8500504E46 /* NSObject+Extensions.swift in Sources */,
 				3274B388268EF58200E1B445 /* CategoryViewController.swift in Sources */,
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
 				9A92CC8F268C7AB900B7A80E /* CategoryItemsViewController.swift in Sources */,
 				9A92CC9C268CA4AA00B7A80E /* CategoryItemsViewModelProtocol.swift in Sources */,
 				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
+				32964BEF2693205900FC3B1A /* CategoryViewModelCoordinatorDelegate.swift in Sources */,
 				9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */,
+				32964BF12693453D00FC3B1A /* CategoryViewModel.swift in Sources */,
 				9A92CCA5268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift in Sources */,
-				32499A492692E02500504E46 /* CategoryViewModel.swift in Sources */,
 				3274B390268EF68600E1B445 /* CategoryTableViewCell.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */,
