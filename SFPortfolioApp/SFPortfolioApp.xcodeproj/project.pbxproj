@@ -11,6 +11,10 @@
 		3274B388268EF58200E1B445 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B387268EF58200E1B445 /* CategoryViewController.swift */; };
 		3274B38A268EF59E00E1B445 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3274B389268EF59E00E1B445 /* CategoryViewController.xib */; };
 		3274B390268EF68600E1B445 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B38F268EF68600E1B445 /* CategoryTableViewCell.swift */; };
+		32964BE72692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BE62692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift */; };
+		32964BE92692E0EC00FC3B1A /* CategoryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */; };
+		32964BEB2692EECC00FC3B1A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEA2692EECC00FC3B1A /* Category.swift */; };
+		32964BED2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEC2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift */; };
 		32C1316A268F0167000EDC1C /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */; };
 		32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1318F268F3ABC000EDC1C /* CategoryCoordinator.swift */; };
 		32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDD9AE268B0C9C008154AA /* AppDelegate.swift */; };
@@ -35,6 +39,10 @@
 		3274B387268EF58200E1B445 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3274B389268EF59E00E1B445 /* CategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		3274B38F268EF68600E1B445 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = SFPortfolioApp/Modules/CategoryModule/CategoryListScene/CategoryViewCell/CategoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		32964BE62692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModelProtocol.swift; sourceTree = "<group>"; };
+		32964BEA2692EECC00FC3B1A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		32964BEC2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		32C1318F268F3ABC000EDC1C /* CategoryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCoordinator.swift; sourceTree = "<group>"; };
 		32CDD9AB268B0C9C008154AA /* SFPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFPortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +100,10 @@
 		32C13168268EFE31000EDC1C /* CategoryViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */,
 				3274B38F268EF68600E1B445 /* CategoryTableViewCell.swift */,
+				32C13169268F0167000EDC1C /* CategoryTableViewCell.xib */,
+				32964BEC2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift */,
+				32964BE62692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift */,
 			);
 			path = CategoryViewCell;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 				32C13168268EFE31000EDC1C /* CategoryViewCell */,
 				3274B387268EF58200E1B445 /* CategoryViewController.swift */,
 				3274B389268EF59E00E1B445 /* CategoryViewController.xib */,
+				32964BE82692E0EC00FC3B1A /* CategoryViewModelProtocol.swift */,
+				32499A482692E02500504E46 /* CategoryViewModel.swift */,
 			);
 			path = CategoryListScene;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */,
+				32964BEA2692EECC00FC3B1A /* Category.swift */,
 			);
 			path = Enumerations;
 			sourceTree = "<group>";
@@ -349,18 +362,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32499A472692DF8500504E46 /* NSObject+Extensions.swift in Sources */,
 				3274B388268EF58200E1B445 /* CategoryViewController.swift in Sources */,
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
 				9A92CC8F268C7AB900B7A80E /* CategoryItemsViewController.swift in Sources */,
 				9A92CC9C268CA4AA00B7A80E /* CategoryItemsViewModelProtocol.swift in Sources */,
+				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
 				9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */,
 				9A92CCA5268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift in Sources */,
+				32499A492692E02500504E46 /* CategoryViewModel.swift in Sources */,
 				3274B390268EF68600E1B445 /* CategoryTableViewCell.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */,
 				9A236BE226917C22000E8643 /* CategoryItemsViewModelCoordinatorDelegate.swift in Sources */,
 				9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
+				32964BED2692F06900FC3B1A /* CategoryTableViewCellViewModelProtocol.swift in Sources */,
+				32964BE72692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift in Sources */,
+				32964BE92692E0EC00FC3B1A /* CategoryViewModelProtocol.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsViewModel.swift in Sources */,

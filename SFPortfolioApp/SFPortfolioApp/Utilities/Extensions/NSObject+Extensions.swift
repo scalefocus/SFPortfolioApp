@@ -9,7 +9,6 @@ import Foundation
 
 extension NSObject {
     
-    /// Returns the name of the Object as a string
     static var typeName: String {
         return String(describing: self)
     }
