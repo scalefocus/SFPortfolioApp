@@ -70,7 +70,7 @@
 		32CDD9AD268B0C9C008154AA /* SFPortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
-				32CDD9C7268B4A44008154AA /* Scenes */,
+				9A92CC99268C91C000B7A80E /* Modules */,
 				32CDD9C4268B46D8008154AA /* Utilities */,
 				32CDD9C2268B0CC5008154AA /* Common */,
 			);
@@ -105,11 +105,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		32CDD9C7268B4A44008154AA /* Scenes */ = {
+		9A92CC99268C91C000B7A80E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9A92CC9A268C91CC00B7A80E /* CategoryModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9A92CC9A268C91CC00B7A80E /* CategoryModule */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Scenes;
+			path = CategoryModule;
 			sourceTree = "<group>";
 		};
 		C36A6F754EB363BA4393F08F /* Frameworks */ = {
