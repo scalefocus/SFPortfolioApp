@@ -16,6 +16,9 @@ class CategoryViewController: BaseViewController {
         }
     }
     
+    // MARK: - Private Properties
+    private var viewModel: CategoryViewModelProtocol!
+    
 }
 
 // MARK: - UITableViewDelegate
@@ -31,16 +34,30 @@ extension CategoryViewController: UITableViewDelegate {
 extension CategoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        viewModel?.numberOfCellsInSection(section) ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let categoriesCell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.typeName,
-                                                                 for: indexPath) as? CategoryTableViewCell else {
+        guard let cellConfigurator = viewModel?.viewConfigurator(at: indexPath.row,
+                                                                 in: indexPath.section) else {
             return UITableViewCell()
         }
         
-        return categoriesCell
+        return tableView.configureCell(for: cellConfigurator, at: indexPath)
+    }
+    
+}
+
+// MARK: - Instantiate
+extension CategoryViewController {
+    
+    /// Create current ViewController.
+    /// - Parameter viewModel: View model of the current ViewController.
+    /// - Returns: configured ViewController.
+    static func create(with viewModel: CategoryViewModelProtocol) -> UIViewController {
+        let viewController = CategoryViewController()
+        viewController.viewModel = viewModel
+        return viewController
     }
     
 }
