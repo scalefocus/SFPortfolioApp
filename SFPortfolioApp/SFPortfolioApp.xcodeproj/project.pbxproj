@@ -81,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				9A92CC99268C91C000B7A80E /* Modules */,
-				9A92CC96268C7C9D00B7A80E /* Extensions */,
 				32CDD9C4268B46D8008154AA /* Utilities */,
 				32CDD9C2268B0CC5008154AA /* SupportingFiles */,
 			);
@@ -103,6 +102,7 @@
 		32CDD9C4268B46D8008154AA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9A92CC96268C7C9D00B7A80E /* Extensions */,
 				32CDD9C5268B46ED008154AA /* AppCoordinator.swift */,
 			);
 			path = Utilities;
