@@ -13,6 +13,7 @@
 		32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B7268B0C9F008154AA /* Assets.xcassets */; };
 		32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */; };
 		32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDD9C5268B46ED008154AA /* AppCoordinator.swift */; };
+		9A236BD1268EEC3A000E8643 /* CategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BD0268EEC3A000E8643 /* CategoryCoordinator.swift */; };
 		9A92CC8F268C7AB900B7A80E /* CategoryItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC8D268C7AB900B7A80E /* CategoryItemsViewController.swift */; };
 		9A92CC90268C7AB900B7A80E /* CategoryItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A92CC8E268C7AB900B7A80E /* CategoryItemsViewController.xib */; };
 		9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 		5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
+		9A236BD0268EEC3A000E8643 /* CategoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoordinator.swift; sourceTree = "<group>"; };
 		9A92CC8D268C7AB900B7A80E /* CategoryItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsViewController.swift; sourceTree = "<group>"; };
 		9A92CC8E268C7AB900B7A80E /* CategoryItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemsViewController.xib; sourceTree = "<group>"; };
 		9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		9A92CC9A268C91CC00B7A80E /* CategoryModule */ = {
 			isa = PBXGroup;
 			children = (
+				9A236BD0268EEC3A000E8643 /* CategoryCoordinator.swift */,
 				9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */,
 			);
 			path = CategoryModule;
@@ -285,6 +288,7 @@
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
 				9A92CC8F268C7AB900B7A80E /* CategoryItemsViewController.swift in Sources */,
 				9A92CC98268C7CAF00B7A80E /* UITableViewCell+Extensions.swift in Sources */,
+				9A236BD1268EEC3A000E8643 /* CategoryCoordinator.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
