@@ -11,7 +11,7 @@ import SFBaseKit
 protocol CategoryItemsViewModelProtocol: CoordinatableViewModel, BaseDataSource {
     
     /// Request finish scene with category item selected.
-    /// - Parameter indexPath: Index of the selected item in collection.
+    /// - Parameter index: Index of the selected item in collection.
     func selectItem(at index: Int)
     
 }

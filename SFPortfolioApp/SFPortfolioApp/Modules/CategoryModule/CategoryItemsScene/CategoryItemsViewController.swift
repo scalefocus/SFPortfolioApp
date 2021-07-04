@@ -26,6 +26,7 @@ extension CategoryItemsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.selectItem(at: indexPath.row)
     }
     
 }
@@ -51,10 +52,15 @@ extension CategoryItemsViewController: UITableViewDataSource {
 extension CategoryItemsViewController {
     
     /// Create view controller.
-    /// - Parameter viewModel: View model of the controller.
-    /// - Returns: Configured CategoryItem view controller.
-    static func create(with viewModel: CategoryItemsViewModelProtocol) -> UIViewController {
+    /// - Parameters:
+    ///   - items: Items to configure view model.
+    ///   - delegate: View model coordinator delegate.
+    /// - Returns: Configured CategoryItems view controller.
+    static func create(with items: [CategoryItem],
+                       delegate: CategoryItemsViewModelCoordinatorDelegate) -> UIViewController {
         let viewController = CategoryItemsViewController()
+        let viewModel = CategoryItemsViewModel(categoryItems: items)
+        viewModel.delegate = delegate
         viewController.viewModel = viewModel
         return viewController
     }
