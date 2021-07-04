@@ -18,3 +18,11 @@ class CategoryCoordinator: Coordinator {
     }
     
 }
+
+// MARK: - CategoryItemsViewModelCoordinatorDelegate
+extension CategoryCoordinator: CategoryItemsViewModelCoordinatorDelegate {
+    
+    func didFinishCategoryItemsSceneWithSelection(of item: CategoryItem) {
+    }
+    
+}
