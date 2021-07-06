@@ -35,6 +35,8 @@
 		9A92CCA5268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CCA4268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift */; };
 		9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CCA6268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift */; };
 		9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */; };
+		9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */; };
+		9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		9A92CCA4268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		9A92CCA6268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayoutConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,7 @@
 		9A92CC99268C91C000B7A80E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9AF7811F2695B8A600283DFE /* CustomViewsModule */,
 				32CDD9FC268CC255008154AA /* CategoryModule */,
 			);
 			path = Modules;
@@ -240,6 +245,23 @@
 				9A236BDC268F392E000E8643 /* Enumerations */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9AF7811F2695B8A600283DFE /* CustomViewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
+			);
+			path = CustomViewsModule;
+			sourceTree = "<group>";
+		};
+		9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */,
+				9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */,
+			);
+			path = AsymmetricCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		C36A6F754EB363BA4393F08F /* Frameworks */ = {
@@ -369,6 +391,7 @@
 			files = (
 				3274B388268EF58200E1B445 /* CategoryViewController.swift in Sources */,
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
+				9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */,
 				9A92CC8F268C7AB900B7A80E /* CategoryItemsViewController.swift in Sources */,
 				9A92CC9C268CA4AA00B7A80E /* CategoryItemsViewModelProtocol.swift in Sources */,
 				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
@@ -386,6 +409,7 @@
 				32964BE72692E0CA00FC3B1A /* CategoryTableViewCellViewModel.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* CategoryViewModelProtocol.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
+				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsViewModel.swift in Sources */,
 			);
