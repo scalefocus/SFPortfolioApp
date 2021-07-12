@@ -50,7 +50,12 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
     func didFinishCategoryItemsSceneWithSelection(of item: CategoryItem) {
         switch item {
         case .synchronisedCollectionView:
-            break
+            let configurator = SynchronisedCollectionViewsLayoutConfigurator(numberOfItemsInPortrait: 5)
+            let viewModel = SynchronisedCollectionViewsViewModel(iconsCollection: SyncronisedCollectionViewMockIcons.allCases)
+            
+            let synchronisedCollectionViewsViewController = SynchronisedCollectionViewsViewController.create(viewModel: viewModel,
+                                                                                                             with: configurator)
+            navigationController.pushViewController(synchronisedCollectionViewsViewController, animated: true)
         case .asymmetricCollectionView:
             let asymmetricCollectionDemoCoordinator = AsymmetricCollectionDemoCoordinator(navigationController: navigationController)
             addChildCoordinator(asymmetricCollectionDemoCoordinator)
