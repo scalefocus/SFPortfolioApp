@@ -19,6 +19,7 @@ class AppCoordinator: Coordinator {
         self.navigationController = navigationController
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
+        navigationController.setupNavigationBarAppearance()
     }
     
     // MARK: - Public Functions
@@ -28,5 +29,5 @@ class AppCoordinator: Coordinator {
         addChildCoordinator(categoryCoordinator)
         categoryCoordinator.start()
     }
-
+    
 }
