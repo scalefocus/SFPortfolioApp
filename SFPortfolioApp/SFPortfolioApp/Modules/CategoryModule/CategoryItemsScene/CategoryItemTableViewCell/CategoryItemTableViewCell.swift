@@ -11,6 +11,21 @@ class CategoryItemTableViewCell: UITableViewCell {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var containerView: UIView!
+    
+    // MARK: - Public Functions
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        containerView.shadowed()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let edgeInsets = UIDevice.current.orientation.isLandscape
+            ? Constants.landscapeCellInsets
+            : Constants.portraitCellInsets
+        contentView.frame = contentView.frame.inset(by: edgeInsets)
+    }
     
 }
 
@@ -22,4 +37,3 @@ extension CategoryItemTableViewCell: Configurable {
     }
     
 }
-
