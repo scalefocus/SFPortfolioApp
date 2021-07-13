@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="SFPortfolioApp" customModuleProvider="target">
+            <connections>
+                <outlet property="categoriesTableView" destination="qMn-6I-6Xc" id="zwl-9R-Di7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qMn-6I-6Xc">
+                    <rect key="frame" x="0.0" y="0.0" width="896" height="384"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P6h-wB-RXY"/>
+                        <outlet property="delegate" destination="-1" id="sOH-Ou-k1W"/>
+                    </connections>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ch-pe-fYS">
+                    <rect key="frame" x="0.0" y="384" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="U69-6L-Ij0"/>
+                        <constraint firstAttribute="height" constant="30" id="cb4-P8-obM"/>
+                    </constraints>
+                    <imageReference key="image" image="logo"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="barBackground"/>
+            <constraints>
+                <constraint firstItem="qMn-6I-6Xc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bvz-ob-Rh4"/>
+                <constraint firstItem="0ch-pe-fYS" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Oci-D2-EeE"/>
+                <constraint firstItem="qMn-6I-6Xc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P07-7v-SHX"/>
+                <constraint firstItem="qMn-6I-6Xc" firstAttribute="bottom" secondItem="0ch-pe-fYS" secondAttribute="top" id="XN9-fd-ZKx"/>
+                <constraint firstAttribute="trailing" secondItem="qMn-6I-6Xc" secondAttribute="trailing" id="tgn-xj-TgX"/>
+                <constraint firstItem="0ch-pe-fYS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vDp-Rs-3Dp"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="1556" height="504"/>
+        <namedColor name="barBackground">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

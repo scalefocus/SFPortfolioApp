@@ -7,10 +7,17 @@
 
 import SFBaseKit
 
-class CategoryTableViewCell: UITableViewCell {
-
+class CategoryTableViewCell: UIResizebleTableViewCell {
+    
     // MARK: - IBOutlets
     @IBOutlet private weak var categoryName: UILabel!
+    @IBOutlet private weak var containerView: UIView!
+    
+    // MARK: - Public Functions
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        containerView.shadowed()
+    }
     
 }
 

@@ -7,13 +7,19 @@
 
 import SFBaseKit
 
-class CategoryViewModel: CategoryViewModelProtocol {
+class CategoryListViewModel: ListViewModelProtocol {
     
     typealias CategoryViewConfigurator = BaseViewConfigurator<CategoryTableViewCell>
     
-    // MARK: - Public Properties
-    let categories: [Category]
-    weak var delegate: CategoryViewModelCoordinatorDelegate?
+    // MARK: - Properties
+    var title: String {
+        Constants.appTitle
+    }
+    var reuseIdentifiers: [String] {
+        [CategoryViewConfigurator.reuseIdentifier]
+    }
+    weak var delegate: CategoryListViewModelCoordinatorDelegate?
+    private let categories: [Category]
     
     // MARK: - Inits
     init(categories: [Category]) {
@@ -21,11 +27,6 @@ class CategoryViewModel: CategoryViewModelProtocol {
     }
     
     // MARK: - Public Functions
-    func selectCategory(at index: Int) {
-        guard let category = categories[safeAt: index] else { return }
-        delegate?.didFinishCategorySceneWithSelection(of: category)
-    }
-    
     func numberOfCellsInSection(_ section: Int) -> Int? {
         return categories.count
     }
@@ -35,8 +36,15 @@ class CategoryViewModel: CategoryViewModelProtocol {
             return nil
         }
         let categoryCellViewModel = CategoryTableViewCellViewModel(categoryName)
-        let configurator = CategoryViewConfigurator(data: categoryCellViewModel)
-        return configurator
+        return CategoryViewConfigurator(data: categoryCellViewModel) { [weak self] in
+            self?.selectCategory(at: index)
+        }
+    }
+    
+    // MARK: - Private Functions
+    private func selectCategory(at index: Int) {
+        guard let category = categories[safeAt: index] else { return }
+        delegate?.didFinishCategorySceneWithSelection(of: category)
     }
     
 }
