@@ -22,4 +22,14 @@ enum Category: Int, CaseIterable {
         }
     }
     
+    var categoryItems: [CategoryItem] {
+        switch self {
+        case .collectionView:
+            return [.asymmetricCollectionView,
+                    .synchronisedCollectionView]
+        case .swiftUI:
+            return []
+        }
+    }
+    
 }

@@ -12,12 +12,14 @@ class CategoryItemsViewModel: CategoryItemsViewModelProtocol {
     typealias CategoryItemViewConfigurator = BaseViewConfigurator<CategoryItemTableViewCell>
     
     // MARK: - Properties
-    let categoryItems: [CategoryItem]
+    let title: String
     weak var delegate: CategoryItemsViewModelCoordinatorDelegate?
+    private let categoryItems: [CategoryItem]
     
     // MARK: - Initializers
-    init(categoryItems: [CategoryItem]) {
-        self.categoryItems = categoryItems
+    init(category: Category) {
+        self.categoryItems = category.categoryItems
+        self.title = category.title
     }
     
     // MARK: - Public Methods
