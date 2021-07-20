@@ -56,10 +56,10 @@ extension CategoryItemsViewController {
     ///   - items: Items to configure view model.
     ///   - delegate: View model coordinator delegate.
     /// - Returns: Configured CategoryItems view controller.
-    static func create(with items: [CategoryItem],
+    static func create(with category: Category,
                        delegate: CategoryItemsViewModelCoordinatorDelegate) -> UIViewController {
         let viewController = CategoryItemsViewController()
-        let viewModel = CategoryItemsViewModel(categoryItems: items)
+        let viewModel = CategoryItemsViewModel(category: category)
         viewModel.delegate = delegate
         viewController.viewModel = viewModel
         return viewController

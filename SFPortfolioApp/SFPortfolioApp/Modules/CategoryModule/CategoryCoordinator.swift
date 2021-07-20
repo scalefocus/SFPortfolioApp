@@ -35,7 +35,7 @@ class CategoryCoordinator: Coordinator {
 extension CategoryCoordinator: CategoryViewModelCoordinatorDelegate {
     
     func didFinishCategorySceneWithSelection(of category: Category) {
-        let categoryItemsViewController = CategoryItemsViewController.create(with: CategoryItem.allCases,
+        let categoryItemsViewController = CategoryItemsViewController.create(with: category,
                                                                              delegate: self)
         navigationController.pushViewController(categoryItemsViewController, animated: true)
     }
