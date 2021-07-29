@@ -43,8 +43,6 @@
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
 		9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */; };
 		9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
-		9AD7EC49269D6B2600624F76 /* CaregoryModuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD7EC48269D6B2600624F76 /* CaregoryModuleImages.xcassets */; };
-		9AD7EC4B269D733600624F76 /* CategoryModuleColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4A269D733600624F76 /* CategoryModuleColors.xcassets */; };
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
 		9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */; };
 		9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */; };
@@ -91,8 +89,6 @@
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
 		9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		9AC4975126A6D5D5008A2A38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9AD7EC48269D6B2600624F76 /* CaregoryModuleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CaregoryModuleImages.xcassets; sourceTree = "<group>"; };
-		9AD7EC4A269D733600624F76 /* CategoryModuleColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CategoryModuleColors.xcassets; sourceTree = "<group>"; };
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayout.swift; sourceTree = "<group>"; };
 		9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayoutConfigurator.swift; sourceTree = "<group>"; };
@@ -241,8 +237,6 @@
 			children = (
 				9A7416F7269C27D800DD5945 /* Fonts */,
 				32CDD9B7268B0C9F008154AA /* Assets.xcassets */,
-				9AD7EC48269D6B2600624F76 /* CaregoryModuleImages.xcassets */,
-				9AD7EC4A269D733600624F76 /* CategoryModuleColors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -390,12 +384,10 @@
 			files = (
 				3274B38A268EF59E00E1B445 /* CategoryViewController.xib in Resources */,
 				32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */,
-				9AD7EC4B269D733600624F76 /* CategoryModuleColors.xcassets in Resources */,
 				9A92CC90268C7AB900B7A80E /* CategoryItemsViewController.xib in Resources */,
 				9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */,
 				32C1316A268F0167000EDC1C /* CategoryTableViewCell.xib in Resources */,
 				9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */,
-				9AD7EC49269D6B2600624F76 /* CaregoryModuleImages.xcassets in Resources */,
 				32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,11 +17,11 @@ class CategoryItemsViewController: BaseViewController {
     }
     private var isScrolledDown = true
     private var lastContentOffset: CGFloat = .zero
+    
     // MARK: - IBOutlets
     @IBOutlet private weak var categoryItemsTableView: UITableView! {
         didSet {
-            categoryItemsTableView.register(cellNames: CategoryItemTableViewCell.typeName)
-            categoryItemsTableView.backgroundView = UIImageView(image: UIImage.background)
+            setupCategoryItemsTableView()
         }
     }
     
@@ -39,6 +39,13 @@ class CategoryItemsViewController: BaseViewController {
             view.center.y = view.center.y - distanceToMove
             view.alpha = 1
         }
+    }
+    
+    /// Sets up appearance of category items table view.
+    /// - Warning: Call this function early in view controllers' lifecycle because of registering its cells.
+    private func setupCategoryItemsTableView() {
+        categoryItemsTableView.register(cellNames: CategoryItemTableViewCell.typeName)
+        categoryItemsTableView.backgroundView = UIImageView(image: UIImage.background)
     }
     
 }
