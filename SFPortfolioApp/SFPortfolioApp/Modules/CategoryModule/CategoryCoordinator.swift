@@ -24,26 +24,28 @@ class CategoryCoordinator: Coordinator {
     
     // MARK: - Private Functions
     private func startCategoryScene() {
-        let categoriesViewController = CategoryViewController.create(with: Category.allCases,
-                                                                     delegate: self)
+        let viewModel = CategoryListViewModel(categories: Category.allCases)
+        viewModel.delegate = self
+        let categoriesViewController = ListViewController.create(viewModel: viewModel)
         navigationController.pushViewController(categoriesViewController, animated: true)
     }
     
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
-extension CategoryCoordinator: CategoryViewModelCoordinatorDelegate {
+extension CategoryCoordinator: CategoryListViewModelCoordinatorDelegate {
     
     func didFinishCategorySceneWithSelection(of category: Category) {
-        let categoryItemsViewController = CategoryItemsViewController.create(with: category,
-                                                                             delegate: self)
+        let viewModel = CategoryItemsListViewModel(category: category)
+        viewModel.delegate = self
+        let categoryItemsViewController = ListViewController.create(viewModel: viewModel)
         navigationController.pushViewController(categoryItemsViewController, animated: true)
     }
     
 }
 
 // MARK: - CategoryItemsViewModelCoordinatorDelegate
-extension CategoryCoordinator: CategoryItemsViewModelCoordinatorDelegate {
+extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
     
     func didFinishCategoryItemsSceneWithSelection(of item: CategoryItem) {
     }

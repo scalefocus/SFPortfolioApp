@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="CategoryItemTableViewCell" customModule="SFPortfolioApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U37-AN-KeY" userLabel="Container View">
+                        <rect key="frame" x="8" y="8" width="304" height="129"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yok-FD-ezr">
+                                <rect key="frame" x="16" y="0.0" width="272" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-OM-wQy">
+                                        <rect key="frame" x="0.0" y="0.0" width="217.5" height="129"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="22"/>
+                                        <color key="textColor" name="baseText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="shk-bn-EaU">
+                                        <rect key="frame" x="217.5" y="52.5" width="54.5" height="24.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq4-gd-ydJ" customClass="UITagLabel" customModule="SFPortfolioApp" customModuleProvider="target">
+                                                <rect key="frame" x="2.5" y="0.0" width="49.5" height="24.5"/>
+                                                <color key="backgroundColor" red="0.88235294117647056" green="0.96078431372549022" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                                <color key="textColor" name="baseText"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="baseText"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z01-OM-wQy" firstAttribute="top" secondItem="yok-FD-ezr" secondAttribute="top" id="EsI-Ft-Ytf"/>
+                                    <constraint firstItem="shk-bn-EaU" firstAttribute="leading" secondItem="Z01-OM-wQy" secondAttribute="trailing" id="Wvp-Lp-3Li"/>
+                                    <constraint firstItem="Z01-OM-wQy" firstAttribute="leading" secondItem="yok-FD-ezr" secondAttribute="leading" id="f1q-mx-omO"/>
+                                    <constraint firstItem="Z01-OM-wQy" firstAttribute="width" secondItem="shk-bn-EaU" secondAttribute="width" multiplier="4" id="xyN-ZY-Kvh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z01-OM-wQy" secondAttribute="bottom" id="zW8-dP-bAe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="baseCell"/>
+                        <constraints>
+                            <constraint firstItem="yok-FD-ezr" firstAttribute="top" secondItem="U37-AN-KeY" secondAttribute="top" id="5QE-8V-gHG"/>
+                            <constraint firstAttribute="bottom" secondItem="yok-FD-ezr" secondAttribute="bottom" id="FG9-wk-9Ka"/>
+                            <constraint firstItem="yok-FD-ezr" firstAttribute="leading" secondItem="U37-AN-KeY" secondAttribute="leading" constant="16" id="TnG-aO-t0g"/>
+                            <constraint firstAttribute="trailing" secondItem="yok-FD-ezr" secondAttribute="trailing" constant="16" id="oGH-Fs-TjP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.91764705882352937" green="0.91764705882352937" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U37-AN-KeY" secondAttribute="trailing" constant="8" id="KHB-cL-8C9"/>
+                    <constraint firstItem="U37-AN-KeY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="a6d-79-ZyQ"/>
+                    <constraint firstAttribute="bottom" secondItem="U37-AN-KeY" secondAttribute="bottom" constant="8" id="fgt-bQ-3yU"/>
+                    <constraint firstItem="U37-AN-KeY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fjq-dH-fks"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="20"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="leftInsetInPortrait">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="rightInsetInPortrait">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="leftInsetInLandscape">
+                    <real key="value" value="96"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="rightInsetInLandscape">
+                    <real key="value" value="96"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="U37-AN-KeY" id="Ubl-wI-Lww"/>
+                <outlet property="tagsStackView" destination="shk-bn-EaU" id="hq9-qc-kR0"/>
+                <outlet property="titleLabel" destination="Z01-OM-wQy" id="CFu-2P-RQK"/>
+            </connections>
+            <point key="canvasLocation" x="2.8985507246376816" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Gq4-gd-ydJ">
+            <size key="intrinsicContentSize" width="49.5" height="24.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="baseCell">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="baseText">
+            <color red="0.030999999493360519" green="0.15299999713897705" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

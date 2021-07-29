@@ -29,4 +29,8 @@ struct Constants {
     
     /// Default edge insets of table view cells when device is in landscape orientation.
     static let landscapeCellInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 96, bottom: 0, right: 96)
+    
+    /// Title of the application.
+    static let appTitle = "SFPortfolioApp"
+    
 }
