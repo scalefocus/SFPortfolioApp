@@ -1,34 +1,35 @@
 //
-//  CategoryItemsViewController.swift
+//  ListViewController.swift
 //  SFPortfolioApp
 //
-//  Created by Stoyko Kolev on 30.06.21.
+//  Created by Svetlomir Petrov on 30.06.21.
 //
 
 import SFBaseKit
 
-class CategoryItemsViewController: BaseViewController {
+class ListViewController: BaseViewController {
     
     // MARK: - Properties
-    private var viewModel: CategoryItemsViewModelProtocol! {
+    private var isScrolledDown = true
+    private var lastContentOffset: CGFloat = .zero
+    private var viewModel: ListViewModelProtocol! {
         didSet {
             title = viewModel.title
         }
     }
-    private var isScrolledDown = true
-    private var lastContentOffset: CGFloat = .zero
+    
     // MARK: - IBOutlets
-    @IBOutlet private weak var categoryItemsTableView: UITableView! {
+    @IBOutlet private weak var categoriesTableView: UITableView! {
         didSet {
-            categoryItemsTableView.register(cellNames: CategoryItemTableViewCell.typeName)
-            categoryItemsTableView.backgroundView = UIImageView(image: UIImage.background)
+            categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
+            categoriesTableView.backgroundView = UIImageView(image: UIImage.background)
         }
     }
     
     // MARK: - Private Functions
     /// Animates table view cell to appear from top or bottom of the table view depending of scrolling direction.
     /// - Parameters:
-    ///   - cell: Cell to animate.
+    ///   - view: View to animate.
     ///   - duration: The total duration of the animation.
     ///   - delay: The amount of time to wait before beginning the animation.
     private func animate(_ view: UIView, duration: TimeInterval, delay: TimeInterval) {
@@ -44,11 +45,12 @@ class CategoryItemsViewController: BaseViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension CategoryItemsViewController: UITableViewDelegate {
+extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        viewModel.selectItem(at: indexPath.row)
+        guard let configurator = viewModel.viewConfigurator(at: indexPath.row, in: indexPath.section) else { return }
+        configurator.didSelectAction?()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -58,8 +60,28 @@ extension CategoryItemsViewController: UITableViewDelegate {
     
 }
 
+// MARK: - UITableViewDataSource
+extension ListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel?.numberOfCellsInSection(section) ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cellConfigurator = viewModel?.viewConfigurator(at: indexPath.row, in: indexPath.section) else {
+            return UITableViewCell()
+        }
+        return tableView.configureCell(for: cellConfigurator, at: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        animate(cell, duration: Constants.cellAnimationDuration, delay: Constants.cellAnimationDelay)
+    }
+    
+}
+
 // MARK: - UIScrollViewDelegate
-extension CategoryItemsViewController: UIScrollViewDelegate {
+extension ListViewController: UIScrollViewDelegate {
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         lastContentOffset = scrollView.contentOffset.y
@@ -71,40 +93,14 @@ extension CategoryItemsViewController: UIScrollViewDelegate {
     
 }
 
-// MARK: - UITableViewDataSource
-extension CategoryItemsViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.numberOfCellsInSection(section) ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let configurator = viewModel.viewConfigurator(at: indexPath.row,
-                                                            in: indexPath.section) else {
-            return UITableViewCell()
-        }
-        return tableView.configureCell(for: configurator, at: indexPath)
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        animate(cell, duration: Constants.cellAnimationDuration, delay: Constants.cellAnimationDelay)
-    }
-    
-}
-
 // MARK: - Instantiate
-extension CategoryItemsViewController {
+extension ListViewController {
     
-    /// Create view controller.
-    /// - Parameters:
-    ///   - items: Items to configure view model.
-    ///   - delegate: View model coordinator delegate.
-    /// - Returns: Configured CategoryItems view controller.
-    static func create(with category: Category,
-                       delegate: CategoryItemsViewModelCoordinatorDelegate) -> UIViewController {
-        let viewController = CategoryItemsViewController()
-        let viewModel = CategoryItemsViewModel(category: category)
-        viewModel.delegate = delegate
+    /// Create category list view controller.
+    /// - Parameter viewModel: View model to configure view with.
+    /// - Returns: Configured List view controller.
+    static func create(viewModel: ListViewModelProtocol) -> UIViewController {
+        let viewController = ListViewController()
         viewController.viewModel = viewModel
         return viewController
     }

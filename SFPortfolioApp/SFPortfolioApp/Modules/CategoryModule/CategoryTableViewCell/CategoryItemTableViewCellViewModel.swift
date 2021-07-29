@@ -11,10 +11,12 @@ class CategoryItemTableViewCellViewModel: CategoryItemTableViewCellViewModelProt
     
     // MARK: - Properties
     let title: String
+    let cellType: CategoryCellType
     
     // MARK: - Initializers
-    init(title: String) {
+    init(title: String, cellType: CategoryCellType) {
         self.title = title
+        self.cellType = cellType
     }
     
 }

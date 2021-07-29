@@ -7,13 +7,16 @@
 
 import SFBaseKit
 
-class CategoryItemsViewModel: CategoryItemsViewModelProtocol {
+class CategoryItemsListViewModel: ListViewModelProtocol {
     
     typealias CategoryItemViewConfigurator = BaseViewConfigurator<CategoryItemTableViewCell>
     
     // MARK: - Properties
     let title: String
-    weak var delegate: CategoryItemsViewModelCoordinatorDelegate?
+    var reuseIdentifiers: [String] {
+        [CategoryItemViewConfigurator.reuseIdentifier]
+    }
+    weak var delegate: CategoryItemsListViewModelCoordinatorDelegate?
     private let categoryItems: [CategoryItem]
     
     // MARK: - Initializers
@@ -23,11 +26,6 @@ class CategoryItemsViewModel: CategoryItemsViewModelProtocol {
     }
     
     // MARK: - Public Methods
-    func selectItem(at index: Int) {
-        guard let item = categoryItems[safeAt: index] else { return }
-        delegate?.didFinishCategoryItemsSceneWithSelection(of: item)
-    }
-    
     func numberOfCellsInSection(_ section: Int) -> Int? {
         return categoryItems.count
     }
@@ -36,9 +34,16 @@ class CategoryItemsViewModel: CategoryItemsViewModelProtocol {
         guard let title = categoryItems[safeAt: index]?.title else {
             return nil
         }
-        let cellViewModel = CategoryItemTableViewCellViewModel(title: title)
-        let configurator = CategoryItemViewConfigurator(data: cellViewModel)
-        return configurator
+        let cellViewModel = CategoryItemTableViewCellViewModel(title: title, cellType: .categoryItem)
+        return CategoryItemViewConfigurator(data: cellViewModel) { [weak self] in
+            self?.selectItem(at: index)
+        }
+    }
+    
+    // MARK: - Private Functions
+    private func selectItem(at index: Int) {
+        guard let item = categoryItems[safeAt: index] else { return }
+        delegate?.didFinishCategoryItemsSceneWithSelection(of: item)
     }
     
 }

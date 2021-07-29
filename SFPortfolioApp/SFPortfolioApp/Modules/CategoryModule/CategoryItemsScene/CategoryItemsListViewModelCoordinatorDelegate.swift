@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CategoryItemsViewModelCoordinatorDelegate: AnyObject {
+protocol CategoryItemsListViewModelCoordinatorDelegate: AnyObject {
     
     /// Navigate to ItemDemo scene.
     /// - Parameter item: Category item model to configure the scene with.

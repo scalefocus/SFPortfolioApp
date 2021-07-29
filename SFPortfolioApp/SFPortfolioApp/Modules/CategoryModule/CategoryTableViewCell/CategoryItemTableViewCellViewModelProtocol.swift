@@ -13,4 +13,7 @@ protocol CategoryItemTableViewCellViewModelProtocol {
     /// Title to be set as label.
     var title: String { get }
     
+    /// Type of cell depending of which will visualize tag label.
+    var cellType: CategoryCellType { get }
+    
 }
