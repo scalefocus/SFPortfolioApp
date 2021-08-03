@@ -7,28 +7,26 @@
 
 import Foundation
 
+/// Enum defining possible portfolio categories.
 enum Category: Int, CaseIterable {
     
     case collectionView
-    case swiftUI
     
     // MARK: - Properties
     var title: String {
         switch self {
         case .collectionView:
-            return "Collection View elements"
-        case .swiftUI:
-            return "SwiftUI elements"
+            return Constants.CategoryTitle.collectionView
         }
     }
     
     var categoryItems: [CategoryItem] {
         switch self {
         case .collectionView:
-            return [.asymmetricCollectionView,
-                    .synchronisedCollectionView]
-        case .swiftUI:
-            return []
+            return [
+                .asymmetricCollectionView,
+                .synchronisedCollectionView
+            ]
         }
     }
     

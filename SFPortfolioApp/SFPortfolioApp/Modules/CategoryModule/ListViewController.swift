@@ -54,7 +54,8 @@ extension ListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let attributes: [NSAttributedString.Key: Any] = [.font: UIFont.openSans]
+        let font: UIFont = .custom(size: Constants.General.defaultFontSize)
+        let attributes: [NSAttributedString.Key: Any] = [.font: font]
         return "\n\n".size(withAttributes: attributes).height
     }
     
@@ -75,7 +76,9 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        animate(cell, duration: Constants.cellAnimationDuration, delay: Constants.cellAnimationDelay)
+        animate(cell,
+                duration: Constants.CategoryList.cellAnimationDuration,
+                delay: Constants.CategoryList.cellAnimationDelay)
     }
     
 }

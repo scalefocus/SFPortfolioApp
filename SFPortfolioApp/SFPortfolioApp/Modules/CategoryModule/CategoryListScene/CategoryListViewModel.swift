@@ -13,7 +13,7 @@ class CategoryListViewModel: ListViewModelProtocol {
     
     // MARK: - Properties
     var title: String {
-        Constants.appTitle
+        Constants.CategoryList.title
     }
     var reuseIdentifiers: [String] {
         [CategoryViewConfigurator.reuseIdentifier]
