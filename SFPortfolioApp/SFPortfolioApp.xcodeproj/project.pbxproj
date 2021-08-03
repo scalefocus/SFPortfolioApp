@@ -20,6 +20,7 @@
 		32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B7268B0C9F008154AA /* Assets.xcassets */; };
 		32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */; };
 		32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDD9C5268B46ED008154AA /* AppCoordinator.swift */; };
+		8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82FFEE26B9783E0059862F /* Colors.xcassets */; };
 		9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */; };
 		9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */; };
 		9A4E1D9E26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E1D9D26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift */; };
@@ -61,6 +62,7 @@
 		5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
+		8C82FFEE26B9783E0059862F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9A4E1D9D26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResizebleTableViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				327F9B9E268DFF9F00A9BB01 /* Architecture */,
+				8C82FFE426B976300059862F /* Components */,
 				9A92CCBB268DA09400B7A80E /* Models */,
 				9A92CC99268C91C000B7A80E /* Modules */,
 				9A236BDD26917AE2000E8643 /* Utilities */,
@@ -146,7 +149,8 @@
 		32CDD9C2268B0CC5008154AA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				9A7416F6269C27CF00DD5945 /* Assets */,
+				8C82FFEC26B9782B0059862F /* Assets */,
+				9A7416F7269C27D800DD5945 /* Fonts */,
 				32CDD9BC268B0C9F008154AA /* Info.plist */,
 				32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */,
 				32CDD9AE268B0C9C008154AA /* AppDelegate.swift */,
@@ -178,20 +182,46 @@
 			path = CategoryListScene;
 			sourceTree = "<group>";
 		};
-		9A236BDC268F392E000E8643 /* Enumerations */ = {
+		8C82FFE426B976300059862F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
+				8C82FFE626B976850059862F /* SupportingViews */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8C82FFE626B976850059862F /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				9AA4713926A00E0400C61FD0 /* UITagLabel.swift */,
+				9A4E1D9D26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		8C82FFEC26B9782B0059862F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				32CDD9B7268B0C9F008154AA /* Assets.xcassets */,
+				8C82FFEE26B9783E0059862F /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9A236BDC268F392E000E8643 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 				9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */,
 				32964BEA2692EECC00FC3B1A /* Category.swift */,
 				9ABF4CF926B963A30046721A /* CategoryCellType.swift */,
 			);
-			path = Enumerations;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		9A236BDD26917AE2000E8643 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				9AA4713B26A01B9100C61FD0 /* UIKit */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
 				9AC4975126A6D5D5008A2A38 /* Constants.swift */,
 			);
@@ -210,15 +240,6 @@
 				9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9A7416F6269C27CF00DD5945 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				9A7416F7269C27D800DD5945 /* Fonts */,
-				32CDD9B7268B0C9F008154AA /* Assets.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		9A7416F7269C27D800DD5945 /* Fonts */ = {
@@ -252,7 +273,6 @@
 		9A92CC99268C91C000B7A80E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9AF7811F2695B8A600283DFE /* CustomViewsModule */,
 				32CDD9FC268CC255008154AA /* CategoryModule */,
 			);
 			path = Modules;
@@ -261,26 +281,9 @@
 		9A92CCBB268DA09400B7A80E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9A236BDC268F392E000E8643 /* Enumerations */,
+				9A236BDC268F392E000E8643 /* Enums */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		9AA4713B26A01B9100C61FD0 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				9AA4713926A00E0400C61FD0 /* UITagLabel.swift */,
-				9A4E1D9D26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		9AF7811F2695B8A600283DFE /* CustomViewsModule */ = {
-			isa = PBXGroup;
-			children = (
-				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
-			);
-			path = CustomViewsModule;
 			sourceTree = "<group>";
 		};
 		9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */ = {
@@ -362,6 +365,7 @@
 				3274B38A268EF59E00E1B445 /* ListViewController.xib in Resources */,
 				32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */,
 				9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */,
+				8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */,
 				9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */,
 				32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */,
 			);

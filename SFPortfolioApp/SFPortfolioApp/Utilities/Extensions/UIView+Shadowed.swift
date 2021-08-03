@@ -16,9 +16,9 @@ extension UIView {
     ///   - opacity: How transparent the shadow is.
     ///   - offset: How far away from the view the shadow should be.
     func shadowed(color: UIColor = .shadow,
-                  radius: CGFloat = Constants.defaultShadowRadius,
-                  opacity: Float = Constants.defaultShadowOpacity,
-                  offset: CGSize = Constants.defaultShadowOffset) {
+                  radius: CGFloat = Constants.General.defaultShadowRadius,
+                  opacity: Float = Constants.General.defaultShadowOpacity,
+                  offset: CGSize = Constants.General.defaultShadowOffset) {
         layer.shadowColor = color.cgColor
         layer.shadowRadius = radius
         layer.shadowOpacity = opacity

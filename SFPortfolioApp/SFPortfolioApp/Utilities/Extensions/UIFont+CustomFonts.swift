@@ -9,7 +9,21 @@ import UIKit
 
 extension UIFont {
     
-    /// Default Scalefocus font.
-    static let openSans = UIFont(name: "OpenSans-Regular", size: 20) ?? UIFont()
+    /// Enum defining possible custom font types.
+    enum CustomFont: String {
+        case primary
+        
+        var name: String {
+            switch self {
+            case .primary:
+                return Constants.General.primaryFontName
+            }
+        }
+    }
+    
+    /// Generates a custom `UIFont` based on a custom font type and size.
+    static func custom(type: CustomFont = .primary, size: CGFloat) -> UIFont {
+        UIFont(name: type.name, size: size) ?? UIFont()
+    }
     
 }

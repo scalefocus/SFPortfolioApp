@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Enum defining possible category items.
 enum CategoryItem: CaseIterable {
     
     case synchronisedCollectionView
@@ -16,9 +17,9 @@ enum CategoryItem: CaseIterable {
     var title: String {
         switch self {
         case .synchronisedCollectionView:
-            return "Synchronised Collection View"
+            return Constants.CategoryItemTitle.synchronisedCollectionView
         case .asymmetricCollectionView:
-            return "Asymmetric Collection View"
+            return Constants.CategoryItemTitle.asymmetricCollectionView
         }
     }
     
