@@ -29,6 +29,12 @@ struct Constants {
         
         /// Defines default shadow offset.
         static let defaultShadowOffset: CGSize = CGSize(width: 0, height: 0)
+        
+        /// UIKit view origin info tag title.
+        static let uiKitViewOriginTagTitle = "UIKit"
+        
+        /// SwiftUI view origin info tag title.
+        static let swiftUIViewOriginTagTitle = "SwiftUI"
     }
     
     // MARK: - CategoryList

@@ -27,7 +27,7 @@ extension CategoryItemTableViewCell: Configurable {
     
     func configureWith(_ data: CategoryItemTableViewCellViewModelProtocol) {
         titleLabel.text = data.title
-        tagsStackView.isHidden = data.cellType == .category
+        tagsStackView.isHidden = data.tags.isEmpty
     }
     
 }

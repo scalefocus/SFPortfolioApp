@@ -38,7 +38,7 @@ class AsymmetricCollectionViewLayout: UICollectionViewLayout {
         return collectionView.bounds.height - sideInsets
     }
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(configurator: AsymmetricCollectionViewLayoutConfigurator) {
         numberOfColumnsInPortrait = configurator.numberOfColumnsInPortrait ?? 3
         verticalOffsetRatio = configurator.verticalOffsetRatio ?? 0.5

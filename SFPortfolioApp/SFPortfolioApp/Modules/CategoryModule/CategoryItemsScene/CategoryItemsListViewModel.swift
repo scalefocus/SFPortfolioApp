@@ -19,7 +19,7 @@ class CategoryItemsListViewModel: ListViewModelProtocol {
     weak var delegate: CategoryItemsListViewModelCoordinatorDelegate?
     private let categoryItems: [CategoryItem]
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(category: Category) {
         self.categoryItems = category.categoryItems
         self.title = category.title
@@ -31,10 +31,9 @@ class CategoryItemsListViewModel: ListViewModelProtocol {
     }
     
     func viewConfigurator(at index: Int, in section: Int) -> ViewConfigurator? {
-        guard let title = categoryItems[safeAt: index]?.title else {
-            return nil
-        }
-        let cellViewModel = CategoryItemTableViewCellViewModel(title: title, cellType: .categoryItem)
+        guard let item = categoryItems[safeAt: index] else { return nil }
+        
+        let cellViewModel = CategoryItemTableViewCellViewModel(title: item.title, tags: item.tags)
         return CategoryItemViewConfigurator(data: cellViewModel) { [weak self] in
             self?.selectItem(at: index)
         }

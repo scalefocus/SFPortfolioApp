@@ -8,11 +8,15 @@
 import Foundation
 
 /// Enum defining possible portfolio categories.
-enum Category: Int, CaseIterable {
+enum Category: CaseIterable {
     
     case collectionView
     
-    // MARK: - Properties
+}
+
+// MARK: - Properties
+extension Category {
+    
     var title: String {
         switch self {
         case .collectionView:
