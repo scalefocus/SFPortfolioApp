@@ -12,7 +12,7 @@ class CategoryCoordinator: Coordinator {
     // MARK: - Properties
     private let navigationController: UINavigationController
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }

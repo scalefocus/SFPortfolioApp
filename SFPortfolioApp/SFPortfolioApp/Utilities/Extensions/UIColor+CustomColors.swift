@@ -21,4 +21,10 @@ extension UIColor {
     /// Navigation bar background color.
     static let barBackground = UIColor(named: "barBackground") ?? UIColor()
     
+    /// UIKit view origin info tag background.
+    static let uiKitInfoTagBackground = UIColor(named: "uiKitTagBackground") ?? UIColor()
+    
+    /// SwiftUI view origin info tag background.
+    static let swiftUIInfoTagBackground = UIColor(named: "swiftUITagBackground") ?? UIColor()
+    
 }

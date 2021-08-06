@@ -20,6 +20,8 @@
 		32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B7268B0C9F008154AA /* Assets.xcassets */; };
 		32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */; };
 		32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDD9C5268B46ED008154AA /* AppCoordinator.swift */; };
+		8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0242A726BD4BD40094029A /* InfoTagProtocol.swift */; };
+		8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0242AB26BD4C570094029A /* ViewOriginInfoTag.swift */; };
 		8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82FFEE26B9783E0059862F /* Colors.xcassets */; };
 		9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */; };
 		9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */; };
@@ -36,7 +38,6 @@
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
 		9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713926A00E0400C61FD0 /* UITagLabel.swift */; };
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
-		9ABF4CFA26B963A30046721A /* CategoryCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4CF926B963A30046721A /* CategoryCellType.swift */; };
 		9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */; };
 		9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
@@ -62,6 +63,8 @@
 		5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
+		8C0242A726BD4BD40094029A /* InfoTagProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTagProtocol.swift; sourceTree = "<group>"; };
+		8C0242AB26BD4C570094029A /* ViewOriginInfoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOriginInfoTag.swift; sourceTree = "<group>"; };
 		8C82FFEE26B9783E0059862F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowed.swift"; sourceTree = "<group>"; };
 		9AA4713926A00E0400C61FD0 /* UITagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITagLabel.swift; sourceTree = "<group>"; };
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
-		9ABF4CF926B963A30046721A /* CategoryCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellType.swift; sourceTree = "<group>"; };
 		9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		9AC4975126A6D5D5008A2A38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
@@ -163,10 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				32C1318F268F3ABC000EDC1C /* CategoryCoordinator.swift */,
-				3274B387268EF58200E1B445 /* ListViewController.swift */,
-				3274B389268EF59E00E1B445 /* ListViewController.xib */,
-				32964BE82692E0EC00FC3B1A /* ListViewModelProtocol.swift */,
-				9A92CC91268C7B7300B7A80E /* CategoryTableViewCell */,
+				8C0242A526BD4BA50094029A /* BaseListScene */,
 				32CDDA14268DCFA3008154AA /* CategoryListScene */,
 				9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */,
 			);
@@ -180,6 +179,26 @@
 				32964BEE2693205800FC3B1A /* CategoryListViewModelCoordinatorDelegate.swift */,
 			);
 			path = CategoryListScene;
+			sourceTree = "<group>";
+		};
+		8C0242A526BD4BA50094029A /* BaseListScene */ = {
+			isa = PBXGroup;
+			children = (
+				3274B387268EF58200E1B445 /* ListViewController.swift */,
+				3274B389268EF59E00E1B445 /* ListViewController.xib */,
+				32964BE82692E0EC00FC3B1A /* ListViewModelProtocol.swift */,
+				9A92CC91268C7B7300B7A80E /* CategoryTableViewCell */,
+			);
+			path = BaseListScene;
+			sourceTree = "<group>";
+		};
+		8C0242A626BD4BBC0094029A /* InfoTag */ = {
+			isa = PBXGroup;
+			children = (
+				8C0242A726BD4BD40094029A /* InfoTagProtocol.swift */,
+				8C0242AB26BD4C570094029A /* ViewOriginInfoTag.swift */,
+			);
+			path = InfoTag;
 			sourceTree = "<group>";
 		};
 		8C82FFE426B976300059862F /* Components */ = {
@@ -214,7 +233,6 @@
 			children = (
 				9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */,
 				32964BEA2692EECC00FC3B1A /* Category.swift */,
-				9ABF4CF926B963A30046721A /* CategoryCellType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -223,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				9A236BDE26917B1D000E8643 /* Extensions */,
+				8C0242A626BD4BBC0094029A /* InfoTag */,
 				9AC4975126A6D5D5008A2A38 /* Constants.swift */,
 			);
 			path = Utilities;
@@ -441,11 +460,12 @@
 				9A4E1D9E26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift in Sources */,
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
 				9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */,
+				8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
+				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
-				9ABF4CFA26B963A30046721A /* CategoryCellType.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);
