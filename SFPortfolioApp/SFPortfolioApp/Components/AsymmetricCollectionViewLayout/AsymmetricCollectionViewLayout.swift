@@ -16,7 +16,6 @@ class AsymmetricCollectionViewLayout: UICollectionViewLayout {
     
     // MARK: - Private Properties
     private let cellPaddingRatio: CGFloat
-    private let maxCellPaddingRatio: CGFloat = 0.25
     private let verticalOffsetRatio: CGFloat
     private let cellHeightRatio: CGFloat
     private let numberOfColumnsInPortrait: Int
@@ -39,11 +38,11 @@ class AsymmetricCollectionViewLayout: UICollectionViewLayout {
     }
     
     // MARK: - Init
-    init(configurator: AsymmetricCollectionViewLayoutConfigurator) {
-        numberOfColumnsInPortrait = configurator.numberOfColumnsInPortrait ?? 3
-        verticalOffsetRatio = configurator.verticalOffsetRatio ?? 0.5
-        cellHeightRatio = configurator.cellHeightRatio ?? 1
-        cellPaddingRatio = min(configurator.cellPaddingRatio ?? 0.1, maxCellPaddingRatio)
+    init(configurator: AsymmetricCollectionViewLayoutConfigurator = AsymmetricCollectionViewLayoutConfigurator()) {
+        numberOfColumnsInPortrait = configurator.numberOfColumnsInPortrait
+        verticalOffsetRatio = configurator.verticalOffsetRatio
+        cellHeightRatio = configurator.cellHeightRatio
+        cellPaddingRatio = configurator.cellPaddingRatio
         super.init()
     }
     
