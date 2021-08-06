@@ -48,6 +48,14 @@ extension CategoryCoordinator: CategoryListViewModelCoordinatorDelegate {
 extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
     
     func didFinishCategoryItemsSceneWithSelection(of item: CategoryItem) {
+        switch item {
+        case .synchronisedCollectionView:
+            break
+        case .asymmetricCollectionView:
+            let asymmetricCollectionDemoCoordinator = AsymmetricCollectionDemoCoordinator(navigationController: navigationController)
+            addChildCoordinator(asymmetricCollectionDemoCoordinator)
+            asymmetricCollectionDemoCoordinator.start()
+        }
     }
     
 }

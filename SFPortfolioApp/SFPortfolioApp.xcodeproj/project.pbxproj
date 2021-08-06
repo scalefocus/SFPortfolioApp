@@ -38,6 +38,20 @@
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
 		9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713926A00E0400C61FD0 /* UITagLabel.swift */; };
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
+		9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3C26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift */; };
+		9ABF4D4C26C157980046721A /* AsymmetricCollectionSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */; };
+		9ABF4D4D26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */; };
+		9ABF4D4E26C157990046721A /* AsymmetricCollectionSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4026C157980046721A /* AsymmetricCollectionSettingsViewController.swift */; };
+		9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4126C157980046721A /* AsymmetricCollectionSettingsViewModel.swift */; };
+		9ABF4D5026C157990046721A /* AsymmetricCollectionDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4326C157980046721A /* AsymmetricCollectionDemoViewController.xib */; };
+		9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4426C157980046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift */; };
+		9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4526C157980046721A /* AsymmetricCollectionDemoViewController.swift */; };
+		9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4626C157980046721A /* AsymmetricCollectionDemoViewModel.swift */; };
+		9ABF4D5426C157990046721A /* AsymmetricCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4826C157980046721A /* AsymmetricCollectionViewCell.xib */; };
+		9ABF4D5526C157990046721A /* AsymmetricCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4926C157980046721A /* AsymmetricCollectionViewCell.swift */; };
+		9ABF4D5626C157990046721A /* AsymmetricCollectionDemoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D4A26C157980046721A /* AsymmetricCollectionDemoViewModelProtocol.swift */; };
+		9ABF4D5826C159840046721A /* Constrained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D5726C159840046721A /* Constrained.swift */; };
+		9ABF4D5A26C159930046721A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D5926C159930046721A /* Observable.swift */; };
 		9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */; };
 		9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
@@ -81,6 +95,20 @@
 		9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowed.swift"; sourceTree = "<group>"; };
 		9AA4713926A00E0400C61FD0 /* UITagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITagLabel.swift; sourceTree = "<group>"; };
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		9ABF4D3C26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoCoordinator.swift; sourceTree = "<group>"; };
+		9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AsymmetricCollectionSettingsViewController.xib; sourceTree = "<group>"; };
+		9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModelProtocol.swift; sourceTree = "<group>"; };
+		9ABF4D4026C157980046721A /* AsymmetricCollectionSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewController.swift; sourceTree = "<group>"; };
+		9ABF4D4126C157980046721A /* AsymmetricCollectionSettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModel.swift; sourceTree = "<group>"; };
+		9ABF4D4326C157980046721A /* AsymmetricCollectionDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AsymmetricCollectionDemoViewController.xib; sourceTree = "<group>"; };
+		9ABF4D4426C157980046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		9ABF4D4526C157980046721A /* AsymmetricCollectionDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoViewController.swift; sourceTree = "<group>"; };
+		9ABF4D4626C157980046721A /* AsymmetricCollectionDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoViewModel.swift; sourceTree = "<group>"; };
+		9ABF4D4826C157980046721A /* AsymmetricCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AsymmetricCollectionViewCell.xib; sourceTree = "<group>"; };
+		9ABF4D4926C157980046721A /* AsymmetricCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewCell.swift; sourceTree = "<group>"; };
+		9ABF4D4A26C157980046721A /* AsymmetricCollectionDemoViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoViewModelProtocol.swift; sourceTree = "<group>"; };
+		9ABF4D5726C159840046721A /* Constrained.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constrained.swift; sourceTree = "<group>"; };
+		9ABF4D5926C159930046721A /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		9AC4975126A6D5D5008A2A38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
@@ -240,9 +268,11 @@
 		9A236BDD26917AE2000E8643 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
 				8C0242A626BD4BBC0094029A /* InfoTag */,
 				9AC4975126A6D5D5008A2A38 /* Constants.swift */,
+				9ABF4D5926C159930046721A /* Observable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -292,6 +322,7 @@
 		9A92CC99268C91C000B7A80E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9ABF4D3A26C157980046721A /* DemoModule */,
 				32CDD9FC268CC255008154AA /* CategoryModule */,
 			);
 			path = Modules;
@@ -303,6 +334,65 @@
 				9A236BDC268F392E000E8643 /* Enums */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9ABF4D3A26C157980046721A /* DemoModule */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D3B26C157980046721A /* AsymmetricCollectionDemo */,
+			);
+			path = DemoModule;
+			sourceTree = "<group>";
+		};
+		9ABF4D3B26C157980046721A /* AsymmetricCollectionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D3C26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift */,
+				9ABF4D4226C157980046721A /* AsymmetricCollectionDemoScene */,
+				9ABF4D3D26C157980046721A /* AsymmetricCollectionSettingsScene */,
+			);
+			path = AsymmetricCollectionDemo;
+			sourceTree = "<group>";
+		};
+		9ABF4D3D26C157980046721A /* AsymmetricCollectionSettingsScene */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D4026C157980046721A /* AsymmetricCollectionSettingsViewController.swift */,
+				9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */,
+				9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */,
+				9ABF4D4126C157980046721A /* AsymmetricCollectionSettingsViewModel.swift */,
+			);
+			path = AsymmetricCollectionSettingsScene;
+			sourceTree = "<group>";
+		};
+		9ABF4D4226C157980046721A /* AsymmetricCollectionDemoScene */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D4526C157980046721A /* AsymmetricCollectionDemoViewController.swift */,
+				9ABF4D4326C157980046721A /* AsymmetricCollectionDemoViewController.xib */,
+				9ABF4D4A26C157980046721A /* AsymmetricCollectionDemoViewModelProtocol.swift */,
+				9ABF4D4626C157980046721A /* AsymmetricCollectionDemoViewModel.swift */,
+				9ABF4D4426C157980046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift */,
+				9ABF4D4726C157980046721A /* AsymmetricCollectionViewCell */,
+			);
+			path = AsymmetricCollectionDemoScene;
+			sourceTree = "<group>";
+		};
+		9ABF4D4726C157980046721A /* AsymmetricCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D4826C157980046721A /* AsymmetricCollectionViewCell.xib */,
+				9ABF4D4926C157980046721A /* AsymmetricCollectionViewCell.swift */,
+			);
+			path = AsymmetricCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9ABF4D5B26C15B9F0046721A /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF4D5726C159840046721A /* Constrained.swift */,
+			);
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 		9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */ = {
@@ -381,9 +471,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABF4D4C26C157980046721A /* AsymmetricCollectionSettingsViewController.xib in Resources */,
+				9ABF4D5026C157990046721A /* AsymmetricCollectionDemoViewController.xib in Resources */,
 				3274B38A268EF59E00E1B445 /* ListViewController.xib in Resources */,
 				32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */,
 				9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */,
+				9ABF4D5426C157990046721A /* AsymmetricCollectionViewCell.xib in Resources */,
 				8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */,
 				9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */,
 				32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */,
@@ -444,25 +537,36 @@
 				9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */,
 				9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */,
 				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
+				9ABF4D4E26C157990046721A /* AsymmetricCollectionSettingsViewController.swift in Sources */,
 				32964BEF2693205900FC3B1A /* CategoryListViewModelCoordinatorDelegate.swift in Sources */,
 				9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */,
 				32964BF12693453D00FC3B1A /* CategoryListViewModel.swift in Sources */,
+				9ABF4D5626C157990046721A /* AsymmetricCollectionDemoViewModelProtocol.swift in Sources */,
+				9ABF4D5526C157990046721A /* AsymmetricCollectionViewCell.swift in Sources */,
 				9A92CCA5268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift in Sources */,
 				9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */,
 				9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */,
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
+				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
+				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */,
 				9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */,
+				9ABF4D5826C159840046721A /* Constrained.swift in Sources */,
+				9ABF4D4D26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift in Sources */,
 				9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */,
 				9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */,
+				9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */,
+				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				9A4E1D9E26AE9ED500DEEE4F /* UIResizebleTableViewCell.swift in Sources */,
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
+				9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */,
 				9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */,
 				8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
+				9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
