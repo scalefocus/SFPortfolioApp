@@ -22,7 +22,7 @@ struct Constants {
         static let defaultFontSize: CGFloat = 20
         
         /// Defines default shadow opacity.
-        static let defaultShadowOpacity: Float = 0.3
+        static let defaultShadowOpacity: Float = 0.2
         
         /// Defines default shadow radius.
         static let defaultShadowRadius: CGFloat = 5
@@ -35,6 +35,7 @@ struct Constants {
         
         /// SwiftUI view origin info tag title.
         static let swiftUIViewOriginTagTitle = "SwiftUI"
+        
     }
     
     // MARK: - CategoryList
@@ -49,11 +50,6 @@ struct Constants {
         /// The amount of time to wait before beginning cell animations in the application.
         static let cellAnimationDelay: TimeInterval = 0.05
         
-        /// Default edge insets of table view cells when device is in portrait orientation.
-        static let portraitCellInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        
-        /// Default edge insets of table view cells when device is in landscape orientation.
-        static let landscapeCellInsets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 96, bottom: 0, right: 96)
     }
     
     // MARK: - CategoryTitle
@@ -61,6 +57,7 @@ struct Constants {
         
         /// Title of `Collection Views` category, containing different collection view elements.
         static let collectionView = "Collection Views"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -71,6 +68,7 @@ struct Constants {
         
         /// Title of `Asymmetric Collection View` category item.
         static let asymmetricCollectionView = "Asymmetric Collection View"
+        
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  UIResizebleTableViewCell.swift
+//  UIResizableTableViewCell.swift
 //  SFPortfolioApp
 //
 //  Created by Stoyko Kolev on 26.07.21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UIResizebleTableViewCell: UITableViewCell {
+class UIResizableTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     /// Distance between left border of the table view and cell in portrait.
