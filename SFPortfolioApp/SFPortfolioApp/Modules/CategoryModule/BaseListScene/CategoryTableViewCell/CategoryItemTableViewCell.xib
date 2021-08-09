@@ -111,10 +111,10 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="leftInsetInPortrait">
-                    <real key="value" value="16"/>
+                    <real key="value" value="8"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="rightInsetInPortrait">
-                    <real key="value" value="16"/>
+                    <real key="value" value="8"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="leftInsetInLandscape">
                     <real key="value" value="96"/>

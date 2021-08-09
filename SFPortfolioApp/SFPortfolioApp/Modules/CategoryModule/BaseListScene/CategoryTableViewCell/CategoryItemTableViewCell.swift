@@ -7,7 +7,7 @@
 
 import SFBaseKit
 
-class CategoryItemTableViewCell: UIResizebleTableViewCell {
+class CategoryItemTableViewCell: UIResizableTableViewCell {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var tagsStackView: UIStackView!
