@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,43 +36,16 @@
                                         <color key="textColor" name="baseText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="shk-bn-EaU">
-                                        <rect key="frame" x="217.5" y="54" width="54.5" height="21.5"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq4-gd-ydJ" customClass="UITagLabel" customModule="SFPortfolioApp" customModuleProvider="target">
-                                                <rect key="frame" x="3" y="0.0" width="49" height="21.5"/>
-                                                <color key="backgroundColor" red="0.96862745098039216" green="1" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
-                                                <color key="textColor" name="baseText"/>
-                                                <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="baseText"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </label>
-                                        </subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="shk-bn-EaU">
+                                        <rect key="frame" x="217.5" y="6" width="54.5" height="117"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Z01-OM-wQy" firstAttribute="top" secondItem="yok-FD-ezr" secondAttribute="top" id="EsI-Ft-Ytf"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="shk-bn-EaU" secondAttribute="bottom" constant="6" id="WcZ-Mp-QX1"/>
                                     <constraint firstItem="shk-bn-EaU" firstAttribute="leading" secondItem="Z01-OM-wQy" secondAttribute="trailing" id="Wvp-Lp-3Li"/>
                                     <constraint firstItem="Z01-OM-wQy" firstAttribute="leading" secondItem="yok-FD-ezr" secondAttribute="leading" id="f1q-mx-omO"/>
+                                    <constraint firstItem="shk-bn-EaU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yok-FD-ezr" secondAttribute="top" constant="6" id="x56-fa-uY9"/>
                                     <constraint firstItem="Z01-OM-wQy" firstAttribute="width" secondItem="shk-bn-EaU" secondAttribute="width" multiplier="4" id="xyN-ZY-Kvh"/>
                                     <constraint firstAttribute="bottom" secondItem="Z01-OM-wQy" secondAttribute="bottom" id="zW8-dP-bAe"/>
                                 </constraints>
@@ -131,11 +105,6 @@
             <point key="canvasLocation" x="2.8985507246376816" y="167.07589285714286"/>
         </tableViewCell>
     </objects>
-    <designables>
-        <designable name="Gq4-gd-ydJ">
-            <size key="intrinsicContentSize" width="49" height="21.5"/>
-        </designable>
-    </designables>
     <resources>
         <namedColor name="baseCell">
             <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

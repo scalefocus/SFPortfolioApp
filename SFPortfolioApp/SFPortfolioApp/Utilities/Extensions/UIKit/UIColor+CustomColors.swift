@@ -12,6 +12,9 @@ extension UIColor {
     /// Navigation bar tint color.
     static let barTint = UIColor(named: "barTint") ?? UIColor()
     
+    /// Navigation bar tint color.
+    static let baseText = UIColor(named: "baseText") ?? UIColor()
+    
     /// Base color for cells background.
     static let baseCell = UIColor(named: "baseCell") ?? UIColor()
     

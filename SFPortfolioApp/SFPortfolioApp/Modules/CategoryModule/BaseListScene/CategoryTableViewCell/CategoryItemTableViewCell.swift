@@ -20,6 +20,16 @@ class CategoryItemTableViewCell: UIResizableTableViewCell {
         containerView.shadowed()
     }
     
+    // MARK: - Private Functions
+    private func addTags(_ tags: [InfoTagProtocol]) {
+        tags.forEach { [weak self] tag in
+            let tagLabel = UITagLabel()
+            tagLabel.setupUI()
+            tagLabel.configureWith(tag)
+            self?.tagsStackView.addArrangedSubview(tagLabel)
+        }
+    }
+    
 }
 
 // MARK: - Configurable
@@ -28,6 +38,7 @@ extension CategoryItemTableViewCell: Configurable {
     func configureWith(_ data: CategoryItemTableViewCellViewModelProtocol) {
         titleLabel.text = data.title
         tagsStackView.isHidden = data.tags.isEmpty
+        addTags(data.tags)
     }
     
 }

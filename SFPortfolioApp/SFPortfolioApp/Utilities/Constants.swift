@@ -36,6 +36,15 @@ struct Constants {
         /// SwiftUI view origin info tag title.
         static let swiftUIViewOriginTagTitle = "SwiftUI"
         
+        /// Defines default edge insets for tag labels.
+        static let tagInsets = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
+        
+        /// Default font size for tag labels.
+        static let tagFontSize: CGFloat = 15
+        
+        /// Minimum scale factor for the text of the tag label.
+        static let tagTextMinimumScaleFactor: CGFloat = 4
+        
     }
     
     // MARK: - CategoryList
