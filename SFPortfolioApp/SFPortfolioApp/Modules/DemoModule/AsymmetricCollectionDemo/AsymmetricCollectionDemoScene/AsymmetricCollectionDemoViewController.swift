@@ -69,8 +69,10 @@ extension AsymmetricCollectionDemoViewController: UICollectionViewDataSource {
         viewModel.numberOfCellsInSection(section) ?? 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AsymmetricCollectionViewCell.typeName, for: indexPath)
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AsymmetricCollectionViewCell.typeName,
+                                                      for: indexPath)
         cell.startWiggle()
         return cell
     }
