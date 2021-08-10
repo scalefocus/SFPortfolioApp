@@ -5,7 +5,7 @@
 //  Created by Stoyko Kolev on 15.07.21.
 //
 
-import UIKit
+import SFBaseKit
 
 @IBDesignable class UITagLabel: UILabel {
     
@@ -75,6 +75,28 @@ import UIKit
     
     override func drawText(in rect: CGRect) {
         super.drawText(in: rect.inset(by: textEdgeInsets))
+    }
+    
+    /// Sets up base tag appearance including font type and color, border and insets.
+    func setupUI() {
+        borderColor = .baseText
+        borderWidth = 1
+        textEdgeInsets = Constants.General.tagInsets
+        textColor = .baseText
+        textAlignment = .center
+        font = .custom(size: Constants.General.tagFontSize)
+        minimumScaleFactor = Constants.General.tagTextMinimumScaleFactor
+        adjustsFontSizeToFitWidth = true
+    }
+    
+}
+
+// MARK: - Configurable
+extension UITagLabel: Configurable {
+    
+    func configureWith(_ data: InfoTagProtocol) {
+        text = data.title
+        backgroundColor = data.backgroundColor
     }
     
 }
