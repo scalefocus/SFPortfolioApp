@@ -61,6 +61,8 @@
 		8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82FFEE26B9783E0059862F /* Colors.xcassets */; };
 		8C912DC526C2C2480051993A /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DC426C2C2480051993A /* ModalView.swift */; };
 		8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DC826C2C6280051993A /* ModalViewModifier.swift */; };
+		8C912DDC26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DDB26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift */; };
+		8C912DDF26C2E5720051993A /* ExecutionButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -73,6 +75,9 @@
 		8CA1FB1826BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FB1726BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift */; };
 		9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */; };
 		9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */; };
+		9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */; };
+		9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035426C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift */; };
+		9A33035726C2B7D100B7EC74 /* ExecutionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035626C2B7D100B7EC74 /* ExecutionButton.swift */; };
 		9A4E1D9E26AE9ED500DEEE4F /* UIResizableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E1D9D26AE9ED500DEEE4F /* UIResizableTableViewCell.swift */; };
 		9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */; };
 		9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */; };
@@ -166,6 +171,8 @@
 		8C82FFEE26B9783E0059862F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8C912DC426C2C2480051993A /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		8C912DC826C2C6280051993A /* ModalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModifier.swift; sourceTree = "<group>"; };
+		8C912DDB26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonWidthPreferenceKey.swift; sourceTree = "<group>"; };
+		8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonConfig.swift; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -178,6 +185,9 @@
 		8CA1FB1726BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipBoundsPreferenceKey.swift; sourceTree = "<group>"; };
 		9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonState.swift; sourceTree = "<group>"; };
+		9A33035426C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A33035626C2B7D100B7EC74 /* ExecutionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButton.swift; sourceTree = "<group>"; };
 		9A4E1D9D26AE9ED500DEEE4F /* UIResizableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResizableTableViewCell.swift; sourceTree = "<group>"; };
 		9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Blurred.swift"; sourceTree = "<group>"; };
@@ -476,6 +486,7 @@
 				8C68799426C254B600D33186 /* BottomSheet */,
 				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
 				8C68796C26C159A200D33186 /* CustomSegmentedControl */,
+				9A33035126C2AFDF00B7EC74 /* ExecutionButton */,
 				8C912DC326C2C21F0051993A /* ModalView */,
 				8C4CF31F26B9846F00EAEABB /* Tooltip */,
 				8C82FFE626B976850059862F /* SupportingViews */,
@@ -600,6 +611,18 @@
 				9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9A33035126C2AFDF00B7EC74 /* ExecutionButton */ = {
+			isa = PBXGroup;
+			children = (
+				9A33035626C2B7D100B7EC74 /* ExecutionButton.swift */,
+				9A33035426C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift */,
+				8C912DDB26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift */,
+				9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */,
+				8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */,
+			);
+			path = ExecutionButton;
 			sourceTree = "<group>";
 		};
 		9A7416F7269C27D800DD5945 /* Fonts */ = {
@@ -858,6 +881,9 @@
 				8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */,
 				8C68799626C254FD00D33186 /* BottomSheetView.swift in Sources */,
 				8C6879C426C2691500D33186 /* CustomRoundedShape.swift in Sources */,
+				8C912DDC26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift in Sources */,
+				8C912DDF26C2E5720051993A /* ExecutionButtonConfig.swift in Sources */,
+				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
 				8C6879C726C269DE00D33186 /* View+CornerRadius.swift in Sources */,
 				32964C132695D92C00FC3B1A /* SynchronisedCollectionViews.swift in Sources */,
 				32C92B8526A5720700245BA8 /* SynchronisedCollectionViewsLayoutConfigurator.swift in Sources */,
@@ -885,6 +911,7 @@
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
 				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
+				9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
 				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
@@ -924,10 +951,12 @@
 				8C56BB0426BBE02A00DBE86F /* View+TooltipApplicable.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
 				9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */,
+				9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */,
+				9A33035726C2B7D100B7EC74 /* ExecutionButton.swift in Sources */,
 				8CA1FB0926BBEBEA00AE58CD /* View+AnyView.swift in Sources */,
 				8CA1FB0626BBEBE000AE58CD /* View+ConditionalModifier.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
