@@ -33,7 +33,18 @@
 		8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68797526C15E8F00D33186 /* SegmentedControlViewModel.swift */; };
 		8C68797926C15EAF00D33186 /* TabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68797826C15EAF00D33186 /* TabItemModel.swift */; };
 		8C68797D26C172FA00D33186 /* SegmentedControlViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68797C26C172FA00D33186 /* SegmentedControlViewConfig.swift */; };
+		8C68799626C254FD00D33186 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68799526C254FD00D33186 /* BottomSheetView.swift */; };
+		8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68799926C2551B00D33186 /* BottomSheetViewModel.swift */; };
+		8C6879C426C2691500D33186 /* CustomRoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6879C326C2691500D33186 /* CustomRoundedShape.swift */; };
+		8C6879C726C269DE00D33186 /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6879C626C269DE00D33186 /* View+CornerRadius.swift */; };
+		8C6879CA26C2812B00D33186 /* View+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6879C926C2812B00D33186 /* View+Show.swift */; };
+		8C72854626C2B631006F650C /* StatusBarUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72854526C2B631006F650C /* StatusBarUtility.swift */; };
+		8C72854926C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72854826C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift */; };
+		8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72854B26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift */; };
+		8C72854F26C2BEE0006F650C /* BottomSheetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C72854E26C2BEE0006F650C /* BottomSheetConfig.swift */; };
 		8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82FFEE26B9783E0059862F /* Colors.xcassets */; };
+		8C912DC526C2C2480051993A /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DC426C2C2480051993A /* ModalView.swift */; };
+		8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DC826C2C6280051993A /* ModalViewModifier.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -111,7 +122,18 @@
 		8C68797526C15E8F00D33186 /* SegmentedControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewModel.swift; sourceTree = "<group>"; };
 		8C68797826C15EAF00D33186 /* TabItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemModel.swift; sourceTree = "<group>"; };
 		8C68797C26C172FA00D33186 /* SegmentedControlViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewConfig.swift; sourceTree = "<group>"; };
+		8C68799526C254FD00D33186 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		8C68799926C2551B00D33186 /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
+		8C6879C326C2691500D33186 /* CustomRoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedShape.swift; sourceTree = "<group>"; };
+		8C6879C626C269DE00D33186 /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		8C6879C926C2812B00D33186 /* View+Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Show.swift"; sourceTree = "<group>"; };
+		8C72854526C2B631006F650C /* StatusBarUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarUtility.swift; sourceTree = "<group>"; };
+		8C72854826C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHeightPreferenceKey.swift; sourceTree = "<group>"; };
+		8C72854B26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarUtilityEnvironmentKey.swift; sourceTree = "<group>"; };
+		8C72854E26C2BEE0006F650C /* BottomSheetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfig.swift; sourceTree = "<group>"; };
 		8C82FFEE26B9783E0059862F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8C912DC426C2C2480051993A /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		8C912DC826C2C6280051993A /* ModalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModifier.swift; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -269,8 +291,8 @@
 				8C0242AB26BD4C570094029A /* ViewOriginInfoTag.swift */,
 			);
 			path = InfoTag;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		8C4CF31F26B9846F00EAEABB /* Tooltip */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,12 +346,43 @@
 			path = CustomSegmentedControl;
 			sourceTree = "<group>";
 		};
+		8C68799426C254B600D33186 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8C68799526C254FD00D33186 /* BottomSheetView.swift */,
+				8C68799926C2551B00D33186 /* BottomSheetViewModel.swift */,
+				8C72854E26C2BEE0006F650C /* BottomSheetConfig.swift */,
+				8C72854826C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		8C6879C226C268FF00D33186 /* CustomRoundedShape */ = {
+			isa = PBXGroup;
+			children = (
+				8C6879C326C2691500D33186 /* CustomRoundedShape.swift */,
+			);
+			path = CustomRoundedShape;
+			sourceTree = "<group>";
+		};
+		8C72854426C2B623006F650C /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				8C72854526C2B631006F650C /* StatusBarUtility.swift */,
+				8C72854B26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift */,
+			);
+			path = StatusBar;
+			sourceTree = "<group>";
+		};
 		8C82FFE426B976300059862F /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
-				8C4CF31F26B9846F00EAEABB /* Tooltip */,
+				8C68799426C254B600D33186 /* BottomSheet */,
+				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
 				8C68796C26C159A200D33186 /* CustomSegmentedControl */,
+				8C912DC326C2C21F0051993A /* ModalView */,
+				8C4CF31F26B9846F00EAEABB /* Tooltip */,
 				8C82FFE626B976850059862F /* SupportingViews */,
 			);
 			path = Components;
@@ -351,6 +404,15 @@
 				8C82FFEE26B9783E0059862F /* Colors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		8C912DC326C2C21F0051993A /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				8C912DC426C2C2480051993A /* ModalView.swift */,
+				8C912DC826C2C6280051993A /* ModalViewModifier.swift */,
+			);
+			path = ModalView;
 			sourceTree = "<group>";
 		};
 		8CA1FAF626BBE4D600AE58CD /* TooltipElement */ = {
@@ -379,9 +441,11 @@
 			isa = PBXGroup;
 			children = (
 				8CA1FB0826BBEBEA00AE58CD /* View+AnyView.swift */,
-				8CA1FB0526BBEBE000AE58CD /* View+ConditionalModifier.swift */,
+				8C6879C926C2812B00D33186 /* View+Show.swift */,
 				8CA1FB0E26BBF9DE00AE58CD /* View+IsHidden.swift */,
+				8CA1FB0526BBEBE000AE58CD /* View+ConditionalModifier.swift */,
 				8CA1FB0026BBEB4D00AE58CD /* Font+CustomFonts.swift */,
+				8C6879C626C269DE00D33186 /* View+CornerRadius.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -425,6 +489,7 @@
 				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
 				8C0242A626BD4BBC0094029A /* InfoTag */,
+				8C72854426C2B623006F650C /* StatusBar */,
 				9AC4975126A6D5D5008A2A38 /* Constants.swift */,
 				9ABF4D5926C159930046721A /* Observable.swift */,
 			);
@@ -683,14 +748,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C912DC526C2C2480051993A /* ModalView.swift in Sources */,
 				3274B388268EF58200E1B445 /* ListViewController.swift in Sources */,
+				8C6879CA26C2812B00D33186 /* View+Show.swift in Sources */,
 				8C4CF32526B9854400EAEABB /* TooltipConfig.swift in Sources */,
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
+				8C72854F26C2BEE0006F650C /* BottomSheetConfig.swift in Sources */,
 				8C4CF32826B9854F00EAEABB /* TooltipTransitionConfig.swift in Sources */,
 				9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */,
 				8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */,
+				8C68799626C254FD00D33186 /* BottomSheetView.swift in Sources */,
 				9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */,
+				8C6879C426C2691500D33186 /* CustomRoundedShape.swift in Sources */,
 				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
+				8C6879C726C269DE00D33186 /* View+CornerRadius.swift in Sources */,
 				9ABF4D4E26C157990046721A /* AsymmetricCollectionSettingsViewController.swift in Sources */,
 				8CA1FB1426BC050F00AE58CD /* ArrowShape.swift in Sources */,
 				8CA1FB0F26BBF9DE00AE58CD /* View+IsHidden.swift in Sources */,
@@ -706,11 +777,13 @@
 				8CA1FB1826BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift in Sources */,
 				9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */,
 				8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */,
+				8C72854926C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift in Sources */,
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
 				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
+				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
 				32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */,
 				9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5826C159840046721A /* Constrained.swift in Sources */,
@@ -720,10 +793,12 @@
 				9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */,
 				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
+				8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */,
 				9A4E1D9E26AE9ED500DEEE4F /* UIResizableTableViewCell.swift in Sources */,
 				8C68797926C15EAF00D33186 /* TabItemModel.swift in Sources */,
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
 				9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */,
+				8C72854626C2B631006F650C /* StatusBarUtility.swift in Sources */,
 				9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */,
 				8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */,
 				8CA1FB0126BBEB4D00AE58CD /* Font+CustomFonts.swift in Sources */,
@@ -740,9 +815,9 @@
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
+				8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */,
 				8CA1FB0926BBEBEA00AE58CD /* View+AnyView.swift in Sources */,
 				8CA1FB0626BBEBE000AE58CD /* View+ConditionalModifier.swift in Sources */,
-				9ABF4CFA26B963A30046721A /* CategoryCellType.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);

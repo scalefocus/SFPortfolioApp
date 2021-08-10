@@ -7,6 +7,4 @@
 
 import UIKit
 
-class AsymmetricCollectionViewCell: UICollectionViewCell {
-
-}
+class AsymmetricCollectionViewCell: UICollectionViewCell {}

@@ -44,6 +44,9 @@ struct Constants {
         
         /// Minimum scale factor for the text of the tag label.
         static let tagTextMinimumScaleFactor: CGFloat = 4
+
+        /// Defines default navigation bar height.
+        static let navigationBarHeight: CGFloat = 72
         
     }
     
