@@ -18,7 +18,7 @@ extension View {
     ///
     /// - Returns: The subscribed to `TooltipElementModifier` view.
     func tooltipElement<T: TooltipHandlerProtocol>(handler: T, identity: TooltipIdentity) -> some View {
-        return modifier(TooltipElementModifier(handler: handler, tooltipIdentity: identity)).anyView
+        modifier(TooltipElementModifier(handler: handler, tooltipIdentity: identity)).anyView
     }
     
 }
