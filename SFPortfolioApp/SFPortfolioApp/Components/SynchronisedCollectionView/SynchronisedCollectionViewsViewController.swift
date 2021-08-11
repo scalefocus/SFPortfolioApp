@@ -88,18 +88,18 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
     
     /// Returns current device orientation.
     private func isOrientationInLandscape() -> Bool? {
-            let deviceOrientationIsValid = UIDevice.current.orientation.isValidInterfaceOrientation
-            
-            if deviceOrientationIsValid {
-                return UIDevice.current.orientation.isLandscape
-            }
-
-            if let interfaceOrientation = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.windowScene?.interfaceOrientation {
-                return interfaceOrientation.isLandscape
-            }
-            
-            return nil
+        let deviceOrientationIsValid = UIDevice.current.orientation.isValidInterfaceOrientation
+        
+        if deviceOrientationIsValid {
+            return UIDevice.current.orientation.isLandscape
         }
+        
+        if let interfaceOrientation = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.windowScene?.interfaceOrientation {
+            return interfaceOrientation.isLandscape
+        }
+        
+        return nil
+    }
     
     /// Calculates the offset of both both collection views on device rotation and scrolls the top view to correct position.
     private func calculateIconsCollectionViewOffset(for indexPath: IndexPath, and size: CGSize) {
@@ -127,9 +127,11 @@ extension SynchronisedCollectionViewsViewController: UICollectionViewDelegate {
         
         collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear) { [weak self] in
-            self?.line.backgroundColor = .white
-            self?.line.frame.origin.x = CGFloat(indexPath.row) * (self?.line.frame.size.width ?? .zero)
-            self?.synchronizeCollectionView(self?.iconDetailsCollectionView, index: indexPath.row)
+            guard let self = self else { return }
+            
+            self.line.backgroundColor = .white
+            self.line.frame.origin.x = CGFloat(indexPath.row) * self.line.frame.size.width
+            self.synchronizeCollectionView(self.iconDetailsCollectionView, index: indexPath.row)
         }
     }
     
@@ -155,7 +157,6 @@ extension SynchronisedCollectionViewsViewController: UIScrollViewDelegate {
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         isScrolledRight = scrollView.contentOffset.x > lastContentOffset
-        
         let currentCell = isScrolledRight
             ? iconDetailsCollectionView.visibleCells.first
             : iconDetailsCollectionView.visibleCells.last
@@ -165,10 +166,12 @@ extension SynchronisedCollectionViewsViewController: UIScrollViewDelegate {
               scrollView == iconDetailsCollectionView else { return }
         
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveLinear) { [weak self] in
-            let xPosition = CGFloat(indexPath.row) * (self?.line.frame.size.width ?? .zero)
-            self?.line.frame.origin.x = xPosition
-            self?.iconsCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
-            self?.iconDetailsCollectionView.selectItem(at: indexPath, animated: false, scrollPosition: .centeredHorizontally)
+            guard let self = self else { return }
+            
+            let xPosition = CGFloat(indexPath.row) * self.line.frame.size.width
+            self.line.frame.origin.x = xPosition
+            self.iconsCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+            self.iconDetailsCollectionView.selectItem(at: indexPath, animated: false, scrollPosition: .centeredHorizontally)
         }
     }
     
@@ -191,8 +194,8 @@ extension SynchronisedCollectionViewsViewController: UICollectionViewDataSource 
                                                                 in: indexPath.section,
                                                                 for: collectionView.restorationIdentifier ?? "") else {
             return UICollectionViewCell()
-            
         }
+        
         return collectionView.configureCell(for: cellConfigurator, at: indexPath)
     }
     

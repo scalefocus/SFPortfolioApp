@@ -26,8 +26,22 @@ class CategoryCoordinator: Coordinator {
     private func startCategoryScene() {
         let viewModel = CategoryListViewModel(categories: Category.allCases)
         viewModel.delegate = self
-        let categoriesViewController = ListViewController.create(viewModel: viewModel)
-        navigationController.pushViewController(categoriesViewController, animated: true)
+        let viewController = ListViewController.create(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func startSynchronisedCollectionViewScene() {
+        let configurator = SynchronisedCollectionViewsLayoutConfigurator(numberOfItemsInPortrait: 5)
+        let iconsCollection = SyncronisedCollectionViewMockIcons.allCases
+        let viewModel = SynchronisedCollectionViewsViewModel(iconsCollection: iconsCollection)
+        let viewController = SynchronisedCollectionViewsViewController.create(viewModel: viewModel, with: configurator)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func startAsymmetricCollectionViewFlow() {
+        let coordinator = AsymmetricCollectionDemoCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
     }
     
 }
@@ -38,8 +52,8 @@ extension CategoryCoordinator: CategoryListViewModelCoordinatorDelegate {
     func didFinishCategorySceneWithSelection(of category: Category) {
         let viewModel = CategoryItemsListViewModel(category: category)
         viewModel.delegate = self
-        let categoryItemsViewController = ListViewController.create(viewModel: viewModel)
-        navigationController.pushViewController(categoryItemsViewController, animated: true)
+        let viewController = ListViewController.create(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
     
 }
@@ -50,16 +64,9 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
     func didFinishCategoryItemsSceneWithSelection(of item: CategoryItem) {
         switch item {
         case .synchronisedCollectionView:
-            let configurator = SynchronisedCollectionViewsLayoutConfigurator(numberOfItemsInPortrait: 5)
-            let viewModel = SynchronisedCollectionViewsViewModel(iconsCollection: SyncronisedCollectionViewMockIcons.allCases)
-            
-            let synchronisedCollectionViewsViewController = SynchronisedCollectionViewsViewController.create(viewModel: viewModel,
-                                                                                                             with: configurator)
-            navigationController.pushViewController(synchronisedCollectionViewsViewController, animated: true)
+            startSynchronisedCollectionViewScene()
         case .asymmetricCollectionView:
-            let asymmetricCollectionDemoCoordinator = AsymmetricCollectionDemoCoordinator(navigationController: navigationController)
-            addChildCoordinator(asymmetricCollectionDemoCoordinator)
-            asymmetricCollectionDemoCoordinator.start()
+            startAsymmetricCollectionViewFlow()
         }
     }
     

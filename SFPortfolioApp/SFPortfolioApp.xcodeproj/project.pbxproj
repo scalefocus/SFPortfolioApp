@@ -251,19 +251,19 @@
 			path = Architecture;
 			sourceTree = "<group>";
 		};
-		3280CCBD26C10EC900ADD949 /* Utils */ = {
+		3280CCBD26C10EC900ADD949 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				32A8F98A269DC6D000A8EBB1 /* SynchronisedCollectionViewsLayout */,
 				32964C122695D92C00FC3B1A /* SynchronisedCollectionViews.swift */,
 			);
-			path = Utils;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		32964BF42694859000FC3B1A /* SynchronisedCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3280CCBD26C10EC900ADD949 /* Utils */,
+				3280CCBD26C10EC900ADD949 /* Utility */,
 				32964BFE26948C4900FC3B1A /* TabBarViewCell */,
 				32964C0926959C8900FC3B1A /* DetailsViewCell */,
 				32964BF62694874900FC3B1A /* SynchronisedCollectionViewsViewController.swift */,
@@ -438,6 +438,13 @@
 			path = TooltipApplicable;
 			sourceTree = "<group>";
 		};
+		8C5D9FFD26C42D7D00887134 /* BottomSheetDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomSheetDemo;
+			sourceTree = "<group>";
+		};
 		8C68796C26C159A200D33186 /* CustomSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,7 +488,6 @@
 		8C82FFE426B976300059862F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				32964BF42694859000FC3B1A /* SynchronisedCollectionView */,
 				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
 				8C68799426C254B600D33186 /* BottomSheet */,
 				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
@@ -489,6 +495,7 @@
 				9A33035126C2AFDF00B7EC74 /* ExecutionButton */,
 				8C912DC326C2C21F0051993A /* ModalView */,
 				8C4CF31F26B9846F00EAEABB /* Tooltip */,
+				32964BF42694859000FC3B1A /* SynchronisedCollectionView */,
 				8C82FFE626B976850059862F /* SupportingViews */,
 			);
 			path = Components;
@@ -657,8 +664,8 @@
 		9A92CC99268C91C000B7A80E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9ABF4D3A26C157980046721A /* DemoModule */,
 				32CDD9FC268CC255008154AA /* CategoryModule */,
+				9ABF4D3A26C157980046721A /* DemoModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -675,6 +682,7 @@
 			isa = PBXGroup;
 			children = (
 				9ABF4D3B26C157980046721A /* AsymmetricCollectionDemo */,
+				8C5D9FFD26C42D7D00887134 /* BottomSheetDemo */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";

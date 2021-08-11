@@ -13,7 +13,7 @@ class TabBarCollectionViewCellViewModel: TabBarCollectionViewCellViewModelProtoc
     let iconImage: String
     let iconLabel: String
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(_ iconImage: String, _ iconLabel: String) {
         self.iconImage = iconImage
         self.iconLabel = iconLabel
