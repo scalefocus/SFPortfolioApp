@@ -70,6 +70,8 @@
 		8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03DF26C454DB0018FAFA /* ExecutionButtonDemoView.swift */; };
 		8C9C03E326C454E60018FAFA /* ExecutionButtonDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03E226C454E60018FAFA /* ExecutionButtonDemoViewModel.swift */; };
 		8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */; };
+		8C9C03F626C48DFF0018FAFA /* SegmentedControlDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03F526C48DFF0018FAFA /* SegmentedControlDemoView.swift */; };
+		8C9C03FA26C48E060018FAFA /* SegmentedControlDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -192,6 +194,8 @@
 		8C9C03DF26C454DB0018FAFA /* ExecutionButtonDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonDemoView.swift; sourceTree = "<group>"; };
 		8C9C03E226C454E60018FAFA /* ExecutionButtonDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonDemoViewModel.swift; sourceTree = "<group>"; };
 		8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarSetup.swift"; sourceTree = "<group>"; };
+		8C9C03F526C48DFF0018FAFA /* SegmentedControlDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoView.swift; sourceTree = "<group>"; };
+		8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoViewModel.swift; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -566,6 +570,15 @@
 			path = ExecutionButtonDemo;
 			sourceTree = "<group>";
 		};
+		8C9C03F426C48D8C0018FAFA /* CustomSegmentedControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C03F526C48DFF0018FAFA /* SegmentedControlDemoView.swift */,
+				8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */,
+			);
+			path = CustomSegmentedControlDemo;
+			sourceTree = "<group>";
+		};
 		8CA1FAF626BBE4D600AE58CD /* TooltipElement */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,6 +746,7 @@
 			children = (
 				9ABF4D3B26C157980046721A /* AsymmetricCollectionDemo */,
 				8C5D9FFD26C42D7D00887134 /* BottomSheetDemo */,
+				8C9C03F426C48D8C0018FAFA /* CustomSegmentedControlDemo */,
 				8C9C03DE26C454BF0018FAFA /* ExecutionButtonDemo */,
 				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
 			);
@@ -968,10 +982,12 @@
 				9AD7BAE626C46AFC007DFE9D /* View+ImageBackground.swift in Sources */,
 				9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */,
 				9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */,
+				8C9C03F626C48DFF0018FAFA /* SegmentedControlDemoView.swift in Sources */,
 				8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */,
 				32964BF12693453D00FC3B1A /* CategoryListViewModel.swift in Sources */,
 				9ABF4D5626C157990046721A /* AsymmetricCollectionDemoViewModelProtocol.swift in Sources */,
 				9ABF4D5526C157990046721A /* AsymmetricCollectionViewCell.swift in Sources */,
+				8C9C03FA26C48E060018FAFA /* SegmentedControlDemoViewModel.swift in Sources */,
 				9A92CCA5268CAB4300B7A80E /* CategoryItemTableViewCellViewModelProtocol.swift in Sources */,
 				9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */,
 				8CA1FB1826BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift in Sources */,

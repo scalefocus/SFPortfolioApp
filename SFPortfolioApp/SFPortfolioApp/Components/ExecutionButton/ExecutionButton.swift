@@ -93,7 +93,7 @@ extension ExecutionButton {
                 
                 // TODO: Temporary commented out. Check why `gradientView` suddenly
                 // started interfering resizing calculations.
-                // To be checked with https://jira.scalefocus.com/browse/SFPA-34
+                // To be checked with [SPFA-34].
                 /*
                 gradientView
                     .frame(width: 191, height: 60)

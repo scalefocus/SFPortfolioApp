@@ -79,6 +79,9 @@ struct Constants {
         /// Title of `Popover Views` category, containing different popover view elements.
         static let popoverViews = "Popover Views"
         
+        /// Title of `Tab Views` category, containing different tab view elements.
+        static let tabViews = "Tab Views"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -98,6 +101,9 @@ struct Constants {
         
         /// Title of `Execution Button` category item.
         static let executionButton = "Execution Button"
+
+        /// Title of `Custom Segmented Control View` category item.
+        static let customSegmentedControl = "Custom Segmented Control"
         
     }
     
