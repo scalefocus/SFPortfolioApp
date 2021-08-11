@@ -21,13 +21,13 @@ class CategoryItemsListViewModel: ListViewModelProtocol {
     
     // MARK: - Init
     init(category: Category) {
-        self.categoryItems = category.categoryItems
-        self.title = category.title
+        categoryItems = category.categoryItems
+        title = category.title
     }
     
     // MARK: - Public Methods
     func numberOfCellsInSection(_ section: Int) -> Int? {
-        return categoryItems.count
+        categoryItems.count
     }
     
     func viewConfigurator(at index: Int, in section: Int) -> ViewConfigurator? {

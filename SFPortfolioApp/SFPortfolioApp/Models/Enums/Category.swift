@@ -11,6 +11,7 @@ import Foundation
 enum Category: CaseIterable {
     
     case collectionView
+    case modalView
     
 }
 
@@ -21,6 +22,8 @@ extension Category {
         switch self {
         case .collectionView:
             return Constants.CategoryTitle.collectionView
+        case .modalView:
+            return Constants.CategoryTitle.modalView
         }
     }
     
@@ -30,6 +33,10 @@ extension Category {
             return [
                 .asymmetricCollectionView,
                 .synchronisedCollectionView
+            ]
+        case .modalView:
+            return [
+                .bottomSheet
             ]
         }
     }
