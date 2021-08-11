@@ -57,6 +57,14 @@ class CategoryCoordinator: Coordinator {
         let viewController = view.hostingController
         navigationController.pushViewController(viewController, animated: true)
     }
+
+    private func startExecutionButtonDemoScene() {
+        let defaultViewModel = ExecutionButtonDemoViewModel(executionButtonState: .default)
+        let disabledViewModel = ExecutionButtonDemoViewModel(executionButtonState: .disabled)
+        let view = ExecutionButtonDemoView(defaultViewModel: defaultViewModel, disabledViewModel: disabledViewModel)
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
     
 }
 
@@ -85,6 +93,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startBottomSheetDemoScene()
         case .tooltipView:
             startTooltipDemoScene()
+        case .executionButton:
+            startExecutionButtonDemoScene()
         }
     }
     

@@ -9,7 +9,7 @@ import Combine
 
 class BottomSheetDemoViewModel: BottomSheetViewModelProtocol {
     
-    // MARK: - Published
+    // MARK: - Publishers
     @Published var isCountrySelectionPresented = false
     
     // MARK: - Subjects
@@ -29,7 +29,7 @@ class BottomSheetDemoViewModel: BottomSheetViewModelProtocol {
     let countryNamePlaceholder = "Select a country: "
     private var selectedCountry: String?
     
-    // MARK: - Actions
+    // MARK: - Public Functions
     func onCountryDropDownTap() {
         isCountrySelectionPresented = true
     }

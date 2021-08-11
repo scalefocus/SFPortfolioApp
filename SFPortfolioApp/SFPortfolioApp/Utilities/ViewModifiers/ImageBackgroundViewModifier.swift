@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view modifier used for attaching an image background to a specific view.
 struct ImageBackgroundViewModifier: ViewModifier {
     
     let image: Image

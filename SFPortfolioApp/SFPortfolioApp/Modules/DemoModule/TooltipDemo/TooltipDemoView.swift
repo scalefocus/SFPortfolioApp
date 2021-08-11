@@ -20,8 +20,7 @@ struct TooltipDemoView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .primaryBackground
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(viewModel.title)
+        .primaryNavigationBarSetup(with: viewModel.title)
         .tooltipApplicable(handler: viewModel.handler)
     }
     

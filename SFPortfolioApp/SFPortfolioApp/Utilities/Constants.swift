@@ -68,13 +68,16 @@ struct Constants {
     struct CategoryTitle {
         
         /// Title of `Collection Views` category, containing different collection view elements.
-        static let collectionView = "Collection Views"
+        static let collectionViews = "Collection Views"
         
         /// Title of `Modal Views` category, containing different modal view elements.
-        static let modalView = "Modal Views"
+        static let modalViews = "Modal Views"
+        
+        /// Title of `Buttons` category, containing different button elements.
+        static let buttons = "Buttons"
         
         /// Title of `Popover Views` category, containing different popover view elements.
-        static let popoverView = "Popover Views"
+        static let popoverViews = "Popover Views"
         
     }
     
@@ -92,6 +95,9 @@ struct Constants {
         
         /// Title of `Tooltip View` category item.
         static let tooltipView = "Tooltip View"
+        
+        /// Title of `Execution Button` category item.
+        static let executionButton = "Execution Button"
         
     }
     

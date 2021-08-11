@@ -17,8 +17,7 @@ struct BottomSheetDemoView: View {
         countrySelectionView
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .primaryBackground
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(viewModel.title)
+            .primaryNavigationBarSetup(with: viewModel.title)
             .modalView(isPresented: viewModel.isCountrySelectionPresented, modalContent: { bottomSheetView })
     }
     

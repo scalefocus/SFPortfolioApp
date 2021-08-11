@@ -91,7 +91,7 @@ extension TooltipApplicableModifier {
             Image(tooltip.leadingImageName)
                 .resizable()
                 .renderingMode(.template)
-                .foregroundColor(tooltip.config.foregroundColor)
+                .foregroundColor(tooltip.config.leadingImageForegroundColor)
                 .frame(width: tooltip.config.leadingImageWidth,
                        height: tooltip.config.leadingImageHeight)
                 .padding(.leading, tooltip.config.contentPaddingLeft)

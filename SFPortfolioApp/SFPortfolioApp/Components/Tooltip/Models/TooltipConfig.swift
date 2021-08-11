@@ -16,6 +16,7 @@ struct TooltipConfig {
     var backgroundColor: Color = .white
     var foregroundColor: Color = .blue
     var font: Font = .custom(size: 16)
+    var leadingImageForegroundColor: Color = .accentColor
     
     // Border
     var borderWidth: CGFloat = 1

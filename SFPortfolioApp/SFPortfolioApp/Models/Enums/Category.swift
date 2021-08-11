@@ -10,9 +10,10 @@ import Foundation
 /// Enum defining possible portfolio categories.
 enum Category: CaseIterable {
     
-    case collectionView
-    case modalView
-    case popoverView
+    case collectionViews
+    case modalViews
+    case buttons
+    case popoverViews
     
 }
 
@@ -21,29 +22,35 @@ extension Category {
     
     var title: String {
         switch self {
-        case .collectionView:
-            return Constants.CategoryTitle.collectionView
-        case .modalView:
-            return Constants.CategoryTitle.modalView
-        case .popoverView:
-            return Constants.CategoryTitle.popoverView
+        case .collectionViews:
+            return Constants.CategoryTitle.collectionViews
+        case .modalViews:
+            return Constants.CategoryTitle.modalViews
+        case .buttons:
+            return Constants.CategoryTitle.buttons
+        case .popoverViews:
+            return Constants.CategoryTitle.popoverViews
         }
     }
     
     var categoryItems: [CategoryItem] {
         switch self {
-        case .collectionView:
+        case .collectionViews:
             return [
                 .asymmetricCollectionView,
                 .synchronisedCollectionView
             ]
-        case .modalView:
+        case .modalViews:
             return [
                 .bottomSheet
             ]
-        case .popoverView:
+        case .popoverViews:
             return [
                 .tooltipView
+            ]
+        case .buttons:
+            return [
+                .executionButton
             ]
         }
     }
