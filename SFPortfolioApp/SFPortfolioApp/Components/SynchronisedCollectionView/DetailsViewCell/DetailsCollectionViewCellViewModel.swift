@@ -12,7 +12,7 @@ class DetailsCollectionViewCellViewModel: DetailsCollectionViewCellViewModelProt
     // MARK: - Public Properties
     let detailsTextLabel: String
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(_ detailsTextLabel: String) {
         self.detailsTextLabel = detailsTextLabel
     }

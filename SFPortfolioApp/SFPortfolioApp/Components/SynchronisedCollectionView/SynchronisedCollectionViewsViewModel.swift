@@ -15,29 +15,29 @@ class SynchronisedCollectionViewsViewModel: SynchronisedCollectionViewsViewModel
     // MARK: - Public Properties
     let iconsCollection: [SyncronisedCollectionViewMockIcons]
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(iconsCollection: [SyncronisedCollectionViewMockIcons]) {
         self.iconsCollection = iconsCollection
     }
     
     // MARK: - Public Functions
     func numberOfCellsInSection(_ section: Int) -> Int? {
-        return iconsCollection.count
+        iconsCollection.count
     }
     
     func viewConfigurator(at index: Int, in section: Int, for collectionView: String) -> ViewConfigurator? {
-        guard let synchronisedCollectionViews = SynchronisedCollectionViews(rawValue: collectionView) else { return nil}
+        guard let collectionViewType = SynchronisedCollectionViews(rawValue: collectionView) else { return nil }
         
-        switch synchronisedCollectionViews {
-        case SynchronisedCollectionViews.barCollectionView:
-            return createConfiguratorForIconsCollectionView(at: index)
-        case SynchronisedCollectionViews.detailsCollectionView:
-            return createConfiguratorForDetailsCollectionView(at: index)
+        switch collectionViewType {
+        case .barCollectionView:
+            return iconsCollectionViewConfigurator(at: index)
+        case .detailsCollectionView:
+            return detailsCollectionViewConfigurator(at: index)
         }
     }
     
     // MARK: - Private Functions
-    private func createConfiguratorForIconsCollectionView(at index: Int) -> ViewConfigurator? {
+    private func iconsCollectionViewConfigurator(at index: Int) -> ViewConfigurator? {
         guard let iconImage = iconsCollection[safeAt: index]?.image,
               let iconLabel = iconsCollection[safeAt: index]?.text else { return nil }
         
@@ -45,7 +45,7 @@ class SynchronisedCollectionViewsViewModel: SynchronisedCollectionViewsViewModel
         return TabBarCollectionViewConfigurator(data: tabBarCollectionViewCellViewModel)
     }
     
-    private func createConfiguratorForDetailsCollectionView(at index: Int) -> ViewConfigurator? {
+    private func detailsCollectionViewConfigurator(at index: Int) -> ViewConfigurator? {
         guard let textLabel = iconsCollection[safeAt: index]?.text else { return nil }
         
         let detailsCollectionViewCellViewModel = DetailsCollectionViewCellViewModel(textLabel)

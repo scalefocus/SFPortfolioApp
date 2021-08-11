@@ -20,4 +20,5 @@ extension DetailsCollectionViewCell: Configurable {
     func configureWith(_ data: DetailsCollectionViewCellViewModelProtocol) {
         detailsTextLabel.text = data.detailsTextLabel
     }
+    
 }

@@ -31,7 +31,7 @@ class SynchronisedCollectionViewsLayout: UICollectionViewLayout {
         CGSize(width: contentWidth, height: contentHeight)
     }
     
-    // MARK: - Initializers
+    // MARK: - Init
     init(configurator: SynchronisedCollectionViewsLayoutConfigurator) {
         numberOfItemsInPortrait = configurator.numberOfItemsInPortrait
         super.init()
@@ -49,15 +49,15 @@ class SynchronisedCollectionViewsLayout: UICollectionViewLayout {
     
     override func prepare() {
         guard attributes.isEmpty,
-              let collectionView = collectionView else { return }
+              let collectionView = collectionView,
+              let identifier = collectionView.restorationIdentifier,
+              let collectionViewType = SynchronisedCollectionViews(rawValue: identifier) else { return }
         
-        switch collectionView.restorationIdentifier {
-        case SynchronisedCollectionViews.barCollectionView.rawValue:
+        switch collectionViewType {
+        case .barCollectionView:
             contentHeight = collectionView.frame.size.height
-        case SynchronisedCollectionViews.detailsCollectionView.rawValue:
+        case .detailsCollectionView:
             contentHeight = collectionView.bounds.size.height
-        default:
-            contentHeight = .zero
         }
         
         let cellWidth = contentWidth / CGFloat(numberOfItems)
@@ -87,20 +87,18 @@ class SynchronisedCollectionViewsLayout: UICollectionViewLayout {
     // MARK: - Private Functions
     private func calculateCellWidth() -> CGFloat {
         guard let collectionView = collectionView,
-              let superView = collectionView.superview else {
-            return .zero
-        }
+              let superView = collectionView.superview,
+              let identifier = collectionView.restorationIdentifier,
+              let collectionViewType = SynchronisedCollectionViews(rawValue: identifier) else { return .zero }
         
-        switch collectionView.restorationIdentifier {
-        case SynchronisedCollectionViews.barCollectionView.rawValue:
+        switch collectionViewType {
+        case .barCollectionView:
             let screenWidth = UIDevice.current.orientation.isLandscape
                 ? superView.frame.height
                 : superView.frame.width
             return screenWidth / numberOfItemsInPortrait
-        case SynchronisedCollectionViews.detailsCollectionView.rawValue:
+        case .detailsCollectionView:
             return collectionView.bounds.size.width
-        default:
-            return .zero
         }
     }
     
