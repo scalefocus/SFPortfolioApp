@@ -67,6 +67,9 @@
 		8C9C03CC26C432070018FAFA /* BottomSheetDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03CB26C432070018FAFA /* BottomSheetDemoViewModel.swift */; };
 		8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03CE26C432F00018FAFA /* BaseHostingController.swift */; };
 		8C9C03D226C435340018FAFA /* View+BaseHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03D126C435340018FAFA /* View+BaseHostingController.swift */; };
+		8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03DF26C454DB0018FAFA /* ExecutionButtonDemoView.swift */; };
+		8C9C03E326C454E60018FAFA /* ExecutionButtonDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03E226C454E60018FAFA /* ExecutionButtonDemoViewModel.swift */; };
+		8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -186,6 +189,9 @@
 		8C9C03CB26C432070018FAFA /* BottomSheetDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDemoViewModel.swift; sourceTree = "<group>"; };
 		8C9C03CE26C432F00018FAFA /* BaseHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHostingController.swift; sourceTree = "<group>"; };
 		8C9C03D126C435340018FAFA /* View+BaseHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BaseHostingController.swift"; sourceTree = "<group>"; };
+		8C9C03DF26C454DB0018FAFA /* ExecutionButtonDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonDemoView.swift; sourceTree = "<group>"; };
+		8C9C03E226C454E60018FAFA /* ExecutionButtonDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonDemoViewModel.swift; sourceTree = "<group>"; };
+		8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarSetup.swift"; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -551,6 +557,15 @@
 			path = ModalView;
 			sourceTree = "<group>";
 		};
+		8C9C03DE26C454BF0018FAFA /* ExecutionButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C03DF26C454DB0018FAFA /* ExecutionButtonDemoView.swift */,
+				8C9C03E226C454E60018FAFA /* ExecutionButtonDemoViewModel.swift */,
+			);
+			path = ExecutionButtonDemo;
+			sourceTree = "<group>";
+		};
 		8CA1FAF626BBE4D600AE58CD /* TooltipElement */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +599,7 @@
 				8CA1FB0026BBEB4D00AE58CD /* Font+CustomFonts.swift */,
 				8C6879C626C269DE00D33186 /* View+CornerRadius.swift */,
 				9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */,
+				8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -615,8 +631,8 @@
 		9A02E45A26C3C902009B2BBC /* TooltipDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9A02E45C26C3C902009B2BBC /* TooltipDemoViewModel.swift */,
 				9A02E45D26C3C902009B2BBC /* TooltipDemoView.swift */,
+				9A02E45C26C3C902009B2BBC /* TooltipDemoViewModel.swift */,
 			);
 			path = TooltipDemo;
 			sourceTree = "<group>";
@@ -633,8 +649,8 @@
 		9A236BDD26917AE2000E8643 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				9AD7BAE726C46BB2007DFE9D /* VIewModifiers */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
+				9AD7BAE726C46BB2007DFE9D /* ViewModifiers */,
 				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
 				8C0242A626BD4BBC0094029A /* InfoTag */,
 				8C72854426C2B623006F650C /* StatusBar */,
@@ -715,9 +731,10 @@
 		9ABF4D3A26C157980046721A /* DemoModule */ = {
 			isa = PBXGroup;
 			children = (
-				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
 				9ABF4D3B26C157980046721A /* AsymmetricCollectionDemo */,
 				8C5D9FFD26C42D7D00887134 /* BottomSheetDemo */,
+				8C9C03DE26C454BF0018FAFA /* ExecutionButtonDemo */,
+				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";
@@ -773,12 +790,12 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
-		9AD7BAE726C46BB2007DFE9D /* VIewModifiers */ = {
+		9AD7BAE726C46BB2007DFE9D /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
 				9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */,
 			);
-			path = VIewModifiers;
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */ = {
@@ -977,6 +994,7 @@
 				9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */,
 				9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */,
 				9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */,
+				8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */,
 				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */,
@@ -986,6 +1004,7 @@
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
 				9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */,
 				8C72854626C2B631006F650C /* StatusBarUtility.swift in Sources */,
+				8C9C03E326C454E60018FAFA /* ExecutionButtonDemoViewModel.swift in Sources */,
 				9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */,
 				8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */,
 				9AD7BAE926C46BC8007DFE9D /* ImageBackgroundViewModifier.swift in Sources */,
@@ -998,6 +1017,7 @@
 				8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */,
 				8C68797D26C172FA00D33186 /* SegmentedControlViewConfig.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
+				8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */,
 				32964C0126948C9000FC3B1A /* TabBarCollectionViewCell.swift in Sources */,
 				32964BFB2694876300FC3B1A /* SynchronisedCollectionViewsViewModel.swift in Sources */,
 				32964BFD26948BC100FC3B1A /* SyncronisedCollectionViewMockIcons.swift in Sources */,

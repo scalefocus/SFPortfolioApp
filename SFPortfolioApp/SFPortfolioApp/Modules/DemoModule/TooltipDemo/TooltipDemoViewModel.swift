@@ -15,14 +15,12 @@ class TooltipDemoViewModel: ObservableObject {
     
     // MARK: - Public Functions
     func onActivateButtonTap(identity: TooltipIdentity) {
-        let tooltip = tooltip(position: identity == .primary ? .top : .bottom,
-                              identity: identity)
+        let tooltip = self.tooltip(position: identity == .primary ? .top : .bottom, identity: identity)
         handler.showTooltip(tooltip)
     }
     
     // MARK: - Private Functions
-    private func tooltip(position: Tooltip.Position,
-                         identity: TooltipIdentity) -> Tooltip {
+    private func tooltip(position: Tooltip.Position, identity: TooltipIdentity) -> Tooltip {
         Tooltip(identity: identity,
                 position: position,
                 text: "This is an information tooltip!",

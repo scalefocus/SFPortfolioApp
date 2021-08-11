@@ -90,9 +90,15 @@ extension ExecutionButton {
                     .font(config.font)
                     .foregroundColor(executionTextForegroundColor)
                     .multilineTextAlignment(.center)
+                
+                // TODO: Temporary commented out. Check why `gradientView` suddenly
+                // started interfering resizing calculations.
+                // To be checked with https://jira.scalefocus.com/browse/SFPA-34
+                /*
                 gradientView
                     .frame(width: 191, height: 60)
                     .show(if: state == .default)
+                 */
             }
             .offset(x: 16, y: 0)
             Spacer()
@@ -237,9 +243,8 @@ extension ExecutionButton {
     private func setCurrentPosition(shrinkSize: CGFloat, completion: (() -> Void)? = nil) {
         /// Setup min and max clamping values so we don't drag the slider out of it's bounds.
         let arrowSlidingPadding: CGFloat = shrinkSize > 0 ? arrowSliderInset * 2 : 0
-        let maxDragDistance: CGFloat = innerWidth - arrowSliderDiameter
-        var tempSpaceWidth = max(arrowSlidingPadding, shrinkSize)
-        tempSpaceWidth = min(tempSpaceWidth, maxDragDistance)
+        let maxDragDistance: CGFloat = max(innerWidth - arrowSliderDiameter, 0)
+        let tempSpaceWidth = min(max(arrowSlidingPadding, shrinkSize), maxDragDistance)
         
         /// Calculate current progress to manage animation's interactivity.
         percentageProgress = Double(tempSpaceWidth / maxDragDistance)
