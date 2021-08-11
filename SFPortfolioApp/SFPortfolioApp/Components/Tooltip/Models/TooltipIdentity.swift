@@ -12,5 +12,8 @@ import Foundation
 /// - NOTE: Here you can define and add your specific identity tooltip keys which are
 /// going to be used which gives you more readable and restricted way of defining identities.
 enum TooltipIdentity: String {
-    case `default`
+    
+    case primary
+    case secondary
+    
 }

@@ -16,7 +16,7 @@ struct BottomSheetDemoView: View {
     var body: some View {
         countrySelectionView
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(mainBackgroundView)
+            .primaryBackground
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(viewModel.title)
             .modalView(isPresented: viewModel.isCountrySelectionPresented, modalContent: { bottomSheetView })
@@ -26,12 +26,6 @@ struct BottomSheetDemoView: View {
 
 // MARK: - Private Views
 extension BottomSheetDemoView {
-    
-    private var mainBackgroundView: some View {
-        Image(uiImage: .background)
-            .resizable()
-            .edgesIgnoringSafeArea(.all)
-    }
     
     private var countrySelectionView: some View {
         VStack(spacing: 0) {

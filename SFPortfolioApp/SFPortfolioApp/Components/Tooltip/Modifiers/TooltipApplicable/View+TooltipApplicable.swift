@@ -14,7 +14,7 @@ extension View {
     /// - Parameters:
     ///   - handler: `TooltipHandlerProtocol`
     ///   - config: `TooltipTransitionConfig`
-    ///   
+    ///
     /// - Returns: The subscribed to `TooltipApplicableModifier` view.
     func tooltipApplicable<T: TooltipHandlerProtocol>(
         handler: T,
