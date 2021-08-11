@@ -26,13 +26,14 @@ struct SegmentedControlView<T: SegmentedControlViewModelProtocol>: View {
                 selectedItemOverlay
                     .frame(width: geometry.size.width / itemsCount, height: config.height)
                     .offset(x: geometry.size.width / itemsCount * selectedIndex, y: 0)
-                    .animation(.default)
+                    .animation(.default, value: viewModel.selectedTabIndex)
                 itemsList
             }
             .background(config.backgroundColor)
             .overlay(segmentedControlOverlay)
             .cornerRadius(config.cornerRadius)
         }
+        .frame(height: config.height)
     }
     
 }

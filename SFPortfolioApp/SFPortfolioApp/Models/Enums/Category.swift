@@ -12,8 +12,9 @@ enum Category: CaseIterable {
     
     case collectionViews
     case modalViews
-    case buttons
     case popoverViews
+    case buttons
+    case tabViews
     
 }
 
@@ -26,10 +27,12 @@ extension Category {
             return Constants.CategoryTitle.collectionViews
         case .modalViews:
             return Constants.CategoryTitle.modalViews
-        case .buttons:
-            return Constants.CategoryTitle.buttons
         case .popoverViews:
             return Constants.CategoryTitle.popoverViews
+        case .buttons:
+            return Constants.CategoryTitle.buttons
+        case .tabViews:
+            return Constants.CategoryTitle.tabViews
         }
     }
     
@@ -51,6 +54,10 @@ extension Category {
         case .buttons:
             return [
                 .executionButton
+            ]
+        case .tabViews:
+            return [
+                .customSegmentedControl
             ]
         }
     }

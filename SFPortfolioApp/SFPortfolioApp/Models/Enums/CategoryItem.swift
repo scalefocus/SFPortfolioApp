@@ -15,6 +15,7 @@ enum CategoryItem: CaseIterable {
     case bottomSheet
     case executionButton
     case tooltipView
+    case customSegmentedControl
     
 }
 
@@ -33,6 +34,8 @@ extension CategoryItem {
             return Constants.CategoryItemTitle.executionButton
         case .tooltipView:
             return Constants.CategoryItemTitle.tooltipView
+        case .customSegmentedControl:
+            return Constants.CategoryItemTitle.customSegmentedControl
         }
     }
     
@@ -45,7 +48,7 @@ extension CategoryItem {
         switch self {
         case .synchronisedCollectionView, .asymmetricCollectionView:
             return .uiKit
-        case .bottomSheet, .tooltipView, .executionButton:
+        case .bottomSheet, .tooltipView, .executionButton, .customSegmentedControl:
             return .swiftUI
         }
     }

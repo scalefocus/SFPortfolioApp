@@ -66,6 +66,13 @@ class CategoryCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    private func startCustomSegmentedControlDemoScene() {
+        let view = SegmentedControlDemoView(primaryViewModel: SegmentedControlDemoViewModel(),
+                                            secondaryViewModel: SegmentedControlDemoViewModel())
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -95,6 +102,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startTooltipDemoScene()
         case .executionButton:
             startExecutionButtonDemoScene()
+        case .customSegmentedControl:
+            startCustomSegmentedControlDemoScene()
         }
     }
     
