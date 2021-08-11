@@ -12,6 +12,7 @@ enum Category: CaseIterable {
     
     case collectionView
     case modalView
+    case popoverView
     
 }
 
@@ -24,6 +25,8 @@ extension Category {
             return Constants.CategoryTitle.collectionView
         case .modalView:
             return Constants.CategoryTitle.modalView
+        case .popoverView:
+            return Constants.CategoryTitle.popoverView
         }
     }
     
@@ -37,6 +40,10 @@ extension Category {
         case .modalView:
             return [
                 .bottomSheet
+            ]
+        case .popoverView:
+            return [
+                .tooltipView
             ]
         }
     }

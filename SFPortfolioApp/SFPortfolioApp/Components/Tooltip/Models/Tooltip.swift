@@ -20,7 +20,7 @@ struct Tooltip {
     let position: Position
     let text: String
     let leadingImageName: String
-    var trailingImageName: String = ""
+    var trailingImageName: String?
     var config: TooltipConfig = TooltipConfig()
     var onCloseCompletion: (() -> Void)?
     

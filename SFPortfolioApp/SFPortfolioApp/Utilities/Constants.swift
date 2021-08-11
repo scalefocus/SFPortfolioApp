@@ -44,7 +44,7 @@ struct Constants {
         
         /// Minimum scale factor for the text of the tag label.
         static let tagTextMinimumScaleFactor: CGFloat = 4
-
+        
         /// Defines default navigation bar height.
         static let navigationBarHeight: CGFloat = 72
         
@@ -73,6 +73,9 @@ struct Constants {
         /// Title of `Modal Views` category, containing different modal view elements.
         static let modalView = "Modal Views"
         
+        /// Title of `Popover Views` category, containing different popover view elements.
+        static let popoverView = "Popover Views"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -86,6 +89,9 @@ struct Constants {
         
         /// Title of `Bottom Sheet View` category item.
         static let bottomSheet = "Bottom Sheet"
+        
+        /// Title of `Tooltip View` category item.
+        static let tooltipView = "Tooltip View"
         
     }
     

@@ -90,6 +90,8 @@ extension TooltipApplicableModifier {
         HStack(alignment: .top, spacing: 0) {
             Image(tooltip.leadingImageName)
                 .resizable()
+                .renderingMode(.template)
+                .foregroundColor(tooltip.config.foregroundColor)
                 .frame(width: tooltip.config.leadingImageWidth,
                        height: tooltip.config.leadingImageHeight)
                 .padding(.leading, tooltip.config.contentPaddingLeft)
@@ -101,11 +103,13 @@ extension TooltipApplicableModifier {
             }
             .frame(maxWidth: .infinity, minHeight: 24, alignment: .leading)
             
-            Image(tooltip.trailingImageName)
-                .resizable()
-                .frame(width: tooltip.config.trailingImageWidth,
-                       height: tooltip.config.trailingImageHeight)
-                .padding(.trailing, tooltip.config.contentPaddingRight)
+            tooltip.trailingImageName.map {
+                Image($0)
+                    .resizable()
+                    .frame(width: tooltip.config.trailingImageWidth,
+                           height: tooltip.config.trailingImageHeight)
+                    .padding(.trailing, tooltip.config.contentPaddingRight)
+            }
         }
         .padding(.vertical, tooltip.config.contentPaddingTop)
         .frame(width: UIScreen.main.bounds.width - (2 * tooltip.config.screenPadding))

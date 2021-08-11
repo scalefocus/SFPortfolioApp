@@ -13,6 +13,7 @@ enum CategoryItem: CaseIterable {
     case synchronisedCollectionView
     case asymmetricCollectionView
     case bottomSheet
+    case tooltipView
     
 }
 
@@ -27,6 +28,8 @@ extension CategoryItem {
             return Constants.CategoryItemTitle.asymmetricCollectionView
         case .bottomSheet:
             return Constants.CategoryItemTitle.bottomSheet
+        case .tooltipView:
+            return Constants.CategoryItemTitle.tooltipView
         }
     }
     
@@ -39,7 +42,7 @@ extension CategoryItem {
         switch self {
         case .synchronisedCollectionView, .asymmetricCollectionView:
             return .uiKit
-        case .bottomSheet:
+        case .bottomSheet, .tooltipView:
             return .swiftUI
         }
     }

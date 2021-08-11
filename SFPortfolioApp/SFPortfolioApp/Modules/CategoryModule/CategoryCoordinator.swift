@@ -51,6 +51,13 @@ class CategoryCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    private func startTooltipDemoScene() {
+        let viewModel = TooltipDemoViewModel()
+        let view = TooltipDemoView(viewModel: viewModel)
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -76,6 +83,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startAsymmetricCollectionViewFlow()
         case .bottomSheet:
             startBottomSheetDemoScene()
+        case .tooltipView:
+            startTooltipDemoScene()
         }
     }
     
