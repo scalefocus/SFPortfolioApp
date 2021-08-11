@@ -70,6 +70,9 @@ struct Constants {
         /// Title of `Collection Views` category, containing different collection view elements.
         static let collectionView = "Collection Views"
         
+        /// Title of `Modal Views` category, containing different modal view elements.
+        static let modalView = "Modal Views"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -80,6 +83,9 @@ struct Constants {
         
         /// Title of `Asymmetric Collection View` category item.
         static let asymmetricCollectionView = "Asymmetric Collection View"
+        
+        /// Title of `Bottom Sheet View` category item.
+        static let bottomSheet = "Bottom Sheet"
         
     }
     

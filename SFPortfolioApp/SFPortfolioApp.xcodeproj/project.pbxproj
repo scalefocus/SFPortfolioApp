@@ -63,6 +63,10 @@
 		8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DC826C2C6280051993A /* ModalViewModifier.swift */; };
 		8C912DDC26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DDB26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift */; };
 		8C912DDF26C2E5720051993A /* ExecutionButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */; };
+		8C9C03C926C431FC0018FAFA /* BottomSheetDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03C826C431FC0018FAFA /* BottomSheetDemoView.swift */; };
+		8C9C03CC26C432070018FAFA /* BottomSheetDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03CB26C432070018FAFA /* BottomSheetDemoViewModel.swift */; };
+		8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03CE26C432F00018FAFA /* BaseHostingController.swift */; };
+		8C9C03D226C435340018FAFA /* View+BaseHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03D126C435340018FAFA /* View+BaseHostingController.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -173,6 +177,10 @@
 		8C912DC826C2C6280051993A /* ModalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModifier.swift; sourceTree = "<group>"; };
 		8C912DDB26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonWidthPreferenceKey.swift; sourceTree = "<group>"; };
 		8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonConfig.swift; sourceTree = "<group>"; };
+		8C9C03C826C431FC0018FAFA /* BottomSheetDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDemoView.swift; sourceTree = "<group>"; };
+		8C9C03CB26C432070018FAFA /* BottomSheetDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDemoViewModel.swift; sourceTree = "<group>"; };
+		8C9C03CE26C432F00018FAFA /* BaseHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHostingController.swift; sourceTree = "<group>"; };
+		8C9C03D126C435340018FAFA /* View+BaseHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BaseHostingController.swift"; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -247,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				32CDD9C5268B46ED008154AA /* AppCoordinator.swift */,
+				8C9C03CE26C432F00018FAFA /* BaseHostingController.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -441,6 +450,8 @@
 		8C5D9FFD26C42D7D00887134 /* BottomSheetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8C9C03C826C431FC0018FAFA /* BottomSheetDemoView.swift */,
+				8C9C03CB26C432070018FAFA /* BottomSheetDemoViewModel.swift */,
 			);
 			path = BottomSheetDemo;
 			sourceTree = "<group>";
@@ -554,6 +565,7 @@
 		8CA1FAFF26BBEB3E00AE58CD /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8C9C03D126C435340018FAFA /* View+BaseHostingController.swift */,
 				8CA1FB0826BBEBEA00AE58CD /* View+AnyView.swift */,
 				8C6879C926C2812B00D33186 /* View+Show.swift */,
 				8CA1FB0E26BBF9DE00AE58CD /* View+IsHidden.swift */,
@@ -600,8 +612,8 @@
 		9A236BDD26917AE2000E8643 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
+				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
 				8C0242A626BD4BBC0094029A /* InfoTag */,
 				8C72854426C2B623006F650C /* StatusBar */,
 				9AC4975126A6D5D5008A2A38 /* Constants.swift */,
@@ -920,6 +932,7 @@
 				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
 				9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */,
+				8C9C03C926C431FC0018FAFA /* BottomSheetDemoView.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
 				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
@@ -945,6 +958,8 @@
 				8C56BAF826B98B9100DBE86F /* TooltipHandler.swift in Sources */,
 				8C68796E26C159CD00D33186 /* SegmentedControlView.swift in Sources */,
 				8C68797326C15B0800D33186 /* SegmentedControlItemView.swift in Sources */,
+				8C9C03CC26C432070018FAFA /* BottomSheetDemoViewModel.swift in Sources */,
+				8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */,
 				8C68797D26C172FA00D33186 /* SegmentedControlViewConfig.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
 				32964C0126948C9000FC3B1A /* TabBarCollectionViewCell.swift in Sources */,
@@ -958,6 +973,7 @@
 				8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */,
 				8C56BB0426BBE02A00DBE86F /* View+TooltipApplicable.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
+				8C9C03D226C435340018FAFA /* View+BaseHostingController.swift in Sources */,
 				9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */,
 				9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,

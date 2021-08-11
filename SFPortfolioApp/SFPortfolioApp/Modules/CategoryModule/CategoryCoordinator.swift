@@ -44,6 +44,13 @@ class CategoryCoordinator: Coordinator {
         coordinator.start()
     }
     
+    private func startBottomSheetDemoScene() {
+        let viewModel = BottomSheetDemoViewModel()
+        let view = BottomSheetDemoView(viewModel: viewModel)
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -67,6 +74,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startSynchronisedCollectionViewScene()
         case .asymmetricCollectionView:
             startAsymmetricCollectionViewFlow()
+        case .bottomSheet:
+            startBottomSheetDemoScene()
         }
     }
     
