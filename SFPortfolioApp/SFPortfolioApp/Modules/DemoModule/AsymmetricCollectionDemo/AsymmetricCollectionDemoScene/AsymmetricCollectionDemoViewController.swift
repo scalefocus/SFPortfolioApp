@@ -46,6 +46,7 @@ class AsymmetricCollectionDemoViewController: BaseViewController {
     
     private func setupNavigationBar() {
         title = viewModel.title
+        navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.settings,
                                                             style: .plain,
                                                             target: self,

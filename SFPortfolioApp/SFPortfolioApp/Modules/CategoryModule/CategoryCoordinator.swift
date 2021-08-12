@@ -33,7 +33,8 @@ class CategoryCoordinator: Coordinator {
     private func startSynchronisedCollectionViewScene() {
         let configurator = SynchronisedCollectionViewsLayoutConfigurator(numberOfItemsInPortrait: 5)
         let iconsCollection = SyncronisedCollectionViewMockIcons.allCases
-        let viewModel = SynchronisedCollectionViewsViewModel(iconsCollection: iconsCollection)
+        let title = Constants.CategoryItemTitle.synchronisedCollectionView
+        let viewModel = SynchronisedCollectionViewsViewModel(title: title, iconsCollection: iconsCollection)
         let viewController = SynchronisedCollectionViewsViewController.create(viewModel: viewModel, with: configurator)
         navigationController.pushViewController(viewController, animated: true)
     }

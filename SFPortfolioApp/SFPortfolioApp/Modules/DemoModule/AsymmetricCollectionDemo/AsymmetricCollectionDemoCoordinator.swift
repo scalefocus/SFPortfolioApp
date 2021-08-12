@@ -19,7 +19,6 @@ class AsymmetricCollectionDemoCoordinator: Coordinator {
     
     // MARK: - Public Functions
     override func start() {
-        navigationController.navigationBar.prefersLargeTitles = false
         startAsymmetricDemoScene()
     }
     
@@ -28,7 +27,7 @@ class AsymmetricCollectionDemoCoordinator: Coordinator {
         let viewModel = AsymmetricCollectionDemoViewModel()
         viewModel.delegate = self
         let viewController = AsymmetricCollectionDemoViewController.create(viewModel: viewModel)
-        navigationController.pushViewController(viewController, animated: false)
+        navigationController.pushViewController(viewController, animated: true)
     }
     
 }

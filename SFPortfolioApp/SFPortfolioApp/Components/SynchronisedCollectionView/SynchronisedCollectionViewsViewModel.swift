@@ -13,10 +13,12 @@ class SynchronisedCollectionViewsViewModel: SynchronisedCollectionViewsViewModel
     typealias DetailsCollectionViewConfigurator = BaseViewConfigurator<DetailsCollectionViewCell>
     
     // MARK: - Public Properties
+    let title: String
     let iconsCollection: [SyncronisedCollectionViewMockIcons]
     
     // MARK: - Init
-    init(iconsCollection: [SyncronisedCollectionViewMockIcons]) {
+    init(title: String, iconsCollection: [SyncronisedCollectionViewMockIcons]) {
+        self.title = title
         self.iconsCollection = iconsCollection
     }
     

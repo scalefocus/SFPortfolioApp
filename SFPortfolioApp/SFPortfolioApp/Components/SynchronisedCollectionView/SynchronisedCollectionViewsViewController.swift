@@ -34,6 +34,7 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
         super.viewDidLoad()
         setupCollectionViewsLayout()
         setupIconSelector()
+        setupNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,6 +61,11 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
     }
     
     // MARK: - Private Functions
+    private func setupNavigationBar() {
+        title = viewModel.title
+        navigationItem.largeTitleDisplayMode = .never
+    }
+    
     private func setupCollectionViewsLayout() {
         iconsCollectionView.collectionViewLayout = SynchronisedCollectionViewsLayout(configurator: configurator)
         iconDetailsCollectionView.collectionViewLayout = SynchronisedCollectionViewsLayout(configurator: configurator)

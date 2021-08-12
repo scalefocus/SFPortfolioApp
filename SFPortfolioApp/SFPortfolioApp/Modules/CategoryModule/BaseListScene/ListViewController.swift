@@ -26,6 +26,12 @@ class ListViewController: BaseViewController {
         }
     }
     
+    // MARK: - Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     // MARK: - Private Functions
     /// Animates table view cell to appear from top or bottom of the table view depending of scrolling direction.
     /// - Parameters:
