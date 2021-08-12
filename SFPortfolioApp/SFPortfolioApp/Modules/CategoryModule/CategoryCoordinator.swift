@@ -74,6 +74,12 @@ class CategoryCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    private func startShimmerLoadingViewScene() {
+        let view = ShimmerLoadingDemoView()
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -105,6 +111,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startExecutionButtonDemoScene()
         case .customSegmentedControl:
             startCustomSegmentedControlDemoScene()
+        case .shimmerLoadingView:
+            startShimmerLoadingViewScene()
         }
     }
     

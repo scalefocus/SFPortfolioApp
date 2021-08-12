@@ -82,6 +82,9 @@ struct Constants {
         /// Title of `Tab Views` category, containing different tab view elements.
         static let tabViews = "Tab Views"
         
+        /// Title of `Loading Views` category, containing different loading view elements.
+        static let loadingViews = "Loading Views"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -104,6 +107,9 @@ struct Constants {
 
         /// Title of `Custom Segmented Control View` category item.
         static let customSegmentedControl = "Custom Segmented Control"
+        
+        /// Title of `Shimmer Loading View` category item.
+        static let shimmerLoadingView = "Shimmer Loading View"
         
     }
     

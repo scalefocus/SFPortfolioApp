@@ -72,6 +72,9 @@
 		8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */; };
 		8C9C03F626C48DFF0018FAFA /* SegmentedControlDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03F526C48DFF0018FAFA /* SegmentedControlDemoView.swift */; };
 		8C9C03FA26C48E060018FAFA /* SegmentedControlDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */; };
+		8C9C041126C4F9C20018FAFA /* ShimmerLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C041026C4F9C20018FAFA /* ShimmerLoadingView.swift */; };
+		8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C041326C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift */; };
+		8C9C042026C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9C041F26C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift */; };
 		8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */; };
 		8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */; };
 		8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */; };
@@ -196,6 +199,9 @@
 		8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarSetup.swift"; sourceTree = "<group>"; };
 		8C9C03F526C48DFF0018FAFA /* SegmentedControlDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoView.swift; sourceTree = "<group>"; };
 		8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoViewModel.swift; sourceTree = "<group>"; };
+		8C9C041026C4F9C20018FAFA /* ShimmerLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerLoadingView.swift; sourceTree = "<group>"; };
+		8C9C041326C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerLoadingViewConfig.swift; sourceTree = "<group>"; };
+		8C9C041F26C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerLoadingDemoView.swift; sourceTree = "<group>"; };
 		8C9F6C2126BD1D2800A599D0 /* TooltipIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipIdentity.swift; sourceTree = "<group>"; };
 		8CA1FAF726BBE4F100AE58CD /* TooltipElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipElementModifier.swift; sourceTree = "<group>"; };
 		8CA1FAFB26BBEB1B00AE58CD /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -524,6 +530,7 @@
 				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
 				8C68796C26C159A200D33186 /* CustomSegmentedControl */,
 				9A33035126C2AFDF00B7EC74 /* ExecutionButton */,
+				8C9C040E26C4F9A80018FAFA /* LoadingViews */,
 				8C912DC326C2C21F0051993A /* ModalView */,
 				8C4CF31F26B9846F00EAEABB /* Tooltip */,
 				32964BF42694859000FC3B1A /* SynchronisedCollectionView */,
@@ -577,6 +584,31 @@
 				8C9C03F926C48E050018FAFA /* SegmentedControlDemoViewModel.swift */,
 			);
 			path = CustomSegmentedControlDemo;
+			sourceTree = "<group>";
+		};
+		8C9C040E26C4F9A80018FAFA /* LoadingViews */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C040F26C4F9B50018FAFA /* ShimmerLoadingView */,
+			);
+			path = LoadingViews;
+			sourceTree = "<group>";
+		};
+		8C9C040F26C4F9B50018FAFA /* ShimmerLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C041026C4F9C20018FAFA /* ShimmerLoadingView.swift */,
+				8C9C041326C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift */,
+			);
+			path = ShimmerLoadingView;
+			sourceTree = "<group>";
+		};
+		8C9C041626C4FDCE0018FAFA /* ShimmerLoadingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8C9C041F26C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift */,
+			);
+			path = ShimmerLoadingDemo;
 			sourceTree = "<group>";
 		};
 		8CA1FAF626BBE4D600AE58CD /* TooltipElement */ = {
@@ -749,6 +781,7 @@
 				8C9C03F426C48D8C0018FAFA /* CustomSegmentedControlDemo */,
 				8C9C03DE26C454BF0018FAFA /* ExecutionButtonDemo */,
 				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
+				8C9C041626C4FDCE0018FAFA /* ShimmerLoadingDemo */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";
@@ -963,6 +996,7 @@
 				8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */,
 				9A02E45F26C3C902009B2BBC /* TooltipDemoViewModel.swift in Sources */,
 				8C68799626C254FD00D33186 /* BottomSheetView.swift in Sources */,
+				8C9C041126C4F9C20018FAFA /* ShimmerLoadingView.swift in Sources */,
 				8C6879C426C2691500D33186 /* CustomRoundedShape.swift in Sources */,
 				8C912DDC26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift in Sources */,
 				8C912DDF26C2E5720051993A /* ExecutionButtonConfig.swift in Sources */,
@@ -1033,6 +1067,7 @@
 				8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */,
 				8C68797D26C172FA00D33186 /* SegmentedControlViewConfig.swift in Sources */,
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
+				8C9C042026C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift in Sources */,
 				8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */,
 				32964C0126948C9000FC3B1A /* TabBarCollectionViewCell.swift in Sources */,
 				32964BFB2694876300FC3B1A /* SynchronisedCollectionViewsViewModel.swift in Sources */,
@@ -1056,6 +1091,7 @@
 				8CA1FB0926BBEBEA00AE58CD /* View+AnyView.swift in Sources */,
 				8CA1FB0626BBEBE000AE58CD /* View+ConditionalModifier.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
+				8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

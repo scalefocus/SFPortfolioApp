@@ -16,6 +16,7 @@ enum CategoryItem: CaseIterable {
     case executionButton
     case tooltipView
     case customSegmentedControl
+    case shimmerLoadingView
     
 }
 
@@ -36,6 +37,8 @@ extension CategoryItem {
             return Constants.CategoryItemTitle.tooltipView
         case .customSegmentedControl:
             return Constants.CategoryItemTitle.customSegmentedControl
+        case .shimmerLoadingView:
+            return Constants.CategoryItemTitle.shimmerLoadingView
         }
     }
     
@@ -46,9 +49,14 @@ extension CategoryItem {
     // MARK: - Private properties
     private var viewOriginTag: ViewOriginInfoTag {
         switch self {
-        case .synchronisedCollectionView, .asymmetricCollectionView:
+        case .synchronisedCollectionView,
+             .asymmetricCollectionView:
             return .uiKit
-        case .bottomSheet, .tooltipView, .executionButton, .customSegmentedControl:
+        case .bottomSheet,
+             .tooltipView,
+             .executionButton,
+             .customSegmentedControl,
+             .shimmerLoadingView:
             return .swiftUI
         }
     }
