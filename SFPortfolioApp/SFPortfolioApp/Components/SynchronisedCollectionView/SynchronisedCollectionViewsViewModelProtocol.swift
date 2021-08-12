@@ -9,6 +9,8 @@ import SFBaseKit
 
 protocol SynchronisedCollectionViewsViewModelProtocol: CoordinatableViewModel, BaseDataSource {
     
+    var title: String { get }
+    
     var iconsCollection: [SyncronisedCollectionViewMockIcons] { get }
     
     func viewConfigurator(at index: Int, in section: Int, for collectionView: String) -> ViewConfigurator?
