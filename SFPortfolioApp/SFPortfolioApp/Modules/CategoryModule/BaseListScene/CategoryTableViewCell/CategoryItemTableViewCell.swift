@@ -17,7 +17,7 @@ class CategoryItemTableViewCell: UIResizableTableViewCell {
     // MARK: - Public Functions
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        tagsStackView.accessibilityIdentifier = Constants.AccessibilityIdentifier.tagsStackView
+        setupAccessibility()
         containerView.shadowed()
     }
     
@@ -29,6 +29,11 @@ class CategoryItemTableViewCell: UIResizableTableViewCell {
             tagLabel.configureWith(tag)
             self?.tagsStackView.addArrangedSubview(tagLabel)
         }
+    }
+    
+    private func setupAccessibility() {
+        tagsStackView.isAccessibilityElement = true
+        tagsStackView.accessibilityIdentifier = Constants.AccessibilityIdentifier.tagsStackView
     }
     
 }
