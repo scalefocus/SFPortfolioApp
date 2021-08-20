@@ -97,7 +97,6 @@
 		9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */; };
 		9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */; };
 		9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */; };
-		9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */; };
 		9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */; };
 		9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */; };
 		9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */; };
@@ -129,16 +128,6 @@
 		9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */; };
 		9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9A83C6A226CA411000F38E4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32CDD9A3268B0C9C008154AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32CDD9AA268B0C9C008154AA;
-			remoteInfo = SFPortfolioApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3274B387268EF58200E1B445 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -235,8 +224,6 @@
 		9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Blurred.swift"; sourceTree = "<group>"; };
 		9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CustomImages.swift"; sourceTree = "<group>"; };
-		9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFPortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPortfolioAppUITests.swift; sourceTree = "<group>"; };
 		9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModel.swift; sourceTree = "<group>"; };
@@ -275,13 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C2CEE49E11672E9C55F26D7 /* Pods_SFPortfolioApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A83C69B26CA411000F38E4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				32CDD9AD268B0C9C008154AA /* SFPortfolioApp */,
-				9A83C69F26CA411000F38E4B /* SFPortfolioAppUITests */,
 				32CDD9AC268B0C9C008154AA /* Products */,
 				1BA6AE7787FB939017C8F66E /* Pods */,
 				C36A6F754EB363BA4393F08F /* Frameworks */,
@@ -383,7 +362,6 @@
 			isa = PBXGroup;
 			children = (
 				32CDD9AB268B0C9C008154AA /* SFPortfolioApp.app */,
-				9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -758,14 +736,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		9A83C69F26CA411000F38E4B /* SFPortfolioAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */,
-			);
-			path = SFPortfolioAppUITests;
-			sourceTree = "<group>";
-		};
 		9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,39 +884,17 @@
 			productReference = 32CDD9AB268B0C9C008154AA /* SFPortfolioApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9A83C69D26CA411000F38E4B /* SFPortfolioAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A83C6A626CA411000F38E4B /* Build configuration list for PBXNativeTarget "SFPortfolioAppUITests" */;
-			buildPhases = (
-				9A83C69A26CA411000F38E4B /* Sources */,
-				9A83C69B26CA411000F38E4B /* Frameworks */,
-				9A83C69C26CA411000F38E4B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9A83C6A326CA411000F38E4B /* PBXTargetDependency */,
-			);
-			name = SFPortfolioAppUITests;
-			productName = SFPortfolioAppUITests;
-			productReference = 9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		32CDD9A3268B0C9C008154AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					32CDD9AA268B0C9C008154AA = {
 						CreatedOnToolsVersion = 12.5;
-					};
-					9A83C69D26CA411000F38E4B = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 32CDD9AA268B0C9C008154AA;
 					};
 				};
 			};
@@ -964,7 +912,6 @@
 			projectRoot = "";
 			targets = (
 				32CDD9AA268B0C9C008154AA /* SFPortfolioApp */,
-				9A83C69D26CA411000F38E4B /* SFPortfolioAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -986,13 +933,6 @@
 				8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */,
 				9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */,
 				32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A83C69C26CA411000F38E4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,23 +1096,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A83C69A26CA411000F38E4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9A83C6A326CA411000F38E4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 32CDD9AA268B0C9C008154AA /* SFPortfolioApp */;
-			targetProxy = 9A83C6A226CA411000F38E4B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		32CDD9B9268B0C9F008154AA /* LaunchScreen.storyboard */ = {
@@ -1348,62 +1272,6 @@
 			};
 			name = Release;
 		};
-		9A83C6A426CA411000F38E4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.scalefocus.SFPortfolioAppUITests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SFPortfolioApp;
-			};
-			name = Debug;
-		};
-		9A83C6A526CA411000F38E4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.scalefocus.SFPortfolioAppUITests;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SFPortfolioApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1421,15 +1289,6 @@
 			buildConfigurations = (
 				32CDD9C0268B0C9F008154AA /* Debug */,
 				32CDD9C1268B0C9F008154AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9A83C6A626CA411000F38E4B /* Build configuration list for PBXNativeTarget "SFPortfolioAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A83C6A426CA411000F38E4B /* Debug */,
-				9A83C6A526CA411000F38E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
