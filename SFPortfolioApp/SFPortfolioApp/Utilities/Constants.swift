@@ -113,4 +113,12 @@ struct Constants {
         
     }
     
+    // MARK: - AccessibilityIdentifier
+    struct AccessibilityIdentifier {
+        
+        static let tagsStackView = "tagsStackView"
+        static let listTableViewBackground = "listTableViewBackground"
+        
+    }
+    
 }

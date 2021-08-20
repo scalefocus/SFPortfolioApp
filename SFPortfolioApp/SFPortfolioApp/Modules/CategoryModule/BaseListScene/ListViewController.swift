@@ -12,21 +12,18 @@ class ListViewController: BaseViewController {
     // MARK: - Properties
     private var isScrolledDown = true
     private var lastContentOffset: CGFloat = .zero
-    private var viewModel: ListViewModelProtocol! {
-        didSet {
-            title = viewModel.title
-        }
-    }
+    private var viewModel: ListViewModelProtocol!
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var categoriesTableView: UITableView! {
-        didSet {
-            categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
-            categoriesTableView.backgroundView = UIImageView(image: UIImage.background)
-        }
-    }
+    @IBOutlet private weak var categoriesTableView: UITableView!
     
     // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = viewModel.title
+        setupTableView()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -46,6 +43,14 @@ class ListViewController: BaseViewController {
             view.center.y = view.center.y - distanceToMove
             view.alpha = 1
         }
+    }
+    
+    private func setupTableView() {
+        categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
+        let backgroundView = UIImageView(image: UIImage.background)
+        backgroundView.isAccessibilityElement = true
+        backgroundView.accessibilityIdentifier = Constants.AccessibilityIdentifier.listTableViewBackground
+        categoriesTableView.backgroundView = backgroundView
     }
     
 }
