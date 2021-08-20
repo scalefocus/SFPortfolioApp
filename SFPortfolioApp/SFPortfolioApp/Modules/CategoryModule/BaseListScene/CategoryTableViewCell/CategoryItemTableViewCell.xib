@@ -83,6 +83,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="listTableViewCell">
+                <accessibilityTraits key="traits" none="YES"/>
+                <bool key="isElement" value="NO"/>
+            </accessibility>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="leftInsetInPortrait">
                     <real key="value" value="8"/>
