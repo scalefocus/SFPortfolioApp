@@ -107,6 +107,8 @@
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
 		9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713926A00E0400C61FD0 /* UITagLabel.swift */; };
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
+		9ABC1DCE26CFC5C3000B695B /* CategorySceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC1DCD26CFC5C3000B695B /* CategorySceneTests.swift */; };
+		9ABC1DD026CFC789000B695B /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC1DCF26CFC788000B695B /* AccessibilityIdentifiers.swift */; };
 		9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3C26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift */; };
 		9ABF4D4C26C157980046721A /* AsymmetricCollectionSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */; };
 		9ABF4D4D26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */; };
@@ -246,6 +248,8 @@
 		9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowed.swift"; sourceTree = "<group>"; };
 		9AA4713926A00E0400C61FD0 /* UITagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITagLabel.swift; sourceTree = "<group>"; };
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		9ABC1DCD26CFC5C3000B695B /* CategorySceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySceneTests.swift; sourceTree = "<group>"; };
+		9ABC1DCF26CFC788000B695B /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		9ABF4D3C26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionDemoCoordinator.swift; sourceTree = "<group>"; };
 		9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AsymmetricCollectionSettingsViewController.xib; sourceTree = "<group>"; };
 		9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -762,6 +766,8 @@
 			isa = PBXGroup;
 			children = (
 				9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */,
+				9ABC1DCC26CFC592000B695B /* CategoryModuleTests */,
+				9ABC1DCF26CFC788000B695B /* AccessibilityIdentifiers.swift */,
 			);
 			path = SFPortfolioAppUITests;
 			sourceTree = "<group>";
@@ -801,6 +807,14 @@
 				9A236BDC268F392E000E8643 /* Enums */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9ABC1DCC26CFC592000B695B /* CategoryModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ABC1DCD26CFC5C3000B695B /* CategorySceneTests.swift */,
+			);
+			path = CategoryModuleTests;
 			sourceTree = "<group>";
 		};
 		9ABF4D3A26C157980046721A /* DemoModule */ = {
@@ -1160,6 +1174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABC1DD026CFC789000B695B /* AccessibilityIdentifiers.swift in Sources */,
+				9ABC1DCE26CFC5C3000B695B /* CategorySceneTests.swift in Sources */,
 				9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1334,6 +1350,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = SFPortfolioApp/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
