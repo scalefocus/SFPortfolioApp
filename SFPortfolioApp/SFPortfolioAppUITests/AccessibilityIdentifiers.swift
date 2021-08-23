@@ -22,6 +22,7 @@ struct Accessibility {
         
         static let buttonsCell = "Buttons"
         static let categoriesNavigationBar = "Categories"
+        static let executionButtonCell = "Execution Button"
         
     }
     
