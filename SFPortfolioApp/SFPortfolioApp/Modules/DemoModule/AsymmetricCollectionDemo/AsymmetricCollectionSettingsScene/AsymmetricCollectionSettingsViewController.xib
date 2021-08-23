@@ -16,9 +16,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AsymmetricCollectionSettingsViewController" customModule="SFPortfolioApp" customModuleProvider="target">
             <connections>
+                <outlet property="cellPaddingLabel" destination="UQd-1e-pUE" id="2U2-lQ-oZj"/>
                 <outlet property="cellPaddingSlider" destination="8fx-mS-zMk" id="FzS-zB-VvW"/>
+                <outlet property="containerView" destination="6gC-k0-dxi" id="Pdy-EX-fFN"/>
+                <outlet property="numberOfCellsLabel" destination="eLN-iU-hE9" id="wSh-vf-nCc"/>
                 <outlet property="numberOfCellsSlider" destination="Rc4-oK-0nC" id="Sws-gh-eee"/>
+                <outlet property="sizeRatioLabel" destination="QxB-lU-wM4" id="ZgK-UT-vQy"/>
                 <outlet property="sizeRatioSlider" destination="67N-r8-RsE" id="DnK-CV-M32"/>
+                <outlet property="verticalOffsetLabel" destination="Dep-vR-lea" id="qQJ-Df-kje"/>
                 <outlet property="verticalOffsetSlider" destination="Da1-96-VdB" id="eLF-Sv-wmE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

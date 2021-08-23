@@ -116,13 +116,34 @@ struct Constants {
         
     }
     
-    // MARK: - AccessibilityIdentifier
-    struct AccessibilityIdentifier {
+    // MARK: - Identifier
+    struct Identifier {
         
+        // MARK: - CategoryModule
         static let listTableView = "listTableView"
         static let listTableViewBackground = "listTableViewBackground"
         static let logo = "logo"
         static let tagsStackView = "tagsStackView"
+        
+        // MARK: - AssymetricCollectionDemoScene
+        static let settingsButton = "settings"
+        static let asymmetricDemoCollectionView = "asymmetricCollectionView"
+        static let asymmetricDemoPlayer = "asymmetricDemoPlayer"
+        static let asymmetricDemoBackground = "asymmetricDemoBackground"
+        static let asymmetricDemoEnemy = "asymmetricDemoEnemy"
+        static let asymmetricDemoCollectionViewCell = "asymmetricCollectionViewCell"
+        
+        // MARK: - AssymetricCollectionSettingsScene
+        static let asymmetricSettingsView = "asymmetricSettingsView"
+        static let asymmetricSettingsContainerView = "containerView"
+        static let asymmetricSettingsNumberOfCellsLabel = "numberOfCellsLabel"
+        static let asymmetricSettingsNumberOfCellsSlider = "numberOfCellsSlider"
+        static let asymmetricSettingsCellPaddingLabel = "cellPaddingLabel"
+        static let asymmetricSettingsCellPaddingSlider = "cellPaddingSlider"
+        static let asymmetricSettingsSizeRatioLabel = "sizeRatioLabel"
+        static let asymmetricSettingsSizeRatioSlider = "sizeRatioSlider"
+        static let asymmetricSettingsOffsetLabel = "offsetLabel"
+        static let asymmetricSettingsOffsetSlider = "offsetSlider"
         
     }
     
