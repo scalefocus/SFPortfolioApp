@@ -48,15 +48,15 @@ class ListViewController: BaseViewController {
     }
     
     private func setupAccessibility() {
-        logoImageView.accessibilityIdentifier = Constants.AccessibilityIdentifier.logo
-        categoriesTableView.accessibilityIdentifier = Constants.AccessibilityIdentifier.listTableView
+        logoImageView.accessibilityIdentifier = Constants.Identifier.logo
+        categoriesTableView.accessibilityIdentifier = Constants.Identifier.listTableView
     }
     
     private func setupTableView() {
         categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
         let backgroundView = UIImageView(image: UIImage.background)
         backgroundView.isAccessibilityElement = true
-        backgroundView.accessibilityIdentifier = Constants.AccessibilityIdentifier.listTableViewBackground
+        backgroundView.accessibilityIdentifier = Constants.Identifier.listTableViewBackground
         categoriesTableView.backgroundView = backgroundView
     }
     

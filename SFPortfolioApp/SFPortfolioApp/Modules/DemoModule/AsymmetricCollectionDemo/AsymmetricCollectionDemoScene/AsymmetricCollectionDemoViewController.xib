@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AsymmetricCollectionDemoViewController" customModule="SFPortfolioApp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImageVIew" destination="cBQ-yt-x6T" id="WmJ-cK-LE1"/>
                 <outlet property="demoCollectionView" destination="lfq-bh-sLk" id="Dct-Td-uIt"/>
+                <outlet property="playerImageView" destination="QhD-9i-sMT" id="Jq5-r9-eeD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
