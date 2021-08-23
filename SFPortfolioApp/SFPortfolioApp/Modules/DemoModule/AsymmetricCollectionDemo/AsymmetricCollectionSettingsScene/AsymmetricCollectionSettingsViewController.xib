@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,12 +40,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of cells per row" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-iU-hE9">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="numberOfCellsLabel"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="2" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-oK-0nC">
                                             <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="numberOfCellsSlider"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="gQ3-FZ-HbC"/>
                                             </connections>
@@ -61,12 +64,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell padding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-1e-pUE">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellPaddingLabel"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="8fx-mS-zMk">
                                             <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="cellPaddingSlider"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="vip-Um-RUg"/>
                                             </connections>
@@ -83,12 +88,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height to Width size ratio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-lU-wM4">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="sizeRatioLabel"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.2" minValue="0.5" maxValue="1.8999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="67N-r8-RsE">
                                             <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="sizeRatioSlider"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="Kpk-nO-is6"/>
                                             </connections>
@@ -105,12 +112,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical offset ratio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dep-vR-lea">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="offsetLabel"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-96-VdB">
                                             <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="offsetSlider"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="vgo-0F-AnY"/>
                                             </connections>
@@ -126,6 +135,7 @@
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <accessibility key="accessibilityConfiguration" identifier="containerView"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="3sD-Cb-99d" secondAttribute="bottom" constant="20" symbolic="YES" id="BrS-z7-7km"/>
                         <constraint firstItem="3sD-Cb-99d" firstAttribute="leading" secondItem="6gC-k0-dxi" secondAttribute="leading" constant="20" symbolic="YES" id="KqY-Gv-emi"/>
@@ -142,6 +152,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="asymmetricSettingsView"/>
             <constraints>
                 <constraint firstItem="6gC-k0-dxi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6hw-EU-dgl"/>
                 <constraint firstItem="6gC-k0-dxi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HPq-bt-q3q"/>

@@ -23,10 +23,12 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cBQ-yt-x6T">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <accessibility key="accessibilityConfiguration" identifier="asymmetricDemoBackground"/>
                     <imageReference key="image" image="galaga-background"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-9i-sMT">
                     <rect key="frame" x="177" y="792" width="60" height="60"/>
+                    <accessibility key="accessibilityConfiguration" identifier="asymmetricDemoPlayer"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="LPc-0i-Cr8"/>
                         <constraint firstAttribute="width" secondItem="QhD-9i-sMT" secondAttribute="height" id="zLb-BZ-7k4"/>
@@ -42,6 +44,9 @@
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="asymmetricCollectionView"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="IES-UU-ICM"/>
                         <outlet property="delegate" destination="-1" id="qoN-DS-SW4"/>

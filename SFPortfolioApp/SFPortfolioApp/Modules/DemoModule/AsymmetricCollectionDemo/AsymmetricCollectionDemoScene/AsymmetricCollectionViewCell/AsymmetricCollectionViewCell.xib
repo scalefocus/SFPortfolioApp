@@ -21,6 +21,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4df-va-12D">
                         <rect key="frame" x="0.0" y="0.0" width="181" height="145"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="asymmetricDemoEnemy"/>
                         <imageReference key="image" image="galaga-enemy"/>
                     </imageView>
                 </subviews>
@@ -33,6 +34,9 @@
                 <constraint firstItem="4df-va-12D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sGD-5S-zqX"/>
             </constraints>
             <size key="customSize" width="181" height="145"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="asymmetricCollectionViewCell"/>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="226.81159420289856" y="170.42410714285714"/>
         </collectionViewCell>
     </objects>
