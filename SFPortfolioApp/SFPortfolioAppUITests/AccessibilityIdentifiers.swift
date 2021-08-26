@@ -16,6 +16,16 @@ struct Accessibility {
         static let logo = "logo"
         static let tagsStackView = "tagsStackView"
         
+        // MARK: - SynchronisedCollectionView
+        static let iconsCollectionView = "iconsCollectionView"
+        static let detailsCollectionView = "detailsCollectionView"
+        static let iconsCell = "iconsCell"
+        static let iconsCellImage = "iconsCellImage"
+        static let iconsCellLabel = "iconsCellLabel"
+        static let detailsCell = "detailsCell"
+        static let detailsCellLabel = "detailsCellLabel"
+        static let lineSelector = "lineSelector"
+        
     }
     
     struct Label {
@@ -23,6 +33,11 @@ struct Accessibility {
         static let buttonsCell = "Buttons"
         static let categoriesNavigationBar = "Categories"
         static let executionButtonCell = "Execution Button"
+        static let collectionViews = "Collection Views"
+        static let synchronisedCollectionView = "Synchronised Collection View"
+        static let fish = "Fish"
+        static let pizza = "Pizza"
+        static let desserts = "Desserts"
         
     }
     

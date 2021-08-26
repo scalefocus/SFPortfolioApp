@@ -118,6 +118,7 @@ struct Constants {
         
         static let tagsStackView = "tagsStackView"
         static let listTableViewBackground = "listTableViewBackground"
+        static let syncronisedCollectionViewSelector = "lineSelector"
         
     }
     

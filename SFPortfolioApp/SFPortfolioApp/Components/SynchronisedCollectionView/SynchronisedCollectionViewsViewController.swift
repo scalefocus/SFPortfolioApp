@@ -72,6 +72,7 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
     }
     
     private func setupIconSelector() {
+        line.accessibilityIdentifier = Constants.AccessibilityIdentifier.syncronisedCollectionViewSelector
         line.backgroundColor = .white
         updateIconSelectorWidth()
         line.frame.size.height = 3
