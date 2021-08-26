@@ -113,6 +113,8 @@
 		9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */; };
 		9A96785826D7BD50000B32D4 /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */; };
 		9A96785A26D7BD77000B32D4 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785926D7BD77000B32D4 /* SplashViewModel.swift */; };
+		9A9BCB2126DF675B002E77F7 /* SynchronisedCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BCB2026DF675B002E77F7 /* SynchronisedCollectionViewTests.swift */; };
+		9A9BCB2226DF6AD7002E77F7 /* SyncronisedCollectionViewMockIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BFC26948BC100FC3B1A /* SyncronisedCollectionViewMockIcons.swift */; };
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
 		9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713926A00E0400C61FD0 /* UITagLabel.swift */; };
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
@@ -261,6 +263,7 @@
 		9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelProtocol.swift; sourceTree = "<group>"; };
 		9A96785926D7BD77000B32D4 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		9A9BCB2026DF675B002E77F7 /* SynchronisedCollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronisedCollectionViewTests.swift; sourceTree = "<group>"; };
 		9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowed.swift"; sourceTree = "<group>"; };
 		9AA4713926A00E0400C61FD0 /* UITagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITagLabel.swift; sourceTree = "<group>"; };
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
@@ -772,6 +775,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4C92CB26DE3E4F00CC95E7 /* AsymmetricCollectionView */,
+				9A9BCB1F26DF675B002E77F7 /* SynchronisedCollectionView */,
 			);
 			path = DemoModuleTests;
 			sourceTree = "<group>";
@@ -852,6 +856,14 @@
 				9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */,
 			);
 			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		9A9BCB1F26DF675B002E77F7 /* SynchronisedCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BCB2026DF675B002E77F7 /* SynchronisedCollectionViewTests.swift */,
+			);
+			path = SynchronisedCollectionView;
 			sourceTree = "<group>";
 		};
 		9ABC1DCC26CFC592000B695B /* CategoryModuleTests */ = {
@@ -1226,11 +1238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4C92CE26DE3E4F00CC95E7 /* AsymmetricCollectionViewSettingsSceneTests.swift in Sources */,
+				9A9BCB2226DF6AD7002E77F7 /* SyncronisedCollectionViewMockIcons.swift in Sources */,
 				9A4C92C326DCF06700CC95E7 /* Constants.swift in Sources */,
 				9A96784426D36453000B32D4 /* CategoryItemsSceneTests.swift in Sources */,
 				9ABC1DCE26CFC5C3000B695B /* CategorySceneTests.swift in Sources */,
 				9A4C92CF26DE3E4F00CC95E7 /* AsymmetricCollectionViewDemoSceneTests.swift in Sources */,
 				9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */,
+				9A9BCB2126DF675B002E77F7 /* SynchronisedCollectionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
