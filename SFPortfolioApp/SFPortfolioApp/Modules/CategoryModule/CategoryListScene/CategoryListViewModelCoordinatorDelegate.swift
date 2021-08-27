@@ -9,8 +9,8 @@ import Foundation
 
 protocol CategoryListViewModelCoordinatorDelegate: AnyObject {
     
-    /// Navigate to CategoryItems scene.
-    /// - Parameter category: <#category description#>
+    /// Navigate to `CategoryItemsScene`.
+    /// - Parameter category: Selected `Category`
     func didFinishCategorySceneWithSelection(of category: Category)
     
 }

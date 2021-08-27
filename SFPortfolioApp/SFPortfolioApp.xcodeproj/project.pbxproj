@@ -106,6 +106,11 @@
 		9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CCA6268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift */; };
 		9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */; };
 		9A96784426D36453000B32D4 /* CategoryItemsSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96784326D36453000B32D4 /* CategoryItemsSceneTests.swift */; };
+		9A96785326D790EC000B32D4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785126D790EC000B32D4 /* SplashViewController.swift */; };
+		9A96785426D790EC000B32D4 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A96785226D790EC000B32D4 /* SplashViewController.xib */; };
+		9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */; };
+		9A96785826D7BD50000B32D4 /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */; };
+		9A96785A26D7BD77000B32D4 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785926D7BD77000B32D4 /* SplashViewModel.swift */; };
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
 		9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713926A00E0400C61FD0 /* UITagLabel.swift */; };
 		9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */; };
@@ -247,6 +252,11 @@
 		9A92CCA6268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		9A96784326D36453000B32D4 /* CategoryItemsSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsSceneTests.swift; sourceTree = "<group>"; };
+		9A96785126D790EC000B32D4 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		9A96785226D790EC000B32D4 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A96785926D7BD77000B32D4 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowed.swift"; sourceTree = "<group>"; };
 		9AA4713926A00E0400C61FD0 /* UITagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITagLabel.swift; sourceTree = "<group>"; };
 		9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
@@ -795,6 +805,7 @@
 		9A92CC99268C91C000B7A80E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A96785026D790BF000B32D4 /* SplashScene */,
 				32CDD9FC268CC255008154AA /* CategoryModule */,
 				9ABF4D3A26C157980046721A /* DemoModule */,
 			);
@@ -807,6 +818,18 @@
 				9A236BDC268F392E000E8643 /* Enums */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9A96785026D790BF000B32D4 /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				9A96785126D790EC000B32D4 /* SplashViewController.swift */,
+				9A96785226D790EC000B32D4 /* SplashViewController.xib */,
+				9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */,
+				9A96785926D7BD77000B32D4 /* SplashViewModel.swift */,
+				9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */,
+			);
+			path = SplashScene;
 			sourceTree = "<group>";
 		};
 		9ABC1DCC26CFC592000B695B /* CategoryModuleTests */ = {
@@ -990,6 +1013,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32964C0226948C9000FC3B1A /* TabBarCollectionViewCell.xib in Resources */,
+				9A96785426D790EC000B32D4 /* SplashViewController.xib in Resources */,
 				32964BF92694874900FC3B1A /* SynchronisedCollectionViewsViewController.xib in Resources */,
 				32964C0D26959CBB00FC3B1A /* DetailsCollectionViewCell.xib in Resources */,
 				9ABF4D4C26C157980046721A /* AsymmetricCollectionSettingsViewController.xib in Resources */,
@@ -1061,6 +1085,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C912DC526C2C2480051993A /* ModalView.swift in Sources */,
+				9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */,
+				9A96785826D7BD50000B32D4 /* SplashViewModelProtocol.swift in Sources */,
 				3274B388268EF58200E1B445 /* ListViewController.swift in Sources */,
 				8C6879CA26C2812B00D33186 /* View+Show.swift in Sources */,
 				8C4CF32526B9854400EAEABB /* TooltipConfig.swift in Sources */,
@@ -1145,6 +1171,7 @@
 				8C9C042026C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift in Sources */,
 				8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */,
 				32964C0126948C9000FC3B1A /* TabBarCollectionViewCell.swift in Sources */,
+				9A96785A26D7BD77000B32D4 /* SplashViewModel.swift in Sources */,
 				32964BFB2694876300FC3B1A /* SynchronisedCollectionViewsViewModel.swift in Sources */,
 				32964BFD26948BC100FC3B1A /* SyncronisedCollectionViewMockIcons.swift in Sources */,
 				32C92B8426A5720700245BA8 /* SynchronisedCollectionViewsLayout.swift in Sources */,
@@ -1162,6 +1189,7 @@
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */,
+				9A96785326D790EC000B32D4 /* SplashViewController.swift in Sources */,
 				9A33035726C2B7D100B7EC74 /* ExecutionButton.swift in Sources */,
 				8CA1FB0926BBEBEA00AE58CD /* View+AnyView.swift in Sources */,
 				8CA1FB0626BBEBE000AE58CD /* View+ConditionalModifier.swift in Sources */,
