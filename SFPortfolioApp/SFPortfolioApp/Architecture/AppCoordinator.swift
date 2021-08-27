@@ -17,17 +17,38 @@ class AppCoordinator: Coordinator {
     init(window: UIWindow, navigationController: UINavigationController = UINavigationController()) {
         self.window = window
         self.navigationController = navigationController
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
         navigationController.setupNavigationBarAppearance()
+        window.makeKeyAndVisible()
     }
     
     // MARK: - Public Functions
-    /// Should start the coordinator of next scene and add it as child coordinator to the current one.
     override func start() {
+        startSplashScene()
+    }
+    
+    // MARK: - Private Functions
+    /// Should start the coordinator of next scene and add it as child coordinator to the current one.
+    private func startCategoryModule() {
+        window.rootViewController = navigationController
         let categoryCoordinator = CategoryCoordinator(navigationController: navigationController)
         addChildCoordinator(categoryCoordinator)
         categoryCoordinator.start()
+    }
+    
+    private func startSplashScene() {
+        let viewModel = SplashViewModel()
+        viewModel.delegate = self
+        let splashViewController = SplashViewController.create(viewModel: viewModel)
+        window.rootViewController = splashViewController
+    }
+    
+}
+
+// MARK: - SplashViewModelCoordinatorDelegate
+extension AppCoordinator: SplashViewModelCoordinatorDelegate {
+    
+    func didFinishSplashScene() {
+        startCategoryModule()
     }
     
 }
