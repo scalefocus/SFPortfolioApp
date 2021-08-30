@@ -104,7 +104,7 @@ struct Constants {
         
         /// Title of `Execution Button` category item.
         static let executionButton = "Execution Button"
-
+        
         /// Title of `Custom Segmented Control View` category item.
         static let customSegmentedControl = "Custom Segmented Control"
         
@@ -116,8 +116,10 @@ struct Constants {
     // MARK: - AccessibilityIdentifier
     struct AccessibilityIdentifier {
         
-        static let tagsStackView = "tagsStackView"
+        static let listTableView = "listTableView"
         static let listTableViewBackground = "listTableViewBackground"
+        static let logo = "logo"
+        static let tagsStackView = "tagsStackView"
         
     }
     

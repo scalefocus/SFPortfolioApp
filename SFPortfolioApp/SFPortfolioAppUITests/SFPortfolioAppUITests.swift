@@ -8,7 +8,7 @@
 import XCTest
 
 class SFPortfolioAppUITests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
