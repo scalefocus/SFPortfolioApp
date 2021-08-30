@@ -16,12 +16,14 @@ class ListViewController: BaseViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private weak var categoriesTableView: UITableView!
+    @IBOutlet private weak var logoImageView: UIImageView!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.title
         setupTableView()
+        setupAccessibility()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +45,11 @@ class ListViewController: BaseViewController {
             view.center.y = view.center.y - distanceToMove
             view.alpha = 1
         }
+    }
+    
+    private func setupAccessibility() {
+        logoImageView.accessibilityIdentifier = Constants.AccessibilityIdentifier.logo
+        categoriesTableView.accessibilityIdentifier = Constants.AccessibilityIdentifier.listTableView
     }
     
     private func setupTableView() {

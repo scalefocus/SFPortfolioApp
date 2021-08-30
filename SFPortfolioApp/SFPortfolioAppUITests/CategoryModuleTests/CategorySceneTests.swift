@@ -14,15 +14,22 @@ class CategorySceneTests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
         app = XCUIApplication()
-        app.launch()
+    }
+    
+    override func tearDownWithError() throws {
+        app.terminate()
+        super.tearDown()
     }
     
     func testCategorySceneShowsOnLaunch() {
         // Given
-        let navigationBar = app.navigationBars[Accessibility.Label.categoriesNavigationBar]
-        let scaleFocusLogo = app.images[Accessibility.Identifier.logo]
-        let categoriesTableView = app.tables[Accessibility.Identifier.listTableView]
+        let navigationBar = app.navigationBars[Constants.CategoryList.title]
+        let scaleFocusLogo = app.images[Constants.AccessibilityIdentifier.logo]
+        let categoriesTableView = app.tables[Constants.AccessibilityIdentifier.listTableView]
         let categoryCell = app.cells.element(boundBy: 0)
+        
+        // When
+        app.launch()
         
         // Then
         XCTAssert(scaleFocusLogo.exists)
@@ -33,7 +40,10 @@ class CategorySceneTests: XCTestCase {
     
     func testCategoriesTableViewBackground() {
         // Given
-        let categoriesTableView = app.images[Accessibility.Identifier.listTableViewBackground]
+        let categoriesTableView = app.images[Constants.AccessibilityIdentifier.listTableViewBackground]
+        
+        // When
+        app.launch()
         
         // Then
         XCTAssert(categoriesTableView.exists)
@@ -42,22 +52,26 @@ class CategorySceneTests: XCTestCase {
     func testCategoryTableViewCellAppearance() {
         // Given
         let buttonsCell = app
-            .tables[Accessibility.Identifier.listTableView]
-            .staticTexts[Accessibility.Label.buttonsCell]
+            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .staticTexts[Constants.CategoryTitle.buttons]
+        
+        // When
+        app.launch()
         
         // Then
-        XCTAssertFalse(app.otherElements[Accessibility.Identifier.tagsStackView].isHittable)
-        XCTAssertEqual(buttonsCell.label, Accessibility.Label.buttonsCell)
+        XCTAssertFalse(app.otherElements[Constants.AccessibilityIdentifier.tagsStackView].isHittable)
+        XCTAssertEqual(buttonsCell.label, Constants.CategoryTitle.buttons)
     }
     
     func testDidTapTableViewCellFinishesScene() {
         // Given
-        let buttonsCategoryNavigationBar = app.navigationBars[Accessibility.Label.buttonsCell]
+        let buttonsCategoryNavigationBar = app.navigationBars[Constants.CategoryTitle.buttons]
         let buttonsCell = app
-            .tables[Accessibility.Identifier.listTableView]
-            .staticTexts[Accessibility.Label.buttonsCell]
+            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .staticTexts[Constants.CategoryTitle.buttons]
         
         // When
+        app.launch()
         buttonsCell.tap()
         
         // Then
