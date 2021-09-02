@@ -35,6 +35,7 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
         setupCollectionViewsLayout()
         setupIconSelector()
         setupNavigationBar()
+        setupAccessibility()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -121,6 +122,12 @@ class SynchronisedCollectionViewsViewController: BaseViewController {
             iconsCollectionView.collectionViewLayout.invalidateLayout()
             iconsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
+    }
+    
+    private func setupAccessibility() {
+        iconsCollectionView.accessibilityIdentifier = Constants.Identifier.iconsCollectionView
+        iconDetailsCollectionView.accessibilityIdentifier = Constants.Identifier.detailsCollectionView
+        line.accessibilityIdentifier = Constants.Identifier.lineSelector
     }
 
 }

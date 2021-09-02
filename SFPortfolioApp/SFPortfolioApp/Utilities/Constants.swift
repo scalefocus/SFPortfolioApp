@@ -145,6 +145,16 @@ struct Constants {
         static let asymmetricSettingsOffsetLabel = "offsetLabel"
         static let asymmetricSettingsOffsetSlider = "offsetSlider"
         
+        // MARK: - SynchronisedCollectionView
+        static let iconsCollectionView = "iconsCollectionView"
+        static let detailsCollectionView = "detailsCollectionView"
+        static let iconsCell = "iconsCell"
+        static let iconsCellImage = "iconsCellImage"
+        static let iconsCellLabel = "iconsCellLabel"
+        static let detailsCell = "detailsCell"
+        static let detailsCellLabel = "detailsCellLabel"
+        static let lineSelector = "lineSelector"
+        
     }
     
 }
