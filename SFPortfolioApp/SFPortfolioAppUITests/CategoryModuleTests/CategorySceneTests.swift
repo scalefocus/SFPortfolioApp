@@ -24,8 +24,8 @@ class CategorySceneTests: XCTestCase {
     func testCategorySceneShowsOnLaunch() {
         // Given
         let navigationBar = app.navigationBars[Constants.CategoryList.title]
-        let scaleFocusLogo = app.images[Constants.AccessibilityIdentifier.logo]
-        let categoriesTableView = app.tables[Constants.AccessibilityIdentifier.listTableView]
+        let scaleFocusLogo = app.images[Constants.Identifier.logo]
+        let categoriesTableView = app.tables[Constants.Identifier.listTableView]
         let categoryCell = app.cells.element(boundBy: 0)
         
         // When
@@ -40,7 +40,7 @@ class CategorySceneTests: XCTestCase {
     
     func testCategoriesTableViewBackground() {
         // Given
-        let categoriesTableView = app.images[Constants.AccessibilityIdentifier.listTableViewBackground]
+        let categoriesTableView = app.images[Constants.Identifier.listTableViewBackground]
         
         // When
         app.launch()
@@ -52,14 +52,14 @@ class CategorySceneTests: XCTestCase {
     func testCategoryTableViewCellAppearance() {
         // Given
         let buttonsCell = app
-            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryTitle.buttons]
         
         // When
         app.launch()
         
         // Then
-        XCTAssertFalse(app.otherElements[Constants.AccessibilityIdentifier.tagsStackView].isHittable)
+        XCTAssertFalse(app.otherElements[Constants.Identifier.tagsStackView].isHittable)
         XCTAssertEqual(buttonsCell.label, Constants.CategoryTitle.buttons)
     }
     
@@ -67,7 +67,7 @@ class CategorySceneTests: XCTestCase {
         // Given
         let buttonsCategoryNavigationBar = app.navigationBars[Constants.CategoryTitle.buttons]
         let buttonsCell = app
-            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryTitle.buttons]
         
         // When

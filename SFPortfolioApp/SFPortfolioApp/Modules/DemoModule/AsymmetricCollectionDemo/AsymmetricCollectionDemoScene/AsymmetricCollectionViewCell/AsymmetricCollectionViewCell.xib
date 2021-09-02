@@ -33,6 +33,9 @@
                 <constraint firstItem="4df-va-12D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sGD-5S-zqX"/>
             </constraints>
             <size key="customSize" width="181" height="145"/>
+            <connections>
+                <outlet property="enemyImageView" destination="4df-va-12D" id="o3r-k3-hAf"/>
+            </connections>
             <point key="canvasLocation" x="226.81159420289856" y="170.42410714285714"/>
         </collectionViewCell>
     </objects>

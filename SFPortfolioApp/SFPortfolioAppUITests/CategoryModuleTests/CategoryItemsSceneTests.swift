@@ -26,8 +26,8 @@ class CategoryItemsSceneTests: XCTestCase {
         // Given
         let buttonsNavigationBar = app.navigationBars[Constants.CategoryTitle.buttons]
         let backButton = buttonsNavigationBar.buttons[Constants.CategoryList.title]
-        let scaleFocusLogo = app.images[Constants.AccessibilityIdentifier.logo]
-        let categoryItemsTableView = app.tables[Constants.AccessibilityIdentifier.listTableView]
+        let scaleFocusLogo = app.images[Constants.Identifier.logo]
+        let categoryItemsTableView = app.tables[Constants.Identifier.listTableView]
         let categoryCell = app.cells.element(boundBy: 0)
         
         // When
@@ -43,7 +43,7 @@ class CategoryItemsSceneTests: XCTestCase {
     
     func testCategoryItemsTableViewBackground() {
         // Given
-        let categoryItemsBackground = app.images[Constants.AccessibilityIdentifier.listTableViewBackground]
+        let categoryItemsBackground = app.images[Constants.Identifier.listTableViewBackground]
         
         // When
         navigateToCategoryItemsScene()
@@ -55,14 +55,14 @@ class CategoryItemsSceneTests: XCTestCase {
     func testCategoryItemsTableViewCellAppearance() {
         // Given
         let executionButtonsCell = app
-            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryItemTitle.executionButton]
         
         // When
         navigateToCategoryItemsScene()
         
         // Then
-        XCTAssert(app.otherElements[Constants.AccessibilityIdentifier.tagsStackView].isHittable)
+        XCTAssert(app.otherElements[Constants.Identifier.tagsStackView].isHittable)
         XCTAssert(executionButtonsCell.exists)
     }
     
@@ -70,7 +70,7 @@ class CategoryItemsSceneTests: XCTestCase {
         // Given
         let executionButtonNavigationBar = app.navigationBars[Constants.CategoryItemTitle.executionButton]
         let executionButtonCell = app
-            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryItemTitle.executionButton]
         
         // When
@@ -98,7 +98,7 @@ class CategoryItemsSceneTests: XCTestCase {
     // MARK: - Private Functions
     private func navigateToCategoryItemsScene() {
         let buttonsCell = app
-            .tables[Constants.AccessibilityIdentifier.listTableView]
+            .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryTitle.buttons]
         buttonsCell.tap()
     }

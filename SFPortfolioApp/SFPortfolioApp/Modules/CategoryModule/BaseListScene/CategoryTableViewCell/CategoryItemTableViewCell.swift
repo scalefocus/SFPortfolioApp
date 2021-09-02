@@ -33,7 +33,7 @@ class CategoryItemTableViewCell: UIResizableTableViewCell {
     
     private func setupAccessibility() {
         tagsStackView.isAccessibilityElement = true
-        tagsStackView.accessibilityIdentifier = Constants.AccessibilityIdentifier.tagsStackView
+        tagsStackView.accessibilityIdentifier = Constants.Identifier.tagsStackView
     }
     
 }
