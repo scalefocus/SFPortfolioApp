@@ -11,7 +11,6 @@
 		3274B388268EF58200E1B445 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B387268EF58200E1B445 /* ListViewController.swift */; };
 		3274B38A268EF59E00E1B445 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3274B389268EF59E00E1B445 /* ListViewController.xib */; };
 		32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BE82692E0EC00FC3B1A /* ListViewModelProtocol.swift */; };
-		32964BEB2692EECC00FC3B1A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEA2692EECC00FC3B1A /* Category.swift */; };
 		32964BEF2693205900FC3B1A /* CategoryListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEE2693205800FC3B1A /* CategoryListViewModelCoordinatorDelegate.swift */; };
 		32964BF12693453D00FC3B1A /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BF02693453C00FC3B1A /* CategoryListViewModel.swift */; };
 		32964BF82694874900FC3B1A /* SynchronisedCollectionViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BF62694874900FC3B1A /* SynchronisedCollectionViewsViewController.swift */; };
@@ -113,6 +112,7 @@
 		9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785526D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift */; };
 		9A96785826D7BD50000B32D4 /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785726D7BD50000B32D4 /* SplashViewModelProtocol.swift */; };
 		9A96785A26D7BD77000B32D4 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96785926D7BD77000B32D4 /* SplashViewModel.swift */; };
+		9A96DD5826E1FF190094DCF2 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BEA2692EECC00FC3B1A /* Category.swift */; };
 		9A9BCB2126DF675B002E77F7 /* SynchronisedCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BCB2026DF675B002E77F7 /* SynchronisedCollectionViewTests.swift */; };
 		9A9BCB2226DF6AD7002E77F7 /* SyncronisedCollectionViewMockIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BFC26948BC100FC3B1A /* SyncronisedCollectionViewMockIcons.swift */; };
 		9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */; };
@@ -1118,6 +1118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A96DD5826E1FF190094DCF2 /* Category.swift in Sources */,
 				8C912DC526C2C2480051993A /* ModalView.swift in Sources */,
 				9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */,
 				9A96785826D7BD50000B32D4 /* SplashViewModelProtocol.swift in Sources */,
@@ -1135,13 +1136,11 @@
 				8C6879C426C2691500D33186 /* CustomRoundedShape.swift in Sources */,
 				8C912DDC26C2E4B70051993A /* ExecutionButtonWidthPreferenceKey.swift in Sources */,
 				8C912DDF26C2E5720051993A /* ExecutionButtonConfig.swift in Sources */,
-				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
 				8C6879C726C269DE00D33186 /* View+CornerRadius.swift in Sources */,
 				32964C132695D92C00FC3B1A /* SynchronisedCollectionViews.swift in Sources */,
 				32C92B8526A5720700245BA8 /* SynchronisedCollectionViewsLayoutConfigurator.swift in Sources */,
 				32964C0C26959CBB00FC3B1A /* DetailsCollectionViewCell.swift in Sources */,
 				32964BF82694874900FC3B1A /* SynchronisedCollectionViewsViewController.swift in Sources */,
-				32964BEB2692EECC00FC3B1A /* Category.swift in Sources */,
 				32964C082694ECBF00FC3B1A /* SynchronisedCollectionViewsViewModelProtocol.swift in Sources */,
 				9ABF4D4E26C157990046721A /* AsymmetricCollectionSettingsViewController.swift in Sources */,
 				8CA1FB1426BC050F00AE58CD /* ArrowShape.swift in Sources */,
