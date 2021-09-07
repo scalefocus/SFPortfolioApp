@@ -19,7 +19,7 @@ struct Constants {
         static let primaryFontName = "OpenSans-Regular"
         
         /// Duration of the `SplashScene` in seconds.
-        static let splashDuration: CGFloat = 2
+        static let splashDuration: Double = 2
         
         /// Default font size.
         static let defaultFontSize: CGFloat = 20
