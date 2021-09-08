@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qMn-6I-6Xc">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="822"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="separatorInset" minX="50" minY="0.0" maxX="50" maxY="0.0"/>
                     <connections>
@@ -47,7 +47,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="barBackground"/>
             <constraints>
-                <constraint firstItem="qMn-6I-6Xc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bvz-ob-Rh4"/>
+                <constraint firstItem="qMn-6I-6Xc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bvz-ob-Rh4"/>
                 <constraint firstItem="0ch-pe-fYS" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Oci-D2-EeE"/>
                 <constraint firstItem="qMn-6I-6Xc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P07-7v-SHX"/>
                 <constraint firstItem="qMn-6I-6Xc" firstAttribute="bottom" secondItem="0ch-pe-fYS" secondAttribute="top" id="XN9-fd-ZKx"/>
