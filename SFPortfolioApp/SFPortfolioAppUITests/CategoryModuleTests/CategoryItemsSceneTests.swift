@@ -100,7 +100,9 @@ class CategoryItemsSceneTests: XCTestCase {
         let buttonsCell = app
             .tables[Constants.Identifier.listTableView]
             .staticTexts[Constants.CategoryTitle.buttons]
-        buttonsCell.tap()
+        _ = buttonsCell.waitForExistence(timeout: Constants.General.splashDuration)
+            ? buttonsCell.tap()
+            : XCTFail()
     }
     
 }

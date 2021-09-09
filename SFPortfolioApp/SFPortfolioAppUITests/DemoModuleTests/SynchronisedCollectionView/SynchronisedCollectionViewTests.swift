@@ -152,10 +152,13 @@ class SynchronisedCollectionViewTests: XCTestCase {
     
     private func navigateToSynchronisedCollectionDemoScene() {
         let listTableView = app.tables[Constants.Identifier.listTableView]
-        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
-        let synchronisedCollection = listTableView.staticTexts[Constants.CategoryItemTitle.synchronisedCollectionView]
         
-        collectionViewsButton.tap()
+        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
+        _ = collectionViewsButton.waitForExistence(timeout: Constants.General.splashDuration)
+            ? collectionViewsButton.tap()
+            : XCTFail()
+        
+        let synchronisedCollection = listTableView.staticTexts[Constants.CategoryItemTitle.synchronisedCollectionView]
         synchronisedCollection.tap()
     }
     
