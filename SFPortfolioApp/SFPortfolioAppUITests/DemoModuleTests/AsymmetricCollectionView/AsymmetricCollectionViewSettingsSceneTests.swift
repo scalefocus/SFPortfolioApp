@@ -94,12 +94,16 @@ class AsymmetricCollectionViewSettingsSceneTests: XCTestCase {
     
     private func navigateToAsymmetricCollectionViewSettingsScene() {
         let listTableView = app.tables[Constants.Identifier.listTableView]
-        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
-        let settingsButton = demoSceneNavigationBar.buttons[Constants.Identifier.settingsButton]
-        let asymmetricCollectionButton = listTableView.staticTexts[Constants.CategoryItemTitle.asymmetricCollectionView]
         
-        collectionViewsButton.tap()
+        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
+        _ = collectionViewsButton.waitForExistence(timeout: Constants.General.splashDuration)
+            ? collectionViewsButton.tap()
+            : XCTFail()
+        
+        let asymmetricCollectionButton = listTableView.staticTexts[Constants.CategoryItemTitle.asymmetricCollectionView]
         asymmetricCollectionButton.tap()
+
+        let settingsButton = demoSceneNavigationBar.buttons[Constants.Identifier.settingsButton]
         settingsButton.tap()
     }
     

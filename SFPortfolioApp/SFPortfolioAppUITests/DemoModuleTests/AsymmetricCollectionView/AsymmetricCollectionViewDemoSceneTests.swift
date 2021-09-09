@@ -61,7 +61,7 @@ class AsymmetricCollectionViewDemoSceneTests: XCTestCase {
             .matching(identifier: Constants.Identifier.asymmetricDemoCollectionViewCell)
             .element
         let enemyImageView = collectionViewCell.images[Constants.Identifier.asymmetricDemoEnemy]
-       
+        
         // When
         navigateToAsymmetricCollectionViewDemoScene()
         
@@ -69,7 +69,7 @@ class AsymmetricCollectionViewDemoSceneTests: XCTestCase {
         XCTAssert(collectionViewCell.exists)
         XCTAssert(enemyImageView.exists)
     }
-
+    
     func testDidTapSettingsButtonFinishesScene() {
         // Given
         let settingsButton = navigationBar.buttons[Constants.Identifier.settingsButton]
@@ -77,7 +77,7 @@ class AsymmetricCollectionViewDemoSceneTests: XCTestCase {
         // When
         navigateToAsymmetricCollectionViewDemoScene()
         settingsButton.tap()
-
+        
         // Then
         XCTAssertFalse(navigationBar.isHittable)
     }
@@ -89,7 +89,7 @@ class AsymmetricCollectionViewDemoSceneTests: XCTestCase {
         // When
         navigateToAsymmetricCollectionViewDemoScene()
         backButton.tap()
-
+        
         // Then
         XCTAssertFalse(navigationBar.exists)
     }
@@ -102,10 +102,13 @@ class AsymmetricCollectionViewDemoSceneTests: XCTestCase {
     
     private func navigateToAsymmetricCollectionViewDemoScene() {
         let listTableView = app.tables[Constants.Identifier.listTableView]
-        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
-        let asymmetricCollectionButton = listTableView.staticTexts[Constants.CategoryItemTitle.asymmetricCollectionView]
         
-        collectionViewsButton.tap()
+        let collectionViewsButton = listTableView.staticTexts[Constants.CategoryTitle.collectionViews]
+        _ = collectionViewsButton.waitForExistence(timeout: Constants.General.splashDuration)
+            ? collectionViewsButton.tap()
+            : XCTFail()
+        
+        let asymmetricCollectionButton = listTableView.staticTexts[Constants.CategoryItemTitle.asymmetricCollectionView]
         asymmetricCollectionButton.tap()
     }
     
