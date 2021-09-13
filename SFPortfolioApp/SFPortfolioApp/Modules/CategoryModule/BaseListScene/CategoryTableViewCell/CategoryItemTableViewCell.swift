@@ -21,6 +21,11 @@ class CategoryItemTableViewCell: UIResizableTableViewCell {
         containerView.shadowed()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        tagsStackView.removeArrangedSubviews()
+    }
+    
     // MARK: - Private Functions
     private func addTags(_ tags: [InfoTagProtocol]) {
         tags.forEach { [weak self] tag in
