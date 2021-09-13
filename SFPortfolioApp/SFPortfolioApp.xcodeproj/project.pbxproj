@@ -98,7 +98,6 @@
 		9A4E1D9E26AE9ED500DEEE4F /* UIResizableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E1D9D26AE9ED500DEEE4F /* UIResizableTableViewCell.swift */; };
 		9A736C8926EA443200FBAA3A /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A736C8826EA443200FBAA3A /* UIStackView+Extensions.swift */; };
 		9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */; };
-		9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */; };
 		9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */; };
 		9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */; };
 		9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */; };
@@ -249,7 +248,6 @@
 		9A4E1D9D26AE9ED500DEEE4F /* UIResizableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResizableTableViewCell.swift; sourceTree = "<group>"; };
 		9A736C8826EA443200FBAA3A /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Blurred.swift"; sourceTree = "<group>"; };
 		9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CustomImages.swift"; sourceTree = "<group>"; };
 		9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFPortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPortfolioAppUITests.swift; sourceTree = "<group>"; };
@@ -674,7 +672,6 @@
 				9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */,
 				9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */,
 				9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */,
-				9A812E4C26AA9B7500A5D628 /* UINavigationBar+Blurred.swift */,
 				9A736C8826EA443200FBAA3A /* UIStackView+Extensions.swift */,
 			);
 			path = UIKit;
@@ -1178,7 +1175,6 @@
 				9A02E46026C3C902009B2BBC /* TooltipDemoView.swift in Sources */,
 				9ABF4D5826C159840046721A /* Constrained.swift in Sources */,
 				9ABF4D4D26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift in Sources */,
-				9A812E4D26AA9B7500A5D628 /* UINavigationBar+Blurred.swift in Sources */,
 				9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */,
 				9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */,
 				8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */,
