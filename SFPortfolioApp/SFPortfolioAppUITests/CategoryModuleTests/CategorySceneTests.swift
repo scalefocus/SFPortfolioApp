@@ -10,10 +10,12 @@ import XCTest
 class CategorySceneTests: XCTestCase {
     
     var app: XCUIApplication!
+    var splashDuration: TimeInterval!
     
     override func setUpWithError() throws {
         continueAfterFailure = false
         app = XCUIApplication()
+        splashDuration = Constants.General.splashDuration
     }
     
     override func tearDownWithError() throws {
@@ -32,10 +34,10 @@ class CategorySceneTests: XCTestCase {
         app.launch()
         
         // Then
-        XCTAssert(scaleFocusLogo.exists)
-        XCTAssert(navigationBar.exists)
-        XCTAssert(categoriesTableView.exists)
-        XCTAssert(categoryCell.exists)
+        XCTAssert(scaleFocusLogo.waitForExistence(timeout: splashDuration))
+        XCTAssert(navigationBar.waitForExistence(timeout: splashDuration))
+        XCTAssert(categoriesTableView.waitForExistence(timeout: splashDuration))
+        XCTAssert(categoryCell.waitForExistence(timeout: splashDuration))
     }
     
     func testCategoriesTableViewBackground() {
@@ -46,7 +48,7 @@ class CategorySceneTests: XCTestCase {
         app.launch()
         
         // Then
-        XCTAssert(categoriesTableView.exists)
+        XCTAssert(categoriesTableView.waitForExistence(timeout: splashDuration))
     }
     
     func testCategoryTableViewCellAppearance() {
@@ -72,7 +74,9 @@ class CategorySceneTests: XCTestCase {
         
         // When
         app.launch()
-        buttonsCell.tap()
+        if buttonsCell.waitForExistence(timeout: splashDuration) {
+            buttonsCell.tap()
+        }
         
         // Then
         XCTAssert(buttonsCategoryNavigationBar.exists)
