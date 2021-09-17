@@ -166,7 +166,7 @@ extension TooltipApplicableModifier {
         let delay = isAppear ? transitionConfig.transitionDelayTime : 0
         let animation = Animation
             .easeOut(duration: transitionConfig.transitionOpacityDuration)
-            .delay(transitionConfig.transitionOpacityDelay)
+            .delay(delay)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             withAnimation(animation) {
                 opacityAnimation = isAppear
