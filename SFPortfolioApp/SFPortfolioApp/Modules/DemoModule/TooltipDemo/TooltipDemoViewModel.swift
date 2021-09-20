@@ -10,13 +10,20 @@ import Foundation
 class TooltipDemoViewModel: ObservableObject {
     
     // MARK: - Properties
-    @Published var handler = TooltipHandler()
+    @Published var primaryHandler = TooltipHandler()
+    @Published var secondaryHandler = TooltipHandler()
     let title = Constants.CategoryItemTitle.tooltipView
     
     // MARK: - Public Functions
     func onActivateButtonTap(identity: TooltipIdentity) {
-        let tooltip = self.tooltip(position: identity == .primary ? .top : .bottom, identity: identity)
-        handler.showTooltip(tooltip)
+        switch identity {
+        case .primary:
+            let tooltip = tooltip(position: .top, identity: identity)
+            primaryHandler.showTooltip(tooltip)
+        case .secondary:
+            let tooltip = tooltip(position: .bottom, identity: identity)
+            secondaryHandler.showTooltip(tooltip)
+        }
     }
     
     // MARK: - Private Functions
