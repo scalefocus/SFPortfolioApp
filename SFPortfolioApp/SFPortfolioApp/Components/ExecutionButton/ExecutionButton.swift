@@ -244,7 +244,8 @@ extension ExecutionButton {
         /// Setup min and max clamping values so we don't drag the slider out of it's bounds.
         let arrowSlidingPadding: CGFloat = shrinkSize > 0 ? arrowSliderInset * 2 : 0
         let maxDragDistance: CGFloat = max(innerWidth - arrowSliderDiameter, 0)
-        let tempSpaceWidth = min(max(arrowSlidingPadding, shrinkSize), maxDragDistance)
+        let tempDragDistance = max(arrowSlidingPadding, shrinkSize) - arrowSliderDiameter
+        let tempSpaceWidth = min(tempDragDistance, maxDragDistance)
         
         /// Calculate current progress to manage animation's interactivity.
         percentageProgress = Double(tempSpaceWidth / maxDragDistance)
@@ -286,7 +287,7 @@ extension ExecutionButton {
     
     private func startLoadingAnimation() {
         viewModel.isExecutionButtonLoading = true
-        setCurrentPosition(shrinkSize: CGFloat((width - arrowSliderInset) / 2)) {
+        setCurrentPosition(shrinkSize: arrowSliderInset / 2) {
             spacerWidth = 0
         }
     }
