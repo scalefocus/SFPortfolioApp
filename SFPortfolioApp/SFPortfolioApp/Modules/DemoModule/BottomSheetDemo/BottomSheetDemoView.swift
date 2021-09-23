@@ -97,7 +97,7 @@ extension BottomSheetDemoView {
     }
     
     private func background(for country: String) -> some View {
-        let opacity = viewModel.isCountrySelected(country) ? 0.2 : 0.1
+        let opacity = viewModel.isCountrySelected(country) ? 0.2 : .zero
         return Color.black.opacity(opacity)
     }
     

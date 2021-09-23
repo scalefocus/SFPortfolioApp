@@ -68,6 +68,7 @@ extension BottomSheetView {
                     .background(measurerView)
             }
             .frame(width: UIScreen.main.bounds.width, height: height)
+            .background(config.defaultItemBackgroundColor)
         }
         .onPreferenceChange(BottomSheetHeightPreferenceKey.self) { newValue in
             DispatchQueue.main.async {
