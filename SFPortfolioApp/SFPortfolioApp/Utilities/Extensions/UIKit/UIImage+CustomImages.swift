@@ -15,4 +15,7 @@ extension UIImage {
     /// Image for settings navigation item.
     static let settings = UIImage(systemName: "gear") ?? UIImage()
     
+    /// `Scalefocus` logo image.
+    static let logo = UIImage(named: "logo") ?? UIImage()
+    
 }

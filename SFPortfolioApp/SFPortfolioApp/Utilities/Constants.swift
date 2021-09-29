@@ -51,6 +51,12 @@ struct Constants {
         /// Defines default navigation bar height.
         static let navigationBarHeight: CGFloat = 72
         
+        /// `Scalefocus` logo image width.
+        static let logoWidth: CGFloat = 100
+        
+        /// `Scalefocus` logo image height.
+        static let logoHeight: CGFloat = 30
+        
     }
     
     // MARK: - CategoryList
