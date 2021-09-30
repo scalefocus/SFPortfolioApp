@@ -120,6 +120,9 @@ struct Constants {
         /// Title of `Shimmer Loading View` category item.
         static let shimmerLoadingView = "Shimmer Loading View"
         
+        /// Title of `Pie Progress Indicator` category item.
+        static let pieProgressIndicator = "Pie Progress Indicator"
+        
     }
     
     // MARK: - Identifier

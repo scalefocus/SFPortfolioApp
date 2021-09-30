@@ -92,6 +92,14 @@
 		9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */; };
 		9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035426C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift */; };
 		9A33035726C2B7D100B7EC74 /* ExecutionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035626C2B7D100B7EC74 /* ExecutionButton.swift */; };
+		9A3AEE062716BDD200CBCADD /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE052716BDD200CBCADD /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */; };
+		9A3AEE0A2716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE082716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift */; };
+		9A3AEE0B2716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE092716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift */; };
+		9A3AEE102716BE6000CBCADD /* PieProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE0D2716BE6000CBCADD /* PieProgressIndicatorView.swift */; };
+		9A3AEE112716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE0E2716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift */; };
+		9A3AEE122716BE6000CBCADD /* PieProgressIndicatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE0F2716BE6000CBCADD /* PieProgressIndicatorConfig.swift */; };
+		9A3AEE142716BE9900CBCADD /* View+PieProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE132716BE9900CBCADD /* View+PieProgressIndicator.swift */; };
+		9A3AEE162716BEB700CBCADD /* PieProgressIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AEE152716BEB700CBCADD /* PieProgressIndicatorModifier.swift */; };
 		9A4C92C326DCF06700CC95E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
 		9A4C92CE26DE3E4F00CC95E7 /* AsymmetricCollectionViewSettingsSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C92CC26DE3E4F00CC95E7 /* AsymmetricCollectionViewSettingsSceneTests.swift */; };
 		9A4C92CF26DE3E4F00CC95E7 /* AsymmetricCollectionViewDemoSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C92CD26DE3E4F00CC95E7 /* AsymmetricCollectionViewDemoSceneTests.swift */; };
@@ -135,7 +143,6 @@
 		9ABF4D5A26C159930046721A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D5926C159930046721A /* Observable.swift */; };
 		9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */; };
 		9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
-		9AD19FCE2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */; };
 		9AD7BAE626C46AFC007DFE9D /* View+ImageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */; };
 		9AD7BAE926C46BC8007DFE9D /* ImageBackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */; };
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
@@ -244,6 +251,14 @@
 		9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonState.swift; sourceTree = "<group>"; };
 		9A33035426C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonViewModelProtocol.swift; sourceTree = "<group>"; };
 		9A33035626C2B7D100B7EC74 /* ExecutionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButton.swift; sourceTree = "<group>"; };
+		9A3AEE052716BDD200CBCADD /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		9A3AEE082716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorViewModel.swift; sourceTree = "<group>"; };
+		9A3AEE092716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorDemoView.swift; sourceTree = "<group>"; };
+		9A3AEE0D2716BE6000CBCADD /* PieProgressIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorView.swift; sourceTree = "<group>"; };
+		9A3AEE0E2716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A3AEE0F2716BE6000CBCADD /* PieProgressIndicatorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorConfig.swift; sourceTree = "<group>"; };
+		9A3AEE132716BE9900CBCADD /* View+PieProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+PieProgressIndicator.swift"; sourceTree = "<group>"; };
+		9A3AEE152716BEB700CBCADD /* PieProgressIndicatorModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicatorModifier.swift; sourceTree = "<group>"; };
 		9A4C92CC26DE3E4F00CC95E7 /* AsymmetricCollectionViewSettingsSceneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewSettingsSceneTests.swift; sourceTree = "<group>"; };
 		9A4C92CD26DE3E4F00CC95E7 /* AsymmetricCollectionViewDemoSceneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewDemoSceneTests.swift; sourceTree = "<group>"; };
 		9A4E1D9D26AE9ED500DEEE4F /* UIResizableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResizableTableViewCell.swift; sourceTree = "<group>"; };
@@ -285,7 +300,6 @@
 		9ABF4D5926C159930046721A /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		9AC4975126A6D5D5008A2A38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ImageBackground.swift"; sourceTree = "<group>"; };
 		9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBackgroundViewModifier.swift; sourceTree = "<group>"; };
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
@@ -636,6 +650,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9C040F26C4F9B50018FAFA /* ShimmerLoadingView */,
+				9A3AEE0C2716BE6000CBCADD /* PieProgressIndicator */,
 			);
 			path = LoadingViews;
 			sourceTree = "<group>";
@@ -690,6 +705,7 @@
 				8CA1FB0026BBEB4D00AE58CD /* Font+CustomFonts.swift */,
 				8C6879C626C269DE00D33186 /* View+CornerRadius.swift */,
 				9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */,
+				9A3AEE132716BE9900CBCADD /* View+PieProgressIndicator.swift */,
 				8C9C03EC26C477170018FAFA /* View+NavigationBarSetup.swift */,
 			);
 			path = SwiftUI;
@@ -771,6 +787,25 @@
 				8C912DDE26C2E5720051993A /* ExecutionButtonConfig.swift */,
 			);
 			path = ExecutionButton;
+			sourceTree = "<group>";
+		};
+		9A3AEE072716BE2F00CBCADD /* PieProgressIndicatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A3AEE082716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift */,
+				9A3AEE092716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift */,
+			);
+			path = PieProgressIndicatorDemo;
+			sourceTree = "<group>";
+		};
+		9A3AEE0C2716BE6000CBCADD /* PieProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				9A3AEE0D2716BE6000CBCADD /* PieProgressIndicatorView.swift */,
+				9A3AEE0E2716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift */,
+				9A3AEE0F2716BE6000CBCADD /* PieProgressIndicatorConfig.swift */,
+			);
+			path = PieProgressIndicator;
 			sourceTree = "<group>";
 		};
 		9A4C92CA26DE3E4F00CC95E7 /* DemoModuleTests */ = {
@@ -885,6 +920,7 @@
 				8C9C03F426C48D8C0018FAFA /* CustomSegmentedControlDemo */,
 				8C9C03DE26C454BF0018FAFA /* ExecutionButtonDemo */,
 				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
+				9A3AEE072716BE2F00CBCADD /* PieProgressIndicatorDemo */,
 				8C9C041626C4FDCE0018FAFA /* ShimmerLoadingDemo */,
 			);
 			path = DemoModule;
@@ -907,7 +943,7 @@
 				9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */,
 				9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */,
 				9ABF4D4126C157980046721A /* AsymmetricCollectionSettingsViewModel.swift */,
-				9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */,
+				9A3AEE052716BDD200CBCADD /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */,
 			);
 			path = AsymmetricCollectionSettingsScene;
 			sourceTree = "<group>";
@@ -945,6 +981,7 @@
 		9AD7BAE726C46BB2007DFE9D /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9A3AEE152716BEB700CBCADD /* PieProgressIndicatorModifier.swift */,
 				9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */,
 			);
 			path = ViewModifiers;
@@ -1121,6 +1158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3AEE0A2716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift in Sources */,
 				9A96DD5826E1FF190094DCF2 /* Category.swift in Sources */,
 				8C912DC526C2C2480051993A /* ModalView.swift in Sources */,
 				9A96785626D79127000B32D4 /* SplashViewModelCoordinatorDelegate.swift in Sources */,
@@ -1168,9 +1206,11 @@
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
 				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
-				9AD19FCE2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */,
+				9A3AEE062716BDD200CBCADD /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */,
 				9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */,
 				8C9C03C926C431FC0018FAFA /* BottomSheetDemoView.swift in Sources */,
+				9A3AEE102716BE6000CBCADD /* PieProgressIndicatorView.swift in Sources */,
+				9A3AEE142716BE9900CBCADD /* View+PieProgressIndicator.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
 				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
@@ -1183,12 +1223,14 @@
 				9ABF4D4B26C157980046721A /* AsymmetricCollectionDemoCoordinator.swift in Sources */,
 				8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */,
 				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
+				9A3AEE112716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */,
 				9A02E45E26C3C902009B2BBC /* RoundedButtonView.swift in Sources */,
 				9A4E1D9E26AE9ED500DEEE4F /* UIResizableTableViewCell.swift in Sources */,
 				8C68797926C15EAF00D33186 /* TabItemModel.swift in Sources */,
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
+				9A3AEE0B2716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift in Sources */,
 				9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */,
 				8C72854626C2B631006F650C /* StatusBarUtility.swift in Sources */,
 				8C9C03E326C454E60018FAFA /* ExecutionButtonDemoViewModel.swift in Sources */,
@@ -1200,6 +1242,7 @@
 				8C56BAF826B98B9100DBE86F /* TooltipHandler.swift in Sources */,
 				8C68796E26C159CD00D33186 /* SegmentedControlView.swift in Sources */,
 				8C68797326C15B0800D33186 /* SegmentedControlItemView.swift in Sources */,
+				9A3AEE122716BE6000CBCADD /* PieProgressIndicatorConfig.swift in Sources */,
 				8C9C03CC26C432070018FAFA /* BottomSheetDemoViewModel.swift in Sources */,
 				8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */,
 				9A736C8926EA443200FBAA3A /* UIStackView+Extensions.swift in Sources */,
@@ -1232,6 +1275,7 @@
 				8CA1FB0626BBEBE000AE58CD /* View+ConditionalModifier.swift in Sources */,
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */,
+				9A3AEE162716BEB700CBCADD /* PieProgressIndicatorModifier.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,7 +64,8 @@ extension Category {
             ]
         case .loadingViews:
             return [
-                .shimmerLoadingView
+                .shimmerLoadingView,
+                .pieProgressIndicator
             ]
         }
     }

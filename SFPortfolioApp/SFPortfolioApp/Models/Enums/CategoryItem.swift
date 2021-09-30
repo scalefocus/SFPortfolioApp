@@ -17,6 +17,7 @@ enum CategoryItem: CaseIterable {
     case tooltipView
     case customSegmentedControl
     case shimmerLoadingView
+    case pieProgressIndicator
     
 }
 
@@ -39,6 +40,8 @@ extension CategoryItem {
             return Constants.CategoryItemTitle.customSegmentedControl
         case .shimmerLoadingView:
             return Constants.CategoryItemTitle.shimmerLoadingView
+        case .pieProgressIndicator:
+            return Constants.CategoryItemTitle.pieProgressIndicator
         }
     }
     
@@ -56,7 +59,8 @@ extension CategoryItem {
              .tooltipView,
              .executionButton,
              .customSegmentedControl,
-             .shimmerLoadingView:
+             .shimmerLoadingView,
+             .pieProgressIndicator:
             return .swiftUI
         }
     }

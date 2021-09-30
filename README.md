@@ -18,6 +18,7 @@
   * Segmented Control (iOS 13.0+)
   * Shimmer Loading View (iOS 13.0+)
   * Bottom Sheet (iOS 13.0+)
+  * Pie Progress Indicator (iOS 13.0+)
 * [Contacts](#contacts)
 * [More Projects](#more-projects)
 * [License](#license)
@@ -39,9 +40,9 @@
 | ![Execution Button] | ![Segmented Control] | ![Shimmer Loading View] |
 
 
- [Bottom Sheet](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/BottomSheet) |
- | --------------- |
- | ![Bottom Sheet] |
+ [Bottom Sheet](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/BottomSheet) | [Pie Progress Indicator](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/PieProgressIndicator) |
+ | --------------- | --------------- |
+ | ![Bottom Sheet] | ![Pie Progress Indicator] |
  
 ## Contacts
 
@@ -67,3 +68,4 @@ We love to make you smile. [Here](https://github.com/orgs/scalefocus/repositorie
 [Segmented Control]: https://media.giphy.com/media/H5Fc9Yy42qw3c2CffA/giphy.gif
 [Shimmer Loading View]: https://media.giphy.com/media/uqgywGUpEbKcsqKBm9/giphy.gif
 [Bottom Sheet]: https://media.giphy.com/media/nPshTYy9AmhztBcypK/giphy.gif
+[Pie Progress Indicator]: https://media.giphy.com/media/qUs1OJNqggqw69dkh1/giphy.gif
