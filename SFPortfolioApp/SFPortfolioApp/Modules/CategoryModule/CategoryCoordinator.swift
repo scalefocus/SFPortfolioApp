@@ -80,6 +80,14 @@ class CategoryCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    private func startPieProgressIndicatorScene() {
+        let viewModel = PieProgressIndicatorViewModel()
+        let viewConfig = PieProgressIndicatorConfig()
+        let view = PieProgressIndicatorDemoView(viewModel: viewModel, config: viewConfig)
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -113,6 +121,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startCustomSegmentedControlDemoScene()
         case .shimmerLoadingView:
             startShimmerLoadingViewScene()
+        case .pieProgressIndicator:
+            startPieProgressIndicatorScene()
         }
     }
     
