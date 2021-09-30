@@ -135,6 +135,7 @@
 		9ABF4D5A26C159930046721A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF4D5926C159930046721A /* Observable.swift */; };
 		9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */; };
 		9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4975126A6D5D5008A2A38 /* Constants.swift */; };
+		9AD19FCE2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */; };
 		9AD7BAE626C46AFC007DFE9D /* View+ImageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */; };
 		9AD7BAE926C46BC8007DFE9D /* ImageBackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */; };
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
@@ -284,6 +285,7 @@
 		9ABF4D5926C159930046721A /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		9AC4975126A6D5D5008A2A38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9AD7BAE526C46AFC007DFE9D /* View+ImageBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ImageBackground.swift"; sourceTree = "<group>"; };
 		9AD7BAE826C46BC8007DFE9D /* ImageBackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBackgroundViewModifier.swift; sourceTree = "<group>"; };
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
@@ -905,6 +907,7 @@
 				9ABF4D3E26C157980046721A /* AsymmetricCollectionSettingsViewController.xib */,
 				9ABF4D3F26C157980046721A /* AsymmetricCollectionSettingsViewModelProtocol.swift */,
 				9ABF4D4126C157980046721A /* AsymmetricCollectionSettingsViewModel.swift */,
+				9AD19FCD2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift */,
 			);
 			path = AsymmetricCollectionSettingsScene;
 			sourceTree = "<group>";
@@ -1165,6 +1168,7 @@
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
 				9ABF4D5126C157990046721A /* AsymmetricCollectionDemoViewModelCoordinatorDelegate.swift in Sources */,
 				9ABF4D5A26C159930046721A /* Observable.swift in Sources */,
+				9AD19FCE2705F79700565618 /* AsymmetricCollectionSettingsViewModelCoordinatorDelegate.swift in Sources */,
 				9A33035526C2B17200B7EC74 /* ExecutionButtonViewModelProtocol.swift in Sources */,
 				8C9C03C926C431FC0018FAFA /* BottomSheetDemoView.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,

@@ -21,8 +21,8 @@ class AsymmetricCollectionDemoViewModel: AsymmetricCollectionDemoViewModelProtoc
     private let demoItems = 30
     
     // MARK: - Init
-    init(layoutConfigurator: AsymmetricCollectionViewLayoutConfigurator = AsymmetricCollectionViewLayoutConfigurator()) {
-        self.layoutConfigurator = Observable(layoutConfigurator)
+    init(layoutConfigurator: Observable<AsymmetricCollectionViewLayoutConfigurator>) {
+        self.layoutConfigurator = layoutConfigurator
     }
     
     // MARK: - Public Functions
@@ -31,7 +31,7 @@ class AsymmetricCollectionDemoViewModel: AsymmetricCollectionDemoViewModelProtoc
     }
     
     func selectSettings() {
-        delegate?.didFinishDemoSceneWithSettingsSelected(configurator: layoutConfigurator)
+        delegate?.didFinishDemoSceneWithSettingsSelected()
     }
     
     func finishScene() {

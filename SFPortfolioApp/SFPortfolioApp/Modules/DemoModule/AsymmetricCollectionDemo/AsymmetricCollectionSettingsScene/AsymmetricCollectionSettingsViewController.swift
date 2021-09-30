@@ -13,6 +13,7 @@ class AsymmetricCollectionSettingsViewController: BaseViewController {
     private var viewModel: AsymmetricCollectionSettingsViewModelProtocol!
     
     // MARK: - IBOutlets
+    @IBOutlet private weak var playButton: UIButton!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var numberOfCellsSlider: UISlider!
     @IBOutlet private weak var numberOfCellsLabel: UILabel!
@@ -27,27 +28,33 @@ class AsymmetricCollectionSettingsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAccessibility()
+        setupSliderValues()
     }
     
     // MARK: - IBActions
     @IBAction private func didSlide(_ sender: UISlider) {
         switch sender {
         case numberOfCellsSlider:
-            viewModel.changeNumberOfCellsPerRow(sender.value)
+            viewModel.numberOfCellsPerRow = sender.value
         case cellPaddingSlider:
-            viewModel.changeCellPadding(sender.value)
+            viewModel.cellPadding = sender.value
         case sizeRatioSlider:
-            viewModel.changeCellSizeRatio(sender.value)
+            viewModel.sizeRatio = sender.value
         case verticalOffsetSlider:
-            viewModel.changeCellVerticalOffset(sender.value)
+            viewModel.verticalOffset = sender.value
         default:
             break
         }
     }
     
+    @IBAction private func didTapPlayButton(_ sender: UIButton) {
+        viewModel.didSelectPlay()
+    }
+    
     // MARK: - Private Functions
     private func setupAccessibility() {
         view.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsView
+        playButton.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsPlayButton
         containerView.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsContainerView
         numberOfCellsLabel.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsNumberOfCellsLabel
         numberOfCellsSlider.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsNumberOfCellsSlider
@@ -57,6 +64,13 @@ class AsymmetricCollectionSettingsViewController: BaseViewController {
         verticalOffsetSlider.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsOffsetSlider
         cellPaddingLabel.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsCellPaddingLabel
         cellPaddingSlider.accessibilityIdentifier = Constants.Identifier.asymmetricSettingsCellPaddingSlider
+    }
+    
+    private func setupSliderValues() {
+        numberOfCellsSlider.value = viewModel.numberOfCellsPerRow
+        cellPaddingSlider.value = viewModel.cellPadding
+        sizeRatioSlider.value = viewModel.sizeRatio
+        verticalOffsetSlider.value = viewModel.verticalOffset
     }
     
 }
