@@ -38,6 +38,7 @@ class AsymmetricCollectionViewSettingsSceneTests: XCTestCase {
     func testAssymetricCollectionViewSettingsSceneAppearance() {
         // Given
         let containerView = app.otherElements[Constants.Identifier.asymmetricSettingsContainerView]
+        let playButton = app.buttons[Constants.Identifier.asymmetricSettingsPlayButton]
         let numberOfCellsLabel = app.staticTexts[Constants.Identifier.asymmetricSettingsNumberOfCellsLabel]
         let cellPaddingLabel = app.staticTexts[Constants.Identifier.asymmetricSettingsCellPaddingLabel]
         let sizeRatioLabel = app.staticTexts[Constants.Identifier.asymmetricSettingsSizeRatioLabel]
@@ -52,6 +53,7 @@ class AsymmetricCollectionViewSettingsSceneTests: XCTestCase {
         
         // Then
         XCTAssert(containerView.exists)
+        XCTAssert(playButton.exists)
         XCTAssert(numberOfCellsLabel.exists)
         XCTAssert(cellPaddingLabel.exists)
         XCTAssert(sizeRatioLabel.exists)
@@ -81,6 +83,18 @@ class AsymmetricCollectionViewSettingsSceneTests: XCTestCase {
         // When
         navigateToAsymmetricCollectionViewSettingsScene()
         settingsView.swipeDown()
+        
+        // Then
+        XCTAssert(demoSceneNavigationBar.isHittable)
+    }
+    
+    func testDidTapPlayButtonFinishesScene() {
+        // Given
+        let playButton = app.buttons[Constants.Identifier.asymmetricSettingsPlayButton]
+        
+        // When
+        navigateToAsymmetricCollectionViewSettingsScene()
+        playButton.tap()
         
         // Then
         XCTAssert(demoSceneNavigationBar.isHittable)
