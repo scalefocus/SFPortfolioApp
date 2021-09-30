@@ -14,7 +14,7 @@ struct TooltipTransitionConfig {
     
     var withTransition: Bool = false
     var transitionYOffset: CGFloat = 8
-    var transitionDelayTime: Double = 0.5
+    var transitionDelayTime: Double = 0.2
     var transitionOffsetDuration: Double = 0.15
     var transitionOpacityDuration: Double = 0.075
     var transitionOpacityDelay: Double = 0.075
