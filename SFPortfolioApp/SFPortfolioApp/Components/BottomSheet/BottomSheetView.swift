@@ -19,7 +19,7 @@ struct BottomSheetView<T: BottomSheetViewModelProtocol, Content: View>: View {
     @Environment(\.statusBarUtility) var statusBarUtility: StatusBarUtility
     @State private var contentHeight: CGFloat = 0
     @State private var offset: CGFloat = 0
-    @State private var safeAreaHeight: CGFloat = 0
+    @State private var bottomSafeAreaHeight: CGFloat = 0
     @State private var dimmerBackgroundVisible = false
     @State private var contentFrame: CGRect = .zero
     
@@ -38,7 +38,7 @@ struct BottomSheetView<T: BottomSheetViewModelProtocol, Content: View>: View {
                     .zIndex(1)
             }
             .onAppear {
-                safeAreaHeight = geometry.safeAreaInsets.bottom
+                bottomSafeAreaHeight = geometry.safeAreaInsets.bottom
                 dimmerBackgroundVisible = true
             }
             .edgesIgnoringSafeArea(.all)
@@ -67,7 +67,7 @@ extension BottomSheetView {
                 content()
                     .background(measurerView)
             }
-            .frame(width: UIScreen.main.bounds.width, height: height)
+            .frame(width: UIScreen.main.bounds.width, height: height + bottomSafeAreaHeight)
             .background(config.defaultItemBackgroundColor)
         }
         .onPreferenceChange(BottomSheetHeightPreferenceKey.self) { newValue in
@@ -75,13 +75,10 @@ extension BottomSheetView {
                 contentHeight = newValue
             }
         }
-        .padding(.bottom, safeAreaHeight)
         .background(Color.white.cornerRadius(12, corners: [.topLeft, .topRight]))
-        .offset(y: isPresented ? offset : height + safeAreaHeight)
-        .animation(defaultAnimation, value: height + safeAreaHeight)
+        .offset(y: isPresented ? offset : height + bottomSafeAreaHeight)
+        .animation(defaultAnimation, value: height + bottomSafeAreaHeight)
     }
-    
-    
     
     private var dragIndicatorView: some View {
         Group {
@@ -94,7 +91,6 @@ extension BottomSheetView {
         .background(dragIndicatorBackgroundView)
         .cornerRadius(config.dragIndicatorCornerRadius, corners: [.topLeft, .topRight])
         .gesture(indicatorDragGesture)
-        
     }
 
     private var headerView: some View {
@@ -144,7 +140,7 @@ extension BottomSheetView {
         UIScreen.main.bounds.width
             - statusBarUtility.statusBarHeight
             - headerViewHeight
-            - safeAreaHeight
+            - bottomSafeAreaHeight
             - config.additionalTopPadding
             - config.handleHeight
             - Constants.General.navigationBarHeight
@@ -187,7 +183,7 @@ extension BottomSheetView {
     private func closeBottomSheetView() {
         withAnimation(defaultAnimation) {
             dimmerBackgroundVisible = false
-            offset = height + safeAreaHeight
+            offset = height + bottomSafeAreaHeight
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + config.animationDuration) {
