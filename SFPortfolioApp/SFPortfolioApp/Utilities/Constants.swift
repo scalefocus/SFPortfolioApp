@@ -150,6 +150,7 @@ struct Constants {
         static let asymmetricSettingsSizeRatioSlider = "sizeRatioSlider"
         static let asymmetricSettingsOffsetLabel = "offsetLabel"
         static let asymmetricSettingsOffsetSlider = "offsetSlider"
+        static let asymmetricSettingsPlayButton = "play"
         
         // MARK: - SynchronisedCollectionView
         static let iconsCollectionView = "iconsCollectionView"
