@@ -5,8 +5,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,7 +39,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="barBackground"/>
                         <constraints>
                             <constraint firstItem="wyt-Ws-htg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2ww-Qt-2j8"/>
                             <constraint firstItem="s7W-rr-ohi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5e3-Ve-Y5u"/>
@@ -61,8 +61,8 @@
         <image name="background" width="3334" height="5001"/>
         <image name="logo" width="1556" height="504"/>
         <image name="sfLogo" width="3140" height="2264"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="barBackground">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

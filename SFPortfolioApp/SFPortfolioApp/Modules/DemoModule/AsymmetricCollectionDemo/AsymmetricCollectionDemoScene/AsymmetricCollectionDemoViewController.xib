@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AsymmetricCollectionDemoViewController" customModule="SFPortfolioApp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImageVIew" destination="cBQ-yt-x6T" id="WmJ-cK-LE1"/>
                 <outlet property="demoCollectionView" destination="lfq-bh-sLk" id="Dct-Td-uIt"/>
+                <outlet property="playerImageView" destination="QhD-9i-sMT" id="Jq5-r9-eeD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cBQ-yt-x6T">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <imageReference key="image" image="galaga-background"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-9i-sMT">
@@ -56,7 +58,7 @@
                 <constraint firstItem="cBQ-yt-x6T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hvf-3A-t1t"/>
                 <constraint firstAttribute="trailing" secondItem="cBQ-yt-x6T" secondAttribute="trailing" id="XYr-F9-WDt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lfq-bh-sLk" secondAttribute="trailing" constant="16" id="aSa-FP-K6D"/>
-                <constraint firstItem="cBQ-yt-x6T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dSj-gs-jr8"/>
+                <constraint firstItem="cBQ-yt-x6T" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dSj-gs-jr8"/>
                 <constraint firstItem="QhD-9i-sMT" firstAttribute="top" secondItem="lfq-bh-sLk" secondAttribute="bottom" constant="16" id="eGU-xF-pPT"/>
                 <constraint firstItem="QhD-9i-sMT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lfU-kA-k0Q"/>
                 <constraint firstItem="lfq-bh-sLk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uv0-qg-sTG"/>

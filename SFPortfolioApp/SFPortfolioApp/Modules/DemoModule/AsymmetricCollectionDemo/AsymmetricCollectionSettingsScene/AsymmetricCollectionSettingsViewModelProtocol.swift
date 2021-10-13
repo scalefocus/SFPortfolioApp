@@ -9,16 +9,19 @@ import SFBaseKit
 
 protocol AsymmetricCollectionSettingsViewModelProtocol: CoordinatableViewModel {
     
-    /// Sets new value for number of cell per row on portait.
-    func changeNumberOfCellsPerRow(_ value: Float)
+    /// Value for number of cell per row on portait.
+    var numberOfCellsPerRow: Float { get set }
     
-    /// Sets new value for padding of cell.
-    func changeCellPadding(_ value: Float)
+    /// Value for padding of cell.
+    var cellPadding: Float { get set }
     
-    /// Sets new value for width to height size ratio of cell.
-    func changeCellSizeRatio(_ value: Float)
+    /// Value for width to height size ratio of cell.
+    var sizeRatio: Float { get set }
     
-    /// Sets new value for vertical offset of cell.
-    func changeCellVerticalOffset(_ value: Float)
+    /// Value for vertical offset of cell.
+    var verticalOffset: Float { get set }
+    
+    /// Request finish scene when play button is tapped.
+    func didSelectPlay()
     
 }

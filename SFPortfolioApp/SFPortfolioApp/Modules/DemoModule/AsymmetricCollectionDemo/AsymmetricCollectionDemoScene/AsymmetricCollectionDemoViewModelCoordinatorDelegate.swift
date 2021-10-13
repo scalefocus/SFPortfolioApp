@@ -10,7 +10,7 @@ import Foundation
 protocol AsymmetricCollectionDemoViewModelCoordinatorDelegate: AnyObject {
     
     /// Navigate to Asymmetric collection settings scene.
-    func didFinishDemoSceneWithSettingsSelected(configurator: Observable<AsymmetricCollectionViewLayoutConfigurator>)
+    func didFinishDemoSceneWithSettingsSelected()
     
     /// Notifies the demo scene have finished.
     func didFinishAsymmetricCollectionDemoScene()

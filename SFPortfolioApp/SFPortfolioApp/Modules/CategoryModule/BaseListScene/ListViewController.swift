@@ -12,21 +12,20 @@ class ListViewController: BaseViewController {
     // MARK: - Properties
     private var isScrolledDown = true
     private var lastContentOffset: CGFloat = .zero
-    private var viewModel: ListViewModelProtocol! {
-        didSet {
-            title = viewModel.title
-        }
-    }
+    private var viewModel: ListViewModelProtocol!
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var categoriesTableView: UITableView! {
-        didSet {
-            categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
-            categoriesTableView.backgroundView = UIImageView(image: UIImage.background)
-        }
-    }
+    @IBOutlet private weak var categoriesTableView: UITableView!
+    @IBOutlet private weak var logoImageView: UIImageView!
     
     // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = viewModel.title
+        setupTableView()
+        setupAccessibility()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -46,6 +45,19 @@ class ListViewController: BaseViewController {
             view.center.y = view.center.y - distanceToMove
             view.alpha = 1
         }
+    }
+    
+    private func setupAccessibility() {
+        logoImageView.accessibilityIdentifier = Constants.Identifier.logo
+        categoriesTableView.accessibilityIdentifier = Constants.Identifier.listTableView
+    }
+    
+    private func setupTableView() {
+        categoriesTableView.register(cellNames: viewModel.reuseIdentifiers)
+        let backgroundView = UIImageView(image: UIImage.background)
+        backgroundView.isAccessibilityElement = true
+        backgroundView.accessibilityIdentifier = Constants.Identifier.listTableViewBackground
+        categoriesTableView.backgroundView = backgroundView
     }
     
 }

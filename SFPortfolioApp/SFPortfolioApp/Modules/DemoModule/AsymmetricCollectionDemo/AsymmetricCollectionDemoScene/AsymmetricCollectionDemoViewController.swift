@@ -13,6 +13,8 @@ class AsymmetricCollectionDemoViewController: BaseViewController {
     private var viewModel: AsymmetricCollectionDemoViewModelProtocol!
     
     // MARK: - IBOutlets
+    @IBOutlet private weak var backgroundImageVIew: UIImageView!
+    @IBOutlet private weak var playerImageView: UIImageView!
     @IBOutlet private weak var demoCollectionView: UICollectionView!
     
     // MARK: - Lifecycle Functions
@@ -21,6 +23,7 @@ class AsymmetricCollectionDemoViewController: BaseViewController {
         setupNavigationBar()
         setupCollectionView()
         setupBindings()
+        setupAccessibility()
     }
     
     override func didMove(toParent parent: UIViewController?) {
@@ -59,6 +62,12 @@ class AsymmetricCollectionDemoViewController: BaseViewController {
                 let layout = AsymmetricCollectionViewLayout(configurator: configurator)
                 self?.demoCollectionView.collectionViewLayout = layout
             }
+    }
+    
+    private func setupAccessibility() {
+        backgroundImageVIew.accessibilityIdentifier = Constants.Identifier.asymmetricDemoBackground
+        playerImageView.accessibilityIdentifier = Constants.Identifier.asymmetricDemoPlayer
+        demoCollectionView.accessibilityIdentifier = Constants.Identifier.asymmetricDemoCollectionView
     }
     
 }

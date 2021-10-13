@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,35 +16,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AsymmetricCollectionSettingsViewController" customModule="SFPortfolioApp" customModuleProvider="target">
             <connections>
+                <outlet property="cellPaddingLabel" destination="UQd-1e-pUE" id="2U2-lQ-oZj"/>
                 <outlet property="cellPaddingSlider" destination="8fx-mS-zMk" id="FzS-zB-VvW"/>
+                <outlet property="containerView" destination="6gC-k0-dxi" id="Pdy-EX-fFN"/>
+                <outlet property="numberOfCellsLabel" destination="eLN-iU-hE9" id="wSh-vf-nCc"/>
                 <outlet property="numberOfCellsSlider" destination="Rc4-oK-0nC" id="Sws-gh-eee"/>
+                <outlet property="playButton" destination="IbA-2B-mC9" id="J1y-qI-U5m"/>
+                <outlet property="sizeRatioLabel" destination="QxB-lU-wM4" id="ZgK-UT-vQy"/>
                 <outlet property="sizeRatioSlider" destination="67N-r8-RsE" id="DnK-CV-M32"/>
+                <outlet property="verticalOffsetLabel" destination="Dep-vR-lea" id="qQJ-Df-kje"/>
                 <outlet property="verticalOffsetSlider" destination="Da1-96-VdB" id="eLF-Sv-wmE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gC-k0-dxi">
-                    <rect key="frame" x="224" y="57" width="448" height="300"/>
+                    <rect key="frame" x="41.5" y="298" width="331" height="300"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3sD-Cb-99d">
-                            <rect key="frame" x="20" y="20" width="408" height="260"/>
+                            <rect key="frame" x="20" y="8" width="291" height="228"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zWn-Dl-R0m">
-                                    <rect key="frame" x="0.0" y="0.0" width="408" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="291" height="49.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of cells per row" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-iU-hE9">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="25"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="2" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-oK-0nC">
-                                            <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <rect key="frame" x="-2" y="25" width="295" height="25.5"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="gQ3-FZ-HbC"/>
                                             </connections>
@@ -57,16 +63,16 @@
                                     </userDefinedRuntimeAttributes>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lgu-vg-rXZ">
-                                    <rect key="frame" x="0.0" y="67.5" width="408" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="59.5" width="291" height="49.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell padding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-1e-pUE">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="25"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.10000000000000001" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="8fx-mS-zMk">
-                                            <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <rect key="frame" x="-2" y="25" width="295" height="25.5"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="vip-Um-RUg"/>
                                             </connections>
@@ -79,16 +85,16 @@
                                     </userDefinedRuntimeAttributes>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WZy-ud-h61">
-                                    <rect key="frame" x="0.0" y="135" width="408" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="119" width="291" height="49.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height to Width size ratio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-lU-wM4">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="25"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.2" minValue="0.5" maxValue="1.8999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="67N-r8-RsE">
-                                            <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <rect key="frame" x="-2" y="25" width="295" height="25.5"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="Kpk-nO-is6"/>
                                             </connections>
@@ -101,16 +107,16 @@
                                     </userDefinedRuntimeAttributes>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y60-v5-L8J">
-                                    <rect key="frame" x="0.0" y="202.5" width="408" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="178.5" width="291" height="49.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical offset ratio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dep-vR-lea">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="291" height="25"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" name="baseText"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-96-VdB">
-                                            <rect key="frame" x="-2" y="29" width="412" height="29.5"/>
+                                            <rect key="frame" x="-2" y="25" width="295" height="25.5"/>
                                             <connections>
                                                 <action selector="didSlide:" destination="-1" eventType="valueChanged" id="vgo-0F-AnY"/>
                                             </connections>
@@ -124,14 +130,37 @@
                                 </stackView>
                             </subviews>
                         </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbA-2B-mC9">
+                            <rect key="frame" x="115.5" y="252" width="100" height="40"/>
+                            <color key="backgroundColor" name="baseText"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gdU-lg-CGm"/>
+                                <constraint firstAttribute="width" constant="100" id="tzz-sd-okc"/>
+                            </constraints>
+                            <color key="tintColor" name="barBackground"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Play">
+                                <fontDescription key="titleFontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapPlayButton:" destination="-1" eventType="touchUpInside" id="ujT-h4-3Jf"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="backgroundColor" name="barBackground"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="3sD-Cb-99d" secondAttribute="bottom" constant="20" symbolic="YES" id="BrS-z7-7km"/>
+                        <constraint firstItem="IbA-2B-mC9" firstAttribute="top" secondItem="3sD-Cb-99d" secondAttribute="bottom" constant="16" id="BrS-z7-7km"/>
                         <constraint firstItem="3sD-Cb-99d" firstAttribute="leading" secondItem="6gC-k0-dxi" secondAttribute="leading" constant="20" symbolic="YES" id="KqY-Gv-emi"/>
-                        <constraint firstItem="3sD-Cb-99d" firstAttribute="top" secondItem="6gC-k0-dxi" secondAttribute="top" constant="20" symbolic="YES" id="meR-aD-hTT"/>
+                        <constraint firstAttribute="bottom" secondItem="IbA-2B-mC9" secondAttribute="bottom" constant="8" id="bQs-8o-hkW"/>
+                        <constraint firstItem="3sD-Cb-99d" firstAttribute="top" secondItem="6gC-k0-dxi" secondAttribute="top" constant="8" id="meR-aD-hTT"/>
                         <constraint firstAttribute="trailing" secondItem="3sD-Cb-99d" secondAttribute="trailing" constant="20" symbolic="YES" id="tKz-Ie-0b0"/>
                         <constraint firstAttribute="height" constant="300" id="vd6-Jp-jvu"/>
+                        <constraint firstItem="IbA-2B-mC9" firstAttribute="centerX" secondItem="6gC-k0-dxi" secondAttribute="centerX" id="zhF-i0-nc7"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -163,11 +192,11 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="barBackground">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="baseText">
             <color red="0.030999999493360519" green="0.15299999713897705" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

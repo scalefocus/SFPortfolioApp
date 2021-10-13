@@ -18,6 +18,9 @@ struct Constants {
         /// Font name of the primary used font.
         static let primaryFontName = "OpenSans-Regular"
         
+        /// Duration of the `SplashScene` in seconds.
+        static let splashDuration: Double = 2
+        
         /// Default font size.
         static let defaultFontSize: CGFloat = 20
         
@@ -47,6 +50,12 @@ struct Constants {
         
         /// Defines default navigation bar height.
         static let navigationBarHeight: CGFloat = 72
+        
+        /// `Scalefocus` logo image width.
+        static let logoWidth: CGFloat = 100
+        
+        /// `Scalefocus` logo image height.
+        static let logoHeight: CGFloat = 30
         
     }
     
@@ -104,12 +113,57 @@ struct Constants {
         
         /// Title of `Execution Button` category item.
         static let executionButton = "Execution Button"
-
+        
         /// Title of `Custom Segmented Control View` category item.
         static let customSegmentedControl = "Custom Segmented Control"
         
         /// Title of `Shimmer Loading View` category item.
         static let shimmerLoadingView = "Shimmer Loading View"
+        
+        /// Title of `Pie Progress Indicator` category item.
+        static let pieProgressIndicator = "Pie Progress Indicator"
+        
+    }
+    
+    // MARK: - Identifier
+    struct Identifier {
+        
+        // MARK: - CategoryModule
+        static let listTableView = "listTableView"
+        static let listTableViewBackground = "listTableViewBackground"
+        static let logo = "logo"
+        static let tagsStackView = "tagsStackView"
+        
+        // MARK: - AssymetricCollectionDemoScene
+        static let settingsButton = "settings"
+        static let asymmetricDemoCollectionView = "asymmetricCollectionView"
+        static let asymmetricDemoPlayer = "asymmetricDemoPlayer"
+        static let asymmetricDemoBackground = "asymmetricDemoBackground"
+        static let asymmetricDemoEnemy = "asymmetricDemoEnemy"
+        static let asymmetricDemoCollectionViewCell = "asymmetricCollectionViewCell"
+        
+        // MARK: - AssymetricCollectionSettingsScene
+        static let asymmetricSettingsView = "asymmetricSettingsView"
+        static let asymmetricSettingsContainerView = "containerView"
+        static let asymmetricSettingsNumberOfCellsLabel = "numberOfCellsLabel"
+        static let asymmetricSettingsNumberOfCellsSlider = "numberOfCellsSlider"
+        static let asymmetricSettingsCellPaddingLabel = "cellPaddingLabel"
+        static let asymmetricSettingsCellPaddingSlider = "cellPaddingSlider"
+        static let asymmetricSettingsSizeRatioLabel = "sizeRatioLabel"
+        static let asymmetricSettingsSizeRatioSlider = "sizeRatioSlider"
+        static let asymmetricSettingsOffsetLabel = "offsetLabel"
+        static let asymmetricSettingsOffsetSlider = "offsetSlider"
+        static let asymmetricSettingsPlayButton = "play"
+        
+        // MARK: - SynchronisedCollectionView
+        static let iconsCollectionView = "iconsCollectionView"
+        static let detailsCollectionView = "detailsCollectionView"
+        static let iconsCell = "iconsCell"
+        static let iconsCellImage = "iconsCellImage"
+        static let iconsCellLabel = "iconsCellLabel"
+        static let detailsCell = "detailsCell"
+        static let detailsCellLabel = "detailsCellLabel"
+        static let lineSelector = "lineSelector"
         
     }
     
