@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C2CEE49E11672E9C55F26D7 /* Pods_SFPortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */; };
 		3274B388268EF58200E1B445 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274B387268EF58200E1B445 /* ListViewController.swift */; };
 		3274B38A268EF59E00E1B445 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3274B389268EF59E00E1B445 /* ListViewController.xib */; };
 		32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32964BE82692E0EC00FC3B1A /* ListViewModelProtocol.swift */; };
@@ -87,6 +86,8 @@
 		9A02E45E26C3C902009B2BBC /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A02E45B26C3C902009B2BBC /* RoundedButtonView.swift */; };
 		9A02E45F26C3C902009B2BBC /* TooltipDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A02E45C26C3C902009B2BBC /* TooltipDemoViewModel.swift */; };
 		9A02E46026C3C902009B2BBC /* TooltipDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A02E45D26C3C902009B2BBC /* TooltipDemoView.swift */; };
+		9A129352271D50E2005EA672 /* AnalyticsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129351271D50E2005EA672 /* AnalyticsManagerProtocol.swift */; };
+		9A129355271D517F005EA672 /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129354271D517F005EA672 /* AppCenterManager.swift */; };
 		9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */; };
 		9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */; };
 		9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */; };
@@ -148,6 +149,7 @@
 		9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */; };
 		9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */; };
 		9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */; };
+		F809D739B2E37007326D7B70 /* Pods_SFPortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB47424B4DF520845C157E6F /* Pods_SFPortfolioApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,9 +193,6 @@
 		32CDD9BA268B0C9F008154AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32CDD9BC268B0C9F008154AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32CDD9C5268B46ED008154AA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
 		8C0242A726BD4BD40094029A /* InfoTagProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTagProtocol.swift; sourceTree = "<group>"; };
 		8C0242AB26BD4C570094029A /* ViewOriginInfoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOriginInfoTag.swift; sourceTree = "<group>"; };
 		8C4CF32026B9853A00EAEABB /* Tooltip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tooltip.swift; sourceTree = "<group>"; };
@@ -246,6 +245,8 @@
 		9A02E45B26C3C902009B2BBC /* RoundedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
 		9A02E45C26C3C902009B2BBC /* TooltipDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TooltipDemoViewModel.swift; sourceTree = "<group>"; };
 		9A02E45D26C3C902009B2BBC /* TooltipDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TooltipDemoView.swift; sourceTree = "<group>"; };
+		9A129351271D50E2005EA672 /* AnalyticsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManagerProtocol.swift; sourceTree = "<group>"; };
+		9A129354271D517F005EA672 /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
 		9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonState.swift; sourceTree = "<group>"; };
@@ -305,6 +306,9 @@
 		9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		9AF781212695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayout.swift; sourceTree = "<group>"; };
 		9AF781252695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCollectionViewLayoutConfigurator.swift; sourceTree = "<group>"; };
+		D178D4419B257B85A12C3741 /* Pods-SFPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E0A30C72E2329C0D81CA04 /* Pods-SFPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
+		FB47424B4DF520845C157E6F /* Pods_SFPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,7 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2CEE49E11672E9C55F26D7 /* Pods_SFPortfolioApp.framework in Frameworks */,
+				F809D739B2E37007326D7B70 /* Pods_SFPortfolioApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +333,8 @@
 		1BA6AE7787FB939017C8F66E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */,
-				7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */,
+				D178D4419B257B85A12C3741 /* Pods-SFPortfolioApp.debug.xcconfig */,
+				E7E0A30C72E2329C0D81CA04 /* Pods-SFPortfolioApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -413,7 +417,7 @@
 				9A83C69F26CA411000F38E4B /* SFPortfolioAppUITests */,
 				32CDD9AC268B0C9C008154AA /* Products */,
 				1BA6AE7787FB939017C8F66E /* Pods */,
-				C36A6F754EB363BA4393F08F /* Frameworks */,
+				CEBB951624CAA7845F575EBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -744,6 +748,15 @@
 			path = TooltipDemo;
 			sourceTree = "<group>";
 		};
+		9A129353271D5133005EA672 /* AnalyticsManager */ = {
+			isa = PBXGroup;
+			children = (
+				9A129351271D50E2005EA672 /* AnalyticsManagerProtocol.swift */,
+				9A129354271D517F005EA672 /* AppCenterManager.swift */,
+			);
+			path = AnalyticsManager;
+			sourceTree = "<group>";
+		};
 		9A236BDC268F392E000E8643 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +769,7 @@
 		9A236BDD26917AE2000E8643 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9A129353271D5133005EA672 /* AnalyticsManager */,
 				9A236BDE26917B1D000E8643 /* Extensions */,
 				9AD7BAE726C46BB2007DFE9D /* ViewModifiers */,
 				9ABF4D5B26C15B9F0046721A /* PropertyWrappers */,
@@ -996,10 +1010,10 @@
 			path = AsymmetricCollectionViewLayout;
 			sourceTree = "<group>";
 		};
-		C36A6F754EB363BA4393F08F /* Frameworks */ = {
+		CEBB951624CAA7845F575EBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BF6E06D26D10038C691F09B /* Pods_SFPortfolioApp.framework */,
+				FB47424B4DF520845C157E6F /* Pods_SFPortfolioApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1011,11 +1025,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32CDD9BF268B0C9F008154AA /* Build configuration list for PBXNativeTarget "SFPortfolioApp" */;
 			buildPhases = (
-				EE4928F02A1CF63043808FF2 /* [CP] Check Pods Manifest.lock */,
+				B9AA2EF098DAEEFB7DF660E9 /* [CP] Check Pods Manifest.lock */,
 				32CDD9A7268B0C9C008154AA /* Sources */,
 				32CDD9A8268B0C9C008154AA /* Frameworks */,
 				32CDD9A9268B0C9C008154AA /* Resources */,
-				640C8B4E52D3CBC5D998AC63 /* [CP] Embed Pods Frameworks */,
+				6B3C2418EA6EEDEEE45229EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1112,7 +1126,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		640C8B4E52D3CBC5D998AC63 /* [CP] Embed Pods Frameworks */ = {
+		6B3C2418EA6EEDEEE45229EC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1129,7 +1143,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFPortfolioApp/Pods-SFPortfolioApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE4928F02A1CF63043808FF2 /* [CP] Check Pods Manifest.lock */ = {
+		B9AA2EF098DAEEFB7DF660E9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1211,6 +1225,7 @@
 				8C9C03C926C431FC0018FAFA /* BottomSheetDemoView.swift in Sources */,
 				9A3AEE102716BE6000CBCADD /* PieProgressIndicatorView.swift in Sources */,
 				9A3AEE142716BE9900CBCADD /* View+PieProgressIndicator.swift in Sources */,
+				9A129355271D517F005EA672 /* AppCenterManager.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
 				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
@@ -1276,6 +1291,7 @@
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */,
 				9A3AEE162716BEB700CBCADD /* PieProgressIndicatorModifier.swift in Sources */,
+				9A129352271D50E2005EA672 /* AnalyticsManagerProtocol.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1435,7 +1451,7 @@
 		};
 		32CDD9C0268B0C9F008154AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D9513F81B8472EFA1D19131 /* Pods-SFPortfolioApp.debug.xcconfig */;
+			baseConfigurationReference = D178D4419B257B85A12C3741 /* Pods-SFPortfolioApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1458,7 +1474,7 @@
 		};
 		32CDD9C1268B0C9F008154AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EA84DCE6887E7E644D97DC9 /* Pods-SFPortfolioApp.release.xcconfig */;
+			baseConfigurationReference = E7E0A30C72E2329C0D81CA04 /* Pods-SFPortfolioApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

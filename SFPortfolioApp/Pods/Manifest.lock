@@ -1,16 +1,27 @@
 PODS:
+  - AppCenter (4.3.0):
+    - AppCenter/Analytics (= 4.3.0)
+    - AppCenter/Crashes (= 4.3.0)
+  - AppCenter/Analytics (4.3.0):
+    - AppCenter/Core
+  - AppCenter/Core (4.3.0)
+  - AppCenter/Crashes (4.3.0):
+    - AppCenter/Core
   - SFBaseKit (2.1.3)
 
 DEPENDENCIES:
+  - AppCenter
   - SFBaseKit (~> 2.1.0)
 
 SPEC REPOS:
   trunk:
+    - AppCenter
     - SFBaseKit
 
 SPEC CHECKSUMS:
+  AppCenter: 883369ab78427b0561c688158d689dfe1f993ea9
   SFBaseKit: c505e7208a3f594bdc411a054d6e2c59ed9b1dcf
 
-PODFILE CHECKSUM: 01bb0247d59cd6ae61cd81a5b788a342a82b611b
+PODFILE CHECKSUM: c46b60605e2267dcbf88f50ec4a70b3d8af6684b
 
 COCOAPODS: 1.10.1
