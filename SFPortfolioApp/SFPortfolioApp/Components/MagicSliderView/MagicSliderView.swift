@@ -17,7 +17,7 @@ struct MagicSliderView<T: MagicSliderViewModelProtocol>: View {
     
     // MARK: - Body
     var body: some View {
-            sliderRect
+        sliderRect
             .cornerRadius(config.sliderCornerRadius(size: maxSize))
             .overlay(progressTag, alignment: overlayAlignment)
             .gesture(DragGesture(minimumDistance: 0)
@@ -43,11 +43,11 @@ extension MagicSliderView {
         let translation = dragGestureValue.translation
         return config.orientation == .vertical ? -translation.height : translation.width
     }
-
+    
     private var innerSliderHorizontarOffset: CGFloat {
-         (viewModel.sliderSize - maxSize) / 2
+        (viewModel.sliderSize - maxSize) / 2
     }
-
+    
     private var tagVerticalOffset: CGFloat {
         let sizeNeeded = tagMaxHeigh * config.aspectRatio
         let isTagOverlapping = viewModel.sliderSize < maxSize - sizeNeeded
@@ -64,7 +64,7 @@ extension MagicSliderView {
             .fill(config.outerColor)
             .opacity(config.outerOpacity)
     }
-
+    
     private var innerRect: some View {
         let rect = Rectangle()
             .fill(config.innerColor)
@@ -80,7 +80,7 @@ extension MagicSliderView {
                 .anyView
         }
     }
-
+    
     private var progressTag: some View {
         let text = Text(progressInfo)
             .fontWeight(.bold)
@@ -100,7 +100,7 @@ extension MagicSliderView {
                 .anyView
         }
     }
-
+    
     private var sliderRect: some View {
         let sliderRect = ZStack(alignment: .bottom) {
             outerRect

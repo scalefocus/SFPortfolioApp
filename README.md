@@ -19,6 +19,7 @@
   * Shimmer Loading View (iOS 13.0+)
   * Bottom Sheet (iOS 13.0+)
   * Pie Progress Indicator (iOS 13.0+)
+  * Magic Slider (iOS 13.0+)
 * [Contacts](#contacts)
 * [More Projects](#more-projects)
 * [License](#license)
@@ -40,9 +41,9 @@
 | ![Execution Button] | ![Segmented Control] | ![Shimmer Loading View] |
 
 
- [Bottom Sheet](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/BottomSheet) | [Pie Progress Indicator](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/PieProgressIndicator) |
- | --------------- | --------------- |
- | ![Bottom Sheet] | ![Pie Progress Indicator] |
+ [Bottom Sheet](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/BottomSheet) | [Pie Progress Indicator](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/PieProgressIndicator) | [Magic Slider](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/MagicSliderView) |
+ | --------------- | --------------- | --------------- |
+ | ![Bottom Sheet] | ![Pie Progress Indicator] | ![Magic Slider] |
  
 ## Contacts
 
@@ -56,7 +57,7 @@ We love to make you smile. [Here](https://github.com/orgs/scalefocus/repositorie
 
 **SFPortfolioApp** is under the terms and conditions of the [MIT license][license-url].
 
-[swift-image]:https://img.shields.io/badge/swift-5-green.svg
+[swift-image]: https://img.shields.io/badge/swift-5-green.svg
 [swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
@@ -69,3 +70,4 @@ We love to make you smile. [Here](https://github.com/orgs/scalefocus/repositorie
 [Shimmer Loading View]: https://media.giphy.com/media/uqgywGUpEbKcsqKBm9/giphy.gif
 [Bottom Sheet]: https://media.giphy.com/media/nPshTYy9AmhztBcypK/giphy.gif
 [Pie Progress Indicator]: https://media.giphy.com/media/qUs1OJNqggqw69dkh1/giphy.gif
+[Magic Slider]: https://media.giphy.com/media/5oLII4j5TMbnYNii8n/giphy.gif
