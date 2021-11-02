@@ -30,10 +30,10 @@ class ScannerDemoViewModel: ScannerDemoViewModelProtocol {
     private func scan(_ image: UIImage) {
         guard let cgImage = image.cgImage else { return }
         
-        let request = VNRecognizeTextRequest { request, error in
+        let request = VNRecognizeTextRequest { [weak self] request, error in
             guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
             
-            observations.forEach { [weak self] observation in
+            observations.forEach { observation in
                 if let recognizedText = observation.topCandidates(1).first {
                     self?.infoText.value = recognizedText.string
                 }
