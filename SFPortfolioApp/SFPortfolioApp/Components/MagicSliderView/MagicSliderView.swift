@@ -12,20 +12,14 @@ struct MagicSliderView<T: MagicSliderViewModelProtocol>: View {
     // MARK: - Configuration
     @ObservedObject var viewModel: T
     let config: MagicSliderConfig
-    let maxSize: CGFloat
+    @State var maxSize: CGFloat = .zero
     let tagMaxHeigh: CGFloat
     
     // MARK: - Body
     var body: some View {
-        sliderRect
-            .cornerRadius(config.sliderCornerRadius(size: maxSize))
-            .overlay(progressTag, alignment: overlayAlignment)
-            .gesture(DragGesture(minimumDistance: 0)
-                        .onChanged { viewModel.onDragChanged(dragValue($0), maxDragValue: maxSize) }
-                        .onEnded { _ in viewModel.onDragEnded(maxDragValue: maxSize) }
-            )
+        GeometryReader { makeView($0) }
     }
-    
+
 }
 
 // MARK: - Helpers
@@ -58,6 +52,20 @@ extension MagicSliderView {
 
 // MARK: - Private Views
 extension MagicSliderView {
+    
+    private func makeView(_ geometry: GeometryProxy) -> some View {
+        DispatchQueue.main.async {
+            maxSize = max(geometry.size.height, geometry.size.width)
+        }
+        
+        return sliderRect
+            .cornerRadius(config.sliderCornerRadius(size: maxSize))
+            .overlay(progressTag, alignment: overlayAlignment)
+            .gesture(DragGesture(minimumDistance: 0)
+                        .onChanged { viewModel.onDragChanged(dragValue($0), maxDragValue: maxSize) }
+                        .onEnded { _ in viewModel.onDragEnded(maxDragValue: maxSize) }
+            )
+    }
     
     private var outerRect: some View {
         Rectangle()
@@ -123,8 +131,8 @@ struct MagicSliderView_Previews: PreviewProvider {
     
     static var previews: some View {
         VStack {
-            MagicSliderView(viewModel: MagicSliderViewModel(), config: MagicSliderConfig(orientation: .horiontal), maxSize: 300, tagMaxHeigh: 30)
-            MagicSliderView(viewModel: MagicSliderViewModel(), config: MagicSliderConfig(orientation: .vertical), maxSize: 300, tagMaxHeigh: 30)
+            MagicSliderView(viewModel: MagicSliderViewModel(), config: MagicSliderConfig(orientation: .horiontal), tagMaxHeigh: 30)
+            MagicSliderView(viewModel: MagicSliderViewModel(), config: MagicSliderConfig(orientation: .vertical), tagMaxHeigh: 30)
         }
     }
     

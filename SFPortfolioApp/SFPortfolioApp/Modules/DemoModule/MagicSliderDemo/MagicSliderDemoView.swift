@@ -14,7 +14,6 @@ struct MagicSliderDemoView<T: MagicSliderViewModel>: View {
     @ObservedObject var secondaryVerticalViewModel: T
     @ObservedObject var horizontalViewModel: T
     private let spacing: CGFloat = 15
-    private let sliderHeight: CGFloat = 300
     private let tagHeight: CGFloat = 30
     
     // MARK: - Body
@@ -22,6 +21,7 @@ struct MagicSliderDemoView<T: MagicSliderViewModel>: View {
         VStack(spacing: spacing) {
             verticalSldiers
             horizontalSldier
+            statusView
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -57,20 +57,28 @@ extension MagicSliderDemoView {
         HStack(spacing: spacing) {
             MagicSliderView(viewModel: primaryVerticalViewModel,
                             config: verticalSldierConfig,
-                            maxSize: sliderHeight,
                             tagMaxHeigh: tagHeight)
+                .frame(width: 100, height: 200)
             MagicSliderView(viewModel: secondaryVerticalViewModel,
                             config: secondaryVerticalSldierConfig,
-                            maxSize: sliderHeight,
                             tagMaxHeigh: tagHeight)
+                .frame(width: 100, height: 300)
         }
     }
     
     private var horizontalSldier: some View {
         MagicSliderView(viewModel: horizontalViewModel,
                         config: horizontalSldierConfig,
-                        maxSize: sliderHeight,
                         tagMaxHeigh: tagHeight)
+            .frame(width: 300, height: 100)
+    }
+    
+    private var statusView: some View {
+        VStack {
+            Text("Left slider value - \(Int(primaryVerticalViewModel.sliderProgress * 100))%")
+            Text("Right slider value - \(Int(secondaryVerticalViewModel.sliderProgress * 100))%")
+            Text("Horizontal slider value - \(Int(horizontalViewModel.sliderProgress * 100))%")
+        }
     }
     
 }
