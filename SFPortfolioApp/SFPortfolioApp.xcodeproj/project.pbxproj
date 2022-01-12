@@ -109,6 +109,12 @@
 		9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */; };
 		9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */; };
 		9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */; };
+		9A8D843627312BDE0032E16E /* MagicSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843527312BDE0032E16E /* MagicSliderView.swift */; };
+		9A8D843827312C230032E16E /* ViewOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843727312C230032E16E /* ViewOrientation.swift */; };
+		9A8D843A27312DE00032E16E /* MagicSliderViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */; };
+		9A8D843C27312E330032E16E /* MagicSliderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843B27312E330032E16E /* MagicSliderConfig.swift */; };
+		9A8D843F27312EE30032E16E /* MagicSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */; };
+		9A8D844127315D060032E16E /* MagicSliderDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D844027315D060032E16E /* MagicSliderDemoView.swift */; };
 		9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */; };
 		9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */; };
 		9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */; };
@@ -268,6 +274,12 @@
 		9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CustomImages.swift"; sourceTree = "<group>"; };
 		9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFPortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPortfolioAppUITests.swift; sourceTree = "<group>"; };
+		9A8D843527312BDE0032E16E /* MagicSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderView.swift; sourceTree = "<group>"; };
+		9A8D843727312C230032E16E /* ViewOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrientation.swift; sourceTree = "<group>"; };
+		9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A8D843B27312E330032E16E /* MagicSliderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderConfig.swift; sourceTree = "<group>"; };
+		9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderViewModel.swift; sourceTree = "<group>"; };
+		9A8D844027315D060032E16E /* MagicSliderDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderDemoView.swift; sourceTree = "<group>"; };
 		9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModel.swift; sourceTree = "<group>"; };
@@ -589,6 +601,7 @@
 		8C82FFE426B976300059862F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9A8D843427312BC30032E16E /* MagicSliderView */,
 				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
 				8C68799426C254B600D33186 /* BottomSheet */,
 				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
@@ -762,6 +775,7 @@
 			children = (
 				9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */,
 				32964BEA2692EECC00FC3B1A /* Category.swift */,
+				9A8D843727312C230032E16E /* ViewOrientation.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -859,6 +873,25 @@
 			path = SFPortfolioAppUITests;
 			sourceTree = "<group>";
 		};
+		9A8D843427312BC30032E16E /* MagicSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D843527312BDE0032E16E /* MagicSliderView.swift */,
+				9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */,
+				9A8D843B27312E330032E16E /* MagicSliderConfig.swift */,
+			);
+			path = MagicSliderView;
+			sourceTree = "<group>";
+		};
+		9A8D843D27312EC70032E16E /* MagicSliderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */,
+				9A8D844027315D060032E16E /* MagicSliderDemoView.swift */,
+			);
+			path = MagicSliderDemo;
+			sourceTree = "<group>";
+		};
 		9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -936,6 +969,7 @@
 				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
 				9A3AEE072716BE2F00CBCADD /* PieProgressIndicatorDemo */,
 				8C9C041626C4FDCE0018FAFA /* ShimmerLoadingDemo */,
+				9A8D843D27312EC70032E16E /* MagicSliderDemo */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";
@@ -1183,6 +1217,7 @@
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
 				8C72854F26C2BEE0006F650C /* BottomSheetConfig.swift in Sources */,
 				8C4CF32826B9854F00EAEABB /* TooltipTransitionConfig.swift in Sources */,
+				9A8D843A27312DE00032E16E /* MagicSliderViewModelProtocol.swift in Sources */,
 				9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */,
 				8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */,
 				9A02E45F26C3C902009B2BBC /* TooltipDemoViewModel.swift in Sources */,
@@ -1239,6 +1274,7 @@
 				8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */,
 				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
 				9A3AEE112716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift in Sources */,
+				9A8D843827312C230032E16E /* ViewOrientation.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */,
 				9A02E45E26C3C902009B2BBC /* RoundedButtonView.swift in Sources */,
@@ -1275,13 +1311,16 @@
 				32964C062694AF9A00FC3B1A /* TabBarCollectionViewCellViewModelProtocol.swift in Sources */,
 				32964C0F26959F4700FC3B1A /* DetailsCollectionViewCellViewModelProtocol.swift in Sources */,
 				8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */,
+				9A8D844127315D060032E16E /* MagicSliderDemoView.swift in Sources */,
 				8C56BB0426BBE02A00DBE86F /* View+TooltipApplicable.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
 				8C9C03D226C435340018FAFA /* View+BaseHostingController.swift in Sources */,
 				9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */,
+				9A8D843C27312E330032E16E /* MagicSliderConfig.swift in Sources */,
 				9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
+				9A8D843F27312EE30032E16E /* MagicSliderViewModel.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */,
 				9A96785326D790EC000B32D4 /* SplashViewController.swift in Sources */,
@@ -1291,6 +1330,7 @@
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */,
 				9A3AEE162716BEB700CBCADD /* PieProgressIndicatorModifier.swift in Sources */,
+				9A8D843627312BDE0032E16E /* MagicSliderView.swift in Sources */,
 				9A129352271D50E2005EA672 /* AnalyticsManagerProtocol.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);
