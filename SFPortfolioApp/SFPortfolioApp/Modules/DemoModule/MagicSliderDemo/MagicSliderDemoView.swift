@@ -19,8 +19,8 @@ struct MagicSliderDemoView<T: MagicSliderViewModel>: View {
     // MARK: - Body
     var body: some View {
         VStack(spacing: spacing) {
-            verticalSldiers
-            horizontalSldier
+            verticalSlider
+            horizontalSlider
             statusView
         }
         .padding()
@@ -34,15 +34,15 @@ struct MagicSliderDemoView<T: MagicSliderViewModel>: View {
 // MARK: - Helpers
 extension MagicSliderDemoView {
     
-    private var horizontalSldierConfig: MagicSliderConfig {
+    private var horizontalSliderConfig: MagicSliderConfig {
         MagicSliderConfig(orientation: .horiontal)
     }
     
-    private var verticalSldierConfig: MagicSliderConfig {
+    private var verticalSliderConfig: MagicSliderConfig {
         MagicSliderConfig(orientation: .vertical)
     }
     
-    private var secondaryVerticalSldierConfig: MagicSliderConfig {
+    private var secondaryVerticalSliderConfig: MagicSliderConfig {
         MagicSliderConfig(orientation: .vertical,
                           outerColor: .gray,
                           innerColor: .gray)
@@ -53,22 +53,22 @@ extension MagicSliderDemoView {
 // MARK: - Private Views
 extension MagicSliderDemoView {
     
-    private var verticalSldiers: some View {
+    private var verticalSlider: some View {
         HStack(spacing: spacing) {
             MagicSliderView(viewModel: primaryVerticalViewModel,
-                            config: verticalSldierConfig,
+                            config: verticalSliderConfig,
                             tagMaxHeigh: tagHeight)
                 .frame(width: 100, height: 200)
             MagicSliderView(viewModel: secondaryVerticalViewModel,
-                            config: secondaryVerticalSldierConfig,
+                            config: secondaryVerticalSliderConfig,
                             tagMaxHeigh: tagHeight)
                 .frame(width: 100, height: 300)
         }
     }
     
-    private var horizontalSldier: some View {
+    private var horizontalSlider: some View {
         MagicSliderView(viewModel: horizontalViewModel,
-                        config: horizontalSldierConfig,
+                        config: horizontalSliderConfig,
                         tagMaxHeigh: tagHeight)
             .frame(width: 300, height: 100)
     }

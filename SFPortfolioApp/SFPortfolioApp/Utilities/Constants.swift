@@ -127,7 +127,7 @@ struct Constants {
         static let pieProgressIndicator = "Pie Progress Indicator"
         
         /// Title of `Magic Slider View` category item.
-        static let magicSliderView = "Magic Sldier View"
+        static let magicSliderView = "Magic Slider View"
         
     }
     

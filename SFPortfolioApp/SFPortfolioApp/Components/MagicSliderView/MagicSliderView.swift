@@ -92,6 +92,7 @@ extension MagicSliderView {
     private var progressTag: some View {
         let text = Text(progressInfo)
             .fontWeight(.bold)
+            .minimumScaleFactor(0.2)
             .foregroundColor(config.tagForegroundColor)
             .frame(maxHeight: tagMaxHeigh)
             .padding(config.tagPadding)
