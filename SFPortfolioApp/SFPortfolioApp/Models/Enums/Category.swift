@@ -77,6 +77,7 @@ extension Category {
         case .sliders:
             return [
                 .magicSliderView
+            ]
         case .utilities:
             return [
                 .scannerView

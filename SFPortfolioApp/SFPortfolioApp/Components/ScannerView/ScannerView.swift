@@ -53,7 +53,7 @@ class ScannerView: BaseView {
     // MARK: - Public Functions
     /// Configures scanning preview.
     func setup() {
-        createrSession()
+        createSession()
         configureCamera()
         addSessionInput()
         addSessionOutput()
@@ -88,7 +88,7 @@ class ScannerView: BaseView {
         }
     }
     
-    private func createrSession() {
+    private func createSession() {
         captureSession = AVCaptureSession()
         let session = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera],
                                                        mediaType: .video,

@@ -18,12 +18,12 @@ class ScannerDemoViewModel: ScannerDemoViewModelProtocol {
     
     // MARK: - Public Functions
     func scan(_ image: UIImage, scanType: ScanType) {
-            switch scanType {
-            case .text:
-                scan(image)
-            case .qr:
-                infoText.value = image.parseQR()
-            }
+        switch scanType {
+        case .text:
+            scan(image)
+        case .qr:
+            infoText.value = image.parseQR()
+        }
     }
     
     // MARK: - Private Functions
@@ -39,6 +39,7 @@ class ScannerDemoViewModel: ScannerDemoViewModelProtocol {
                 }
             }
         }
+        
         request.recognitionLevel = VNRequestTextRecognitionLevel.accurate
         let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         try? requestHandler.perform([request])
