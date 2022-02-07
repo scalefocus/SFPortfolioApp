@@ -94,6 +94,9 @@ struct Constants {
         /// Title of `Loading Views` category, containing different loading view elements.
         static let loadingViews = "Loading Views"
         
+        /// Title of `Sliders` category, containing different slider elements.
+        static let sliders = "Sliders"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -122,6 +125,9 @@ struct Constants {
         
         /// Title of `Pie Progress Indicator` category item.
         static let pieProgressIndicator = "Pie Progress Indicator"
+        
+        /// Title of `Magic Slider View` category item.
+        static let magicSliderView = "Magic Slider View"
         
     }
     
