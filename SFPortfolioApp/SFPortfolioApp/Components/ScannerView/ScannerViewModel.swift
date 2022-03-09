@@ -6,6 +6,7 @@
 //
 
 import SFBaseKit
+import Vision
 
 class ScannerViewModel: ScannerViewModelProtocol {
     
@@ -29,8 +30,8 @@ class ScannerViewModel: ScannerViewModelProtocol {
     
     // MARK: - Public Functions
     func start() {
-        timer = Timer.scheduledTimer(withTimeInterval: scanInterval, repeats: true) { [weak self] _ in
-            self?.shouldSnapshot = true
+        timer = Timer.scheduledTimer(withTimeInterval: scanInterval, repeats: true) { _ in
+            self.shouldSnapshot = true
         }
     }
     
@@ -39,11 +40,35 @@ class ScannerViewModel: ScannerViewModelProtocol {
     }
     
     func didFinishScan(_ image: UIImage) {
-        delegate?.didFinishScan(image, scanType: scanType)
+        switch scanType {
+        case .text:
+            recognizeText(in: image)
+        case .qr:
+            delegate?.didFinishScan(text: image.parseQR())
+        }
     }
     
     func changeType(_ type: ScanType) {
         scanType = type
+    }
+    
+    // MARK: - Private Functions
+    private func recognizeText(in image: UIImage) {
+        guard let cgImage = image.cgImage else { return }
+        
+        let request = VNRecognizeTextRequest { [weak self] request, error in
+            guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
+            
+            observations.forEach { observation in
+                if let recognizedText = observation.topCandidates(1).first {
+                    self?.delegate?.didFinishScan(text: recognizedText.string)
+                }
+            }
+        }
+        
+        request.recognitionLevel = VNRequestTextRecognitionLevel.accurate
+        let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        try? requestHandler.perform([request])
     }
     
 }

@@ -9,9 +9,8 @@ import UIKit
 
 protocol ScannnerViewModelDelegate: AnyObject {
     
-    /// Notifies thet an image is scanned.
-    /// - Parameter image: Scanned image.
-    /// - Parameter scanType: Type of scanned content.
-    func didFinishScan(_ image: UIImage, scanType: ScanType)
+    /// Notifies that an image is scanned.
+    /// - Parameter text: Scanned text or nil if scan did fail.
+    func didFinishScan(text: String?)
 
 }

@@ -31,8 +31,8 @@ class ScannerDemoViewController: BaseViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
         scannerView?.stopScan()
+        super.viewDidDisappear(animated)
     }
     
     // MARK: - Private Functions
@@ -42,7 +42,7 @@ class ScannerDemoViewController: BaseViewController {
     }
     
     private func setupScanner() {
-        scannerView = ScannerView.create(delegate: self)
+        scannerView = ScannerView.create(delegate: viewModel)
         scannerView?.expand(in: scannerContainer)
         scannerView?.setup()
     }
@@ -55,15 +55,6 @@ class ScannerDemoViewController: BaseViewController {
         }
     }
     
-}
-
-// MARK: - ScannerViewModelDelegate
-extension ScannerDemoViewController: ScannnerViewModelDelegate {
-
-    func didFinishScan(_ image: UIImage, scanType: ScanType) {
-        viewModel.scan(image, scanType: scanType)
-    }
-
 }
 
 // MARK: - Instantiate

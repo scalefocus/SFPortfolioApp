@@ -11,6 +11,11 @@ import AVFoundation
 class ScannerView: BaseView {
     
     // MARK: - Properties
+    @IBInspectable var isScanTypeConrolHidden: Bool = false {
+        didSet {
+            scanTypeSegmentedControl.isHidden = isScanTypeConrolHidden
+        }
+    }
     private var captureSession: AVCaptureSession?
     private var rearCamera: AVCaptureDevice?
     private var rearCameraInput: AVCaptureDeviceInput?
@@ -29,6 +34,7 @@ class ScannerView: BaseView {
     @IBOutlet private weak var captureView: UIView!
     @IBOutlet private weak var dimmedView: UIView!
     @IBOutlet private weak var captureViewHeight: NSLayoutConstraint!
+    @IBOutlet private weak var scanTypeSegmentedControl: UISegmentedControl!
     
     // MARK: - Lifecycle
     override func draw(_ rect: CGRect) {
@@ -67,7 +73,7 @@ class ScannerView: BaseView {
                   !session.isRunning else { return }
             
             session.startRunning()
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.configVideoPreviewLayer(session: session)
                 self?.activityIndicator.stopAnimating()
             }
@@ -82,9 +88,7 @@ class ScannerView: BaseView {
     // MARK: - Private Functions
     private func setupBinding() {
         viewModel.infoText.sink { [weak self] text in
-            DispatchQueue.main.async {
-                self?.infoLabel.text = text
-            }
+            self?.infoLabel.text = text
         }
     }
     
@@ -106,7 +110,7 @@ class ScannerView: BaseView {
     
     private func addSessionInput() {
         guard let rearCamera = rearCamera else { return }
-    
+        
         rearCameraInput = try? AVCaptureDeviceInput(device: rearCamera)
         guard let rearCameraInput = rearCameraInput else { return }
         
@@ -120,7 +124,7 @@ class ScannerView: BaseView {
         
         captureSession?.addOutput(videoPreviewOutput)
     }
-
+    
     private func addDimmedMask() {
         dimmedView.layer.mask = nil
         let maskLayer = CAShapeLayer()
@@ -182,7 +186,7 @@ extension ScannerView: AVCaptureVideoDataOutputSampleBufferDelegate {
         let ciImage = CIImage(cvPixelBuffer: imageBuffer)
         let context = CIContext()
         guard let cgImage = context.createCGImage(ciImage, from: ciImage.extent) else { return }
-       
+        
         DispatchQueue.main.sync { [weak self] in
             guard let self = self else { return }
             
@@ -207,7 +211,7 @@ extension ScannerView {
 
 // MARK: - Constants
 private extension Constants {
-
+    
     static let baseCornerRadius: CGFloat = 18
     static let defaultScanHeight: CGFloat = 37
     

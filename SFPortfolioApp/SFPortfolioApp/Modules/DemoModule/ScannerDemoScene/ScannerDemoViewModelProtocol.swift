@@ -7,16 +7,12 @@
 
 import SFBaseKit
 
-protocol ScannerDemoViewModelProtocol: CoordinatableViewModel {
+protocol ScannerDemoViewModelProtocol: CoordinatableViewModel, ScannnerViewModelDelegate {
     
     /// Title to configure the view with.
     var title: String { get }
     
     /// Observable information text.
     var infoText: Observable<String?> { get }
-    
-    /// Performs image scan.
-    /// - Parameter image: Image to scan.
-    func scan(_ image: UIImage, scanType: ScanType)
     
 }
