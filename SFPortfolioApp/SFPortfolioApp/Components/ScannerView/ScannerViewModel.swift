@@ -10,7 +10,7 @@ import Vision
 
 class ScannerViewModel: ScannerViewModelProtocol {
     
-    // MARK: - Propertis
+    // MARK: - Properties
     let infoText: Observable<String>
     var shouldSnapshot = false
     weak var delegate: ScannnerViewModelDelegate?
