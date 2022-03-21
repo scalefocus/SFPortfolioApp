@@ -49,9 +49,7 @@ class ScannerDemoViewController: BaseViewController {
     
     private func setupBinding() {
         viewModel.infoText.sink { [weak self] text in
-            DispatchQueue.main.async {
-                self?.resultLabel.text = text
-            }
+            self?.resultLabel.text = text
         }
     }
     
