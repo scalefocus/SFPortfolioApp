@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerView" customModule="SFPortfolioApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="zk6-EP-bMM" id="zee-Gb-KJm"/>
+                <outlet property="captureView" destination="pyE-xH-GYn" id="ssO-Jk-nAy"/>
+                <outlet property="captureViewHeight" destination="D5t-19-r7d" id="6fL-Fz-jPf"/>
+                <outlet property="dimmedView" destination="ui1-AX-C9W" id="3gR-BR-JBR"/>
+                <outlet property="infoLabel" destination="GJw-jG-dDd" id="qKw-8q-Vxr"/>
+                <outlet property="videoPreviewView" destination="280-VV-Afn" id="B1I-8F-i3I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="698" height="556"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="280-VV-Afn" userLabel="VideoPreview View">
+                    <rect key="frame" x="0.0" y="44" width="698" height="512"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-AX-C9W" userLabel="Dimmed View">
+                    <rect key="frame" x="0.0" y="44" width="698" height="512"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyE-xH-GYn" userLabel="Capture View">
+                            <rect key="frame" x="20" y="207.5" width="658" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="D5t-19-r7d"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="pyE-xH-GYn" secondAttribute="height" id="TJZ-CQ-Myr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pyE-xH-GYn" secondAttribute="trailing" constant="20" id="00d-PK-JZV"/>
+                        <constraint firstItem="pyE-xH-GYn" firstAttribute="centerX" secondItem="ui1-AX-C9W" secondAttribute="centerX" id="EBx-Q0-UHr"/>
+                        <constraint firstItem="pyE-xH-GYn" firstAttribute="leading" secondItem="ui1-AX-C9W" secondAttribute="leading" constant="20" id="Ys3-wM-12B"/>
+                        <constraint firstItem="pyE-xH-GYn" firstAttribute="centerY" secondItem="ui1-AX-C9W" secondAttribute="centerY" constant="-30" id="lbl-UQ-Huw"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-jG-dDd" userLabel="Info Label">
+                    <rect key="frame" x="328.5" y="59" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="baseCell"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-Y0-Eyz">
+                    <rect key="frame" x="289" y="471" width="120" height="32"/>
+                    <color key="backgroundColor" name="shadow"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="8Y2-Z1-CPb"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Text"/>
+                        <segment title="QR"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="barBackground"/>
+                    <connections>
+                        <action selector="didChangeSegmentControlValue:" destination="-1" eventType="valueChanged" id="QGg-to-fe4"/>
+                    </connections>
+                </segmentedControl>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-EP-bMM">
+                    <rect key="frame" x="0.0" y="0.0" width="698" height="556"/>
+                    <color key="backgroundColor" name="shadow"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zk6-EP-bMM" secondAttribute="trailing" id="0YQ-u0-rVF"/>
+                <constraint firstItem="zk6-EP-bMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1SJ-n9-NO4"/>
+                <constraint firstItem="280-VV-Afn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4jz-i4-6ZU"/>
+                <constraint firstItem="GJw-jG-dDd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AR8-QE-Hh0"/>
+                <constraint firstItem="GJw-jG-dDd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="G5B-eG-jZh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j1Q-Y0-Eyz" secondAttribute="bottom" constant="20" id="H4e-Po-Dfc"/>
+                <constraint firstItem="zk6-EP-bMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HX3-vC-BXX"/>
+                <constraint firstAttribute="bottom" secondItem="ui1-AX-C9W" secondAttribute="bottom" id="Lsb-hS-q0u"/>
+                <constraint firstItem="280-VV-Afn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VlL-HU-Qs0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="280-VV-Afn" secondAttribute="trailing" id="XTT-oB-I8A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="ui1-AX-C9W" secondAttribute="top" id="ccd-pT-pf2"/>
+                <constraint firstItem="ui1-AX-C9W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gyy-Zq-xVz"/>
+                <constraint firstAttribute="bottom" secondItem="zk6-EP-bMM" secondAttribute="bottom" id="iQn-nx-ZPk"/>
+                <constraint firstAttribute="bottom" secondItem="280-VV-Afn" secondAttribute="bottom" id="rdi-kP-wp1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ui1-AX-C9W" secondAttribute="trailing" id="wTM-XC-ioN"/>
+                <constraint firstItem="j1Q-Y0-Eyz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wV4-y0-YBX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="246.37681159420291" y="-26.116071428571427"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="barBackground">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="baseCell">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="shadow">
+            <color red="0.41999998688697815" green="0.41999998688697815" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

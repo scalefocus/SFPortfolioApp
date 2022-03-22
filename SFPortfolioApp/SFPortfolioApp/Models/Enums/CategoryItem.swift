@@ -19,6 +19,7 @@ enum CategoryItem: CaseIterable {
     case shimmerLoadingView
     case pieProgressIndicator
     case magicSliderView
+    case scannerView
     
 }
 
@@ -45,6 +46,8 @@ extension CategoryItem {
             return Constants.CategoryItemTitle.pieProgressIndicator
         case .magicSliderView:
             return Constants.CategoryItemTitle.magicSliderView
+        case .scannerView:
+            return Constants.CategoryItemTitle.scannerView
         }
     }
     
@@ -56,7 +59,8 @@ extension CategoryItem {
     private var viewOriginTag: ViewOriginInfoTag {
         switch self {
         case .synchronisedCollectionView,
-             .asymmetricCollectionView:
+             .asymmetricCollectionView,
+             .scannerView:
             return .uiKit
         case .bottomSheet,
              .tooltipView,

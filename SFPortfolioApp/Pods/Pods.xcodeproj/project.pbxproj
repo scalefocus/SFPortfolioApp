@@ -390,8 +390,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -472,8 +472,8 @@
 				E7F58C865ACBD8C88B4A1B9EC14B3D2D /* BaseViewController.swift in Sources */,
 				C287D2D5EB4238EAC1AF7B0511715CA6 /* Bundle+VersionNumber.swift in Sources */,
 				94888924076FECC90D4C456390ABF2C3 /* CoordinatableViewModel.swift in Sources */,
-				1081E14E7500E5600EE1CEDE31BEC56A /* Coordinator+Equatable.swift in Sources */,
 				631D753772C17356BF3A0BB25140027E /* Coordinator.swift in Sources */,
+				1081E14E7500E5600EE1CEDE31BEC56A /* Coordinator+Equatable.swift in Sources */,
 				980B683380DC8C0160FB568390A3CB08 /* NotificaitonName+Custom.swift in Sources */,
 				2FECD31E7176D868B22F1D8FF9289464 /* SFBaseKit-dummy.m in Sources */,
 				6BCB1020E1259A9559FE8C9149F62707 /* SimpleTabBarAnimation.swift in Sources */,

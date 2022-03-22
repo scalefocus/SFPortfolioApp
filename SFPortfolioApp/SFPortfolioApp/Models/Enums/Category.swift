@@ -17,6 +17,7 @@ enum Category: CaseIterable {
     case tabViews
     case loadingViews
     case sliders
+    case utilities
     
 }
 
@@ -39,7 +40,10 @@ extension Category {
             return Constants.CategoryTitle.loadingViews
         case .sliders:
             return Constants.CategoryTitle.sliders
+        case .utilities:
+            return Constants.CategoryTitle.utilities
         }
+        
     }
     
     var categoryItems: [CategoryItem] {
@@ -73,6 +77,10 @@ extension Category {
         case .sliders:
             return [
                 .magicSliderView
+            ]
+        case .utilities:
+            return [
+                .scannerView
             ]
         }
     }

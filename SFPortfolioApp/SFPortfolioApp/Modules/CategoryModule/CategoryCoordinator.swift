@@ -98,6 +98,11 @@ class CategoryCoordinator: Coordinator {
         let viewController = view.hostingController
         navigationController.pushViewController(viewController, animated: true)
     }
+        
+    private func startScannerViewDemoScene() {
+        let viewModel = ScannerDemoViewModel()
+        navigationController.pushViewController(ScannerDemoViewController.create(viewModel: viewModel), animated: true)
+    }
     
 }
 
@@ -136,6 +141,8 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startPieProgressIndicatorScene()
         case .magicSliderView:
             startMagicSliderDemoScene()
+        case .scannerView:
+            startScannerViewDemoScene()
         }
     }
     

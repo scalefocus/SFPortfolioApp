@@ -20,6 +20,7 @@
   * Bottom Sheet (iOS 13.0+)
   * Pie Progress Indicator (iOS 13.0+)
   * Magic Slider (iOS 13.0+)
+  * Scanner View (iOS 14.0+)
 * [Contacts](#contacts)
 * [More Projects](#more-projects)
 * [License](#license)
@@ -44,6 +45,10 @@
  [Bottom Sheet](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/BottomSheet) | [Pie Progress Indicator](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/PieProgressIndicator) | [Magic Slider](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/MagicSliderView) |
  | --------------- | --------------- | --------------- |
  | ![Bottom Sheet] | ![Pie Progress Indicator] | ![Magic Slider] |
+ 
+ | [Scanner View](https://github.com/scalefocus/SFPortfolioApp/tree/main/SFPortfolioApp/SFPortfolioApp/Components/ScannerView) |
+ | --------------- |
+ | ![Scanner View] |
  
 ## Contacts
 
@@ -71,3 +76,4 @@ We love to make you smile. [Here](https://github.com/orgs/scalefocus/repositorie
 [Bottom Sheet]: https://media.giphy.com/media/nPshTYy9AmhztBcypK/giphy.gif
 [Pie Progress Indicator]: https://media.giphy.com/media/qUs1OJNqggqw69dkh1/giphy.gif
 [Magic Slider]: https://media.giphy.com/media/5oLII4j5TMbnYNii8n/giphy.gif
+[Scanner View]: https://media.giphy.com/media/dFYwZQeEcA44b4oVI7/giphy.gif

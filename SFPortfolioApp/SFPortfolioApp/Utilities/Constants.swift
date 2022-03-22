@@ -97,6 +97,9 @@ struct Constants {
         /// Title of `Sliders` category, containing different slider elements.
         static let sliders = "Sliders"
         
+        /// Title of `Utilities` category, containing different utility elements.
+        static let utilities = "Utilities"
+        
     }
     
     // MARK: - CategoryItemTitle
@@ -128,6 +131,9 @@ struct Constants {
         
         /// Title of `Magic Slider View` category item.
         static let magicSliderView = "Magic Slider View"
+        
+        /// Title of `Scanner View` category item.
+        static let scannerView = "Scanner View"
         
     }
     
