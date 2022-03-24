@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerDemoViewController" customModule="SFPortfolioApp" customModuleProvider="target">
+            <connections>
+                <outlet property="resultLabel" destination="ZEi-bN-Vv7" id="V4u-qN-wGx"/>
+                <outlet property="scannerContainer" destination="HuW-hd-c2N" id="Q4F-hs-3m3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ACu-IH-Sah" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-hd-c2N" userLabel="Scanner Container">
+                    <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-bN-Vv7" userLabel="Result Label">
+                    <rect key="frame" x="0.0" y="806" width="414" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="vkM-ir-w1Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="baseText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-zH-ZcR" userLabel="Logo">
+                    <rect key="frame" x="0.0" y="866" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="INo-XF-Zxo"/>
+                        <constraint firstAttribute="width" constant="100" id="L2I-bp-2Gs"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="barBackground"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HuW-hd-c2N" secondAttribute="trailing" id="0N0-ks-KJE"/>
+                <constraint firstItem="HuW-hd-c2N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3gy-Ek-nzV"/>
+                <constraint firstItem="vy6-zH-ZcR" firstAttribute="top" secondItem="ZEi-bN-Vv7" secondAttribute="bottom" id="BMd-LY-aNK"/>
+                <constraint firstItem="ZEi-bN-Vv7" firstAttribute="top" secondItem="HuW-hd-c2N" secondAttribute="bottom" id="Fnu-9V-Ef6"/>
+                <constraint firstAttribute="bottom" secondItem="vy6-zH-ZcR" secondAttribute="bottom" id="HYd-iH-oTp"/>
+                <constraint firstItem="vy6-zH-ZcR" firstAttribute="top" secondItem="ACu-IH-Sah" secondAttribute="bottom" id="PDo-PR-N76"/>
+                <constraint firstItem="HuW-hd-c2N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PEw-FJ-hv0"/>
+                <constraint firstItem="ACu-IH-Sah" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q3w-kh-Zo6"/>
+                <constraint firstItem="ZEi-bN-Vv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QdZ-zM-seL"/>
+                <constraint firstItem="ACu-IH-Sah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cBm-ip-6g7"/>
+                <constraint firstAttribute="trailing" secondItem="ACu-IH-Sah" secondAttribute="trailing" id="d5I-6h-E3b"/>
+                <constraint firstAttribute="trailing" secondItem="ZEi-bN-Vv7" secondAttribute="trailing" id="dbF-l1-8cG"/>
+                <constraint firstItem="vy6-zH-ZcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="epJ-HN-BDm"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="3334" height="5001"/>
+        <image name="logo" width="1556" height="504"/>
+        <namedColor name="barBackground">
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="baseText">
+            <color red="0.030999999493360519" green="0.15299999713897705" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

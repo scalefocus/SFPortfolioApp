@@ -88,6 +88,18 @@
 		9A02E46026C3C902009B2BBC /* TooltipDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A02E45D26C3C902009B2BBC /* TooltipDemoView.swift */; };
 		9A129352271D50E2005EA672 /* AnalyticsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129351271D50E2005EA672 /* AnalyticsManagerProtocol.swift */; };
 		9A129355271D517F005EA672 /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A129354271D517F005EA672 /* AppCenterManager.swift */; };
+		9A21319B272AD17F003DC3FA /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A213196272AD17F003DC3FA /* ScannerView.swift */; };
+		9A21319C272AD17F003DC3FA /* ScannnerViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A213197272AD17F003DC3FA /* ScannnerViewModelDelegate.swift */; };
+		9A21319D272AD17F003DC3FA /* ScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A213198272AD17F003DC3FA /* ScannerView.xib */; };
+		9A21319E272AD17F003DC3FA /* ScannerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A213199272AD17F003DC3FA /* ScannerViewModelProtocol.swift */; };
+		9A21319F272AD17F003DC3FA /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A21319A272AD17F003DC3FA /* ScannerViewModel.swift */; };
+		9A2131A5272AD19E003DC3FA /* ScannerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131A1272AD19E003DC3FA /* ScannerDemoViewController.swift */; };
+		9A2131A6272AD19E003DC3FA /* ScannerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2131A2272AD19E003DC3FA /* ScannerDemoViewController.xib */; };
+		9A2131A7272AD19E003DC3FA /* ScannerDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131A3272AD19E003DC3FA /* ScannerDemoViewModel.swift */; };
+		9A2131A8272AD19E003DC3FA /* ScannerDemoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131A4272AD19E003DC3FA /* ScannerDemoViewModelProtocol.swift */; };
+		9A2131AA272AD205003DC3FA /* UIImage+ParseQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131A9272AD205003DC3FA /* UIImage+ParseQR.swift */; };
+		9A2131AC272AD218003DC3FA /* UIView+Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131AB272AD218003DC3FA /* UIView+Expand.swift */; };
+		9A2131AE272AD24C003DC3FA /* ScanType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2131AD272AD24C003DC3FA /* ScanType.swift */; };
 		9A236BE026917B1D000E8643 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */; };
 		9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */; };
 		9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */; };
@@ -109,6 +121,12 @@
 		9A7416FB269C28E300DD5945 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7416FA269C28E300DD5945 /* OpenSans-Regular.ttf */; };
 		9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */; };
 		9A83C6A126CA411000F38E4B /* SFPortfolioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */; };
+		9A8D843627312BDE0032E16E /* MagicSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843527312BDE0032E16E /* MagicSliderView.swift */; };
+		9A8D843827312C230032E16E /* ViewOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843727312C230032E16E /* ViewOrientation.swift */; };
+		9A8D843A27312DE00032E16E /* MagicSliderViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */; };
+		9A8D843C27312E330032E16E /* MagicSliderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843B27312E330032E16E /* MagicSliderConfig.swift */; };
+		9A8D843F27312EE30032E16E /* MagicSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */; };
+		9A8D844127315D060032E16E /* MagicSliderDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D844027315D060032E16E /* MagicSliderDemoView.swift */; };
 		9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */; };
 		9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */; };
 		9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */; };
@@ -247,6 +265,18 @@
 		9A02E45D26C3C902009B2BBC /* TooltipDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TooltipDemoView.swift; sourceTree = "<group>"; };
 		9A129351271D50E2005EA672 /* AnalyticsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManagerProtocol.swift; sourceTree = "<group>"; };
 		9A129354271D517F005EA672 /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
+		9A213196272AD17F003DC3FA /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		9A213197272AD17F003DC3FA /* ScannnerViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannnerViewModelDelegate.swift; sourceTree = "<group>"; };
+		9A213198272AD17F003DC3FA /* ScannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScannerView.xib; sourceTree = "<group>"; };
+		9A213199272AD17F003DC3FA /* ScannerViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A21319A272AD17F003DC3FA /* ScannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		9A2131A1272AD19E003DC3FA /* ScannerDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerDemoViewController.swift; sourceTree = "<group>"; };
+		9A2131A2272AD19E003DC3FA /* ScannerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScannerDemoViewController.xib; sourceTree = "<group>"; };
+		9A2131A3272AD19E003DC3FA /* ScannerDemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerDemoViewModel.swift; sourceTree = "<group>"; };
+		9A2131A4272AD19E003DC3FA /* ScannerDemoViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerDemoViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A2131A9272AD205003DC3FA /* UIImage+ParseQR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ParseQR.swift"; sourceTree = "<group>"; };
+		9A2131AB272AD218003DC3FA /* UIView+Expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Expand.swift"; sourceTree = "<group>"; };
+		9A2131AD272AD24C003DC3FA /* ScanType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanType.swift; sourceTree = "<group>"; };
 		9A236BDF26917B1D000E8643 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		9A236BE126917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9A33035226C2B05C00B7EC74 /* ExecutionButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionButtonState.swift; sourceTree = "<group>"; };
@@ -268,6 +298,12 @@
 		9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CustomImages.swift"; sourceTree = "<group>"; };
 		9A83C69E26CA411000F38E4B /* SFPortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFPortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A83C6A026CA411000F38E4B /* SFPortfolioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPortfolioAppUITests.swift; sourceTree = "<group>"; };
+		9A8D843527312BDE0032E16E /* MagicSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderView.swift; sourceTree = "<group>"; };
+		9A8D843727312C230032E16E /* ViewOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrientation.swift; sourceTree = "<group>"; };
+		9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderViewModelProtocol.swift; sourceTree = "<group>"; };
+		9A8D843B27312E330032E16E /* MagicSliderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderConfig.swift; sourceTree = "<group>"; };
+		9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderViewModel.swift; sourceTree = "<group>"; };
+		9A8D844027315D060032E16E /* MagicSliderDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSliderDemoView.swift; sourceTree = "<group>"; };
 		9A92CC92268C7BA300B7A80E /* CategoryItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemTableViewCell.swift; sourceTree = "<group>"; };
 		9A92CC93268C7BA300B7A80E /* CategoryItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemTableViewCell.xib; sourceTree = "<group>"; };
 		9A92CC9D268CA55800B7A80E /* CategoryItemsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModel.swift; sourceTree = "<group>"; };
@@ -589,6 +625,7 @@
 		8C82FFE426B976300059862F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9A8D843427312BC30032E16E /* MagicSliderView */,
 				9AF781202695B8BD00283DFE /* AsymmetricCollectionViewLayout */,
 				8C68799426C254B600D33186 /* BottomSheet */,
 				8C6879C226C268FF00D33186 /* CustomRoundedShape */,
@@ -598,6 +635,7 @@
 				8C912DC326C2C21F0051993A /* ModalView */,
 				8C4CF31F26B9846F00EAEABB /* Tooltip */,
 				32964BF42694859000FC3B1A /* SynchronisedCollectionView */,
+				9A213195272AD17F003DC3FA /* ScannerView */,
 				8C82FFE626B976850059862F /* SupportingViews */,
 			);
 			path = Components;
@@ -690,8 +728,10 @@
 			children = (
 				9AD7EC4C269D750300624F76 /* UIColor+CustomColors.swift */,
 				9A82890626AAF1C40077EA9D /* UIImage+CustomImages.swift */,
+				9A2131A9272AD205003DC3FA /* UIImage+ParseQR.swift */,
 				9AA4713C26A0210B00C61FD0 /* UIFont+CustomFonts.swift */,
 				9AA47135269EFC7200C61FD0 /* UIView+Shadowed.swift */,
+				9A2131AB272AD218003DC3FA /* UIView+Expand.swift */,
 				9AC4974F26A6D4C7008A2A38 /* UINavigationController+Appearance.swift */,
 				9A736C8826EA443200FBAA3A /* UIStackView+Extensions.swift */,
 			);
@@ -757,11 +797,36 @@
 			path = AnalyticsManager;
 			sourceTree = "<group>";
 		};
+		9A213195272AD17F003DC3FA /* ScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				9A213196272AD17F003DC3FA /* ScannerView.swift */,
+				9A213197272AD17F003DC3FA /* ScannnerViewModelDelegate.swift */,
+				9A213198272AD17F003DC3FA /* ScannerView.xib */,
+				9A213199272AD17F003DC3FA /* ScannerViewModelProtocol.swift */,
+				9A21319A272AD17F003DC3FA /* ScannerViewModel.swift */,
+			);
+			path = ScannerView;
+			sourceTree = "<group>";
+		};
+		9A2131A0272AD19E003DC3FA /* ScannerDemoScene */ = {
+			isa = PBXGroup;
+			children = (
+				9A2131A1272AD19E003DC3FA /* ScannerDemoViewController.swift */,
+				9A2131A2272AD19E003DC3FA /* ScannerDemoViewController.xib */,
+				9A2131A3272AD19E003DC3FA /* ScannerDemoViewModel.swift */,
+				9A2131A4272AD19E003DC3FA /* ScannerDemoViewModelProtocol.swift */,
+			);
+			path = ScannerDemoScene;
+			sourceTree = "<group>";
+		};
 		9A236BDC268F392E000E8643 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 				9A92CCBC268DA0A300B7A80E /* CategoryItem.swift */,
 				32964BEA2692EECC00FC3B1A /* Category.swift */,
+				9A8D843727312C230032E16E /* ViewOrientation.swift */,
+				9A2131AD272AD24C003DC3FA /* ScanType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -859,6 +924,25 @@
 			path = SFPortfolioAppUITests;
 			sourceTree = "<group>";
 		};
+		9A8D843427312BC30032E16E /* MagicSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D843527312BDE0032E16E /* MagicSliderView.swift */,
+				9A8D843927312DE00032E16E /* MagicSliderViewModelProtocol.swift */,
+				9A8D843B27312E330032E16E /* MagicSliderConfig.swift */,
+			);
+			path = MagicSliderView;
+			sourceTree = "<group>";
+		};
+		9A8D843D27312EC70032E16E /* MagicSliderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A8D843E27312EE30032E16E /* MagicSliderViewModel.swift */,
+				9A8D844027315D060032E16E /* MagicSliderDemoView.swift */,
+			);
+			path = MagicSliderDemo;
+			sourceTree = "<group>";
+		};
 		9A92CC8C268C7A8A00B7A80E /* CategoryItemsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -936,6 +1020,8 @@
 				9A02E45A26C3C902009B2BBC /* TooltipDemo */,
 				9A3AEE072716BE2F00CBCADD /* PieProgressIndicatorDemo */,
 				8C9C041626C4FDCE0018FAFA /* ShimmerLoadingDemo */,
+				9A8D843D27312EC70032E16E /* MagicSliderDemo */,
+				9A2131A0272AD19E003DC3FA /* ScannerDemoScene */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";
@@ -1105,6 +1191,7 @@
 				32964BF92694874900FC3B1A /* SynchronisedCollectionViewsViewController.xib in Resources */,
 				32964C0D26959CBB00FC3B1A /* DetailsCollectionViewCell.xib in Resources */,
 				9ABF4D4C26C157980046721A /* AsymmetricCollectionSettingsViewController.xib in Resources */,
+				9A21319D272AD17F003DC3FA /* ScannerView.xib in Resources */,
 				9ABF4D5026C157990046721A /* AsymmetricCollectionDemoViewController.xib in Resources */,
 				3274B38A268EF59E00E1B445 /* ListViewController.xib in Resources */,
 				32CDD9BB268B0C9F008154AA /* LaunchScreen.storyboard in Resources */,
@@ -1113,6 +1200,7 @@
 				8C82FFEF26B9783E0059862F /* Colors.xcassets in Resources */,
 				9A92CC95268C7BA300B7A80E /* CategoryItemTableViewCell.xib in Resources */,
 				32CDD9B8268B0C9F008154AA /* Assets.xcassets in Resources */,
+				9A2131A6272AD19E003DC3FA /* ScannerDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,6 +1260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2131AA272AD205003DC3FA /* UIImage+ParseQR.swift in Sources */,
 				9A3AEE0A2716BE2F00CBCADD /* PieProgressIndicatorViewModel.swift in Sources */,
 				9A96DD5826E1FF190094DCF2 /* Category.swift in Sources */,
 				8C912DC526C2C2480051993A /* ModalView.swift in Sources */,
@@ -1183,6 +1272,7 @@
 				32CDD9C6268B46ED008154AA /* AppCoordinator.swift in Sources */,
 				8C72854F26C2BEE0006F650C /* BottomSheetConfig.swift in Sources */,
 				8C4CF32826B9854F00EAEABB /* TooltipTransitionConfig.swift in Sources */,
+				9A8D843A27312DE00032E16E /* MagicSliderViewModelProtocol.swift in Sources */,
 				9AF781222695B8EE00283DFE /* AsymmetricCollectionViewLayout.swift in Sources */,
 				8C68797626C15E8F00D33186 /* SegmentedControlViewModel.swift in Sources */,
 				9A02E45F26C3C902009B2BBC /* TooltipDemoViewModel.swift in Sources */,
@@ -1205,6 +1295,7 @@
 				9AD7BAE626C46AFC007DFE9D /* View+ImageBackground.swift in Sources */,
 				9AC4975226A6D5D5008A2A38 /* Constants.swift in Sources */,
 				9A92CCA7268CAB8A00B7A80E /* CategoryItemTableViewCellViewModel.swift in Sources */,
+				9A21319B272AD17F003DC3FA /* ScannerView.swift in Sources */,
 				8C9C03F626C48DFF0018FAFA /* SegmentedControlDemoView.swift in Sources */,
 				8CA1FAFC26BBEB1B00AE58CD /* CustomFont.swift in Sources */,
 				32964BF12693453D00FC3B1A /* CategoryListViewModel.swift in Sources */,
@@ -1215,6 +1306,7 @@
 				9AD7EC4D269D750300624F76 /* UIColor+CustomColors.swift in Sources */,
 				8CA1FB1826BC05AC00AE58CD /* TooltipBoundsPreferenceKey.swift in Sources */,
 				9AA4713A26A00E0400C61FD0 /* UITagLabel.swift in Sources */,
+				9A2131A5272AD19E003DC3FA /* ScannerDemoViewController.swift in Sources */,
 				8CA1FAF826BBE4F100AE58CD /* TooltipElementModifier.swift in Sources */,
 				8C72854926C2B9E4006F650C /* BottomSheetHeightPreferenceKey.swift in Sources */,
 				9AA4713D26A0210B00C61FD0 /* UIFont+CustomFonts.swift in Sources */,
@@ -1228,6 +1320,7 @@
 				9A129355271D517F005EA672 /* AppCenterManager.swift in Sources */,
 				32CDD9AF268B0C9C008154AA /* AppDelegate.swift in Sources */,
 				8C4CF32126B9853A00EAEABB /* Tooltip.swift in Sources */,
+				9A21319E272AD17F003DC3FA /* ScannerViewModelProtocol.swift in Sources */,
 				8C68799A26C2551B00D33186 /* BottomSheetViewModel.swift in Sources */,
 				32C13190268F3ABC000EDC1C /* CategoryCoordinator.swift in Sources */,
 				9A236BE226917C22000E8643 /* CategoryItemsListViewModelCoordinatorDelegate.swift in Sources */,
@@ -1239,6 +1332,7 @@
 				8C9C03ED26C477170018FAFA /* View+NavigationBarSetup.swift in Sources */,
 				9ABF4D5226C157990046721A /* AsymmetricCollectionDemoViewController.swift in Sources */,
 				9A3AEE112716BE6000CBCADD /* PieProgressIndicatorViewModelProtocol.swift in Sources */,
+				9A8D843827312C230032E16E /* ViewOrientation.swift in Sources */,
 				9A92CC94268C7BA300B7A80E /* CategoryItemTableViewCell.swift in Sources */,
 				8C72854C26C2BA99006F650C /* StatusBarUtilityEnvironmentKey.swift in Sources */,
 				9A02E45E26C3C902009B2BBC /* RoundedButtonView.swift in Sources */,
@@ -1246,10 +1340,14 @@
 				8C68797926C15EAF00D33186 /* TabItemModel.swift in Sources */,
 				9AA47136269EFC7200C61FD0 /* UIView+Shadowed.swift in Sources */,
 				9A3AEE0B2716BE2F00CBCADD /* PieProgressIndicatorDemoView.swift in Sources */,
+				9A2131AC272AD218003DC3FA /* UIView+Expand.swift in Sources */,
 				9ABF4D5326C157990046721A /* AsymmetricCollectionDemoViewModel.swift in Sources */,
 				8C72854626C2B631006F650C /* StatusBarUtility.swift in Sources */,
 				8C9C03E326C454E60018FAFA /* ExecutionButtonDemoViewModel.swift in Sources */,
+				9A2131AE272AD24C003DC3FA /* ScanType.swift in Sources */,
 				9A82890726AAF1C40077EA9D /* UIImage+CustomImages.swift in Sources */,
+				9A21319F272AD17F003DC3FA /* ScannerViewModel.swift in Sources */,
+				9A2131A8272AD19E003DC3FA /* ScannerDemoViewModelProtocol.swift in Sources */,
 				8C0242A826BD4BD40094029A /* InfoTagProtocol.swift in Sources */,
 				9AD7BAE926C46BC8007DFE9D /* ImageBackgroundViewModifier.swift in Sources */,
 				8CA1FB0126BBEB4D00AE58CD /* Font+CustomFonts.swift in Sources */,
@@ -1258,6 +1356,7 @@
 				8C68796E26C159CD00D33186 /* SegmentedControlView.swift in Sources */,
 				8C68797326C15B0800D33186 /* SegmentedControlItemView.swift in Sources */,
 				9A3AEE122716BE6000CBCADD /* PieProgressIndicatorConfig.swift in Sources */,
+				9A21319C272AD17F003DC3FA /* ScannnerViewModelDelegate.swift in Sources */,
 				8C9C03CC26C432070018FAFA /* BottomSheetDemoViewModel.swift in Sources */,
 				8C9C03CF26C432F00018FAFA /* BaseHostingController.swift in Sources */,
 				9A736C8926EA443200FBAA3A /* UIStackView+Extensions.swift in Sources */,
@@ -1265,6 +1364,7 @@
 				32964BE92692E0EC00FC3B1A /* ListViewModelProtocol.swift in Sources */,
 				8C9C042026C4FE1C0018FAFA /* ShimmerLoadingDemoView.swift in Sources */,
 				8C9C03E026C454DB0018FAFA /* ExecutionButtonDemoView.swift in Sources */,
+				9A2131A7272AD19E003DC3FA /* ScannerDemoViewModel.swift in Sources */,
 				32964C0126948C9000FC3B1A /* TabBarCollectionViewCell.swift in Sources */,
 				9A96785A26D7BD77000B32D4 /* SplashViewModel.swift in Sources */,
 				32964BFB2694876300FC3B1A /* SynchronisedCollectionViewsViewModel.swift in Sources */,
@@ -1275,13 +1375,16 @@
 				32964C062694AF9A00FC3B1A /* TabBarCollectionViewCellViewModelProtocol.swift in Sources */,
 				32964C0F26959F4700FC3B1A /* DetailsCollectionViewCellViewModelProtocol.swift in Sources */,
 				8C9F6C2226BD1D2800A599D0 /* TooltipIdentity.swift in Sources */,
+				9A8D844127315D060032E16E /* MagicSliderDemoView.swift in Sources */,
 				8C56BB0426BBE02A00DBE86F /* View+TooltipApplicable.swift in Sources */,
 				32CDD9B1268B0C9C008154AA /* SceneDelegate.swift in Sources */,
 				8C9C03D226C435340018FAFA /* View+BaseHostingController.swift in Sources */,
 				9ABF4D4F26C157990046721A /* AsymmetricCollectionSettingsViewModel.swift in Sources */,
+				9A8D843C27312E330032E16E /* MagicSliderConfig.swift in Sources */,
 				9A33035326C2B05C00B7EC74 /* ExecutionButtonState.swift in Sources */,
 				9AF781262695B9B000283DFE /* AsymmetricCollectionViewLayoutConfigurator.swift in Sources */,
 				8C0242AC26BD4C570094029A /* ViewOriginInfoTag.swift in Sources */,
+				9A8D843F27312EE30032E16E /* MagicSliderViewModel.swift in Sources */,
 				9A92CCBD268DA0A300B7A80E /* CategoryItem.swift in Sources */,
 				8C912DC926C2C6280051993A /* ModalViewModifier.swift in Sources */,
 				9A96785326D790EC000B32D4 /* SplashViewController.swift in Sources */,
@@ -1291,6 +1394,7 @@
 				9A92CC9E268CA55800B7A80E /* CategoryItemsListViewModel.swift in Sources */,
 				8C9C041426C4FD0C0018FAFA /* ShimmerLoadingViewConfig.swift in Sources */,
 				9A3AEE162716BEB700CBCADD /* PieProgressIndicatorModifier.swift in Sources */,
+				9A8D843627312BDE0032E16E /* MagicSliderView.swift in Sources */,
 				9A129352271D50E2005EA672 /* AnalyticsManagerProtocol.swift in Sources */,
 				9AC4975026A6D4C7008A2A38 /* UINavigationController+Appearance.swift in Sources */,
 			);

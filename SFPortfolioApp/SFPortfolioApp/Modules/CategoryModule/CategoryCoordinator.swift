@@ -88,6 +88,22 @@ class CategoryCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    private func startMagicSliderDemoScene() {
+        let primaryVerticalSliderViewModel = MagicSliderViewModel()
+        let secondaryVerticalSliderViewModel = MagicSliderViewModel()
+        let horizontalSliderViewModel = MagicSliderViewModel()
+        let view = MagicSliderDemoView(primaryVerticalViewModel: primaryVerticalSliderViewModel,
+                                       secondaryVerticalViewModel: secondaryVerticalSliderViewModel,
+                                       horizontalViewModel: horizontalSliderViewModel)
+        let viewController = view.hostingController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+        
+    private func startScannerViewDemoScene() {
+        let viewModel = ScannerDemoViewModel()
+        navigationController.pushViewController(ScannerDemoViewController.create(viewModel: viewModel), animated: true)
+    }
+    
 }
 
 // MARK: - CategoryViewModelCoordinatorDelegate
@@ -123,6 +139,10 @@ extension CategoryCoordinator: CategoryItemsListViewModelCoordinatorDelegate {
             startShimmerLoadingViewScene()
         case .pieProgressIndicator:
             startPieProgressIndicatorScene()
+        case .magicSliderView:
+            startMagicSliderDemoScene()
+        case .scannerView:
+            startScannerViewDemoScene()
         }
     }
     
